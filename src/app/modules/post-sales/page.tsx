@@ -122,12 +122,12 @@ export default function PostSalesPage() {
                 </div>
               </div>
 
-              {/* Real Software Post-Sales Vector SVG */}
-              <div className="relative overflow-hidden bg-slate-900">
+              {/* Post-Sales Themed Tech Illustration */}
+              <div className="relative overflow-hidden bg-white p-2 sm:p-4 flex items-center justify-center">
                 <img
-                  src="/screenshots/plotline-post-sales-clean.svg"
-                  alt="Plotline ERP Post-Sales Milestone Demand Notice & Collection Ledger"
-                  className="w-full h-auto object-cover"
+                  src="/screenshots/post-sales-illustration.png"
+                  alt="Plotline ERP Post-Sales Operations & Construction Milestone Recovery"
+                  className="w-full h-auto object-contain rounded-xl select-none"
                   loading="lazy"
                 />
               </div>
@@ -136,13 +136,13 @@ export default function PostSalesPage() {
               <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/90 bg-slate-50 px-4 py-2.5 text-xs text-slate-600">
                 <div className="flex items-center gap-2">
                   <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-                  <span className="font-semibold text-slate-800">Green Valley Enclave</span>
+                  <span className="font-semibold text-slate-800">Post-Sales Operations Hub</span>
                   <span className="text-slate-400">&bull;</span>
-                  <span className="text-slate-500">Milestone 3 (Plinth Complete)</span>
+                  <span className="text-slate-500">Milestone Demands &amp; Possession</span>
                 </div>
                 <div className="flex items-center gap-3 text-[11px] font-medium">
-                  <span className="text-emerald-700 font-semibold">&bull; ₹84.50 L Collected (75.4%)</span>
-                  <span className="text-amber-700 font-semibold">&bull; 6 Overdue Notices Sent</span>
+                  <span className="text-emerald-700 font-semibold">&bull; 4.5x Faster Collections</span>
+                  <span className="text-teal-700 font-semibold">&bull; 100% RERA Compliant</span>
                 </div>
               </div>
             </div>
