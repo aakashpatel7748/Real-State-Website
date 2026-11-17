@@ -6,7 +6,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { MobileQuickBar } from '@/components/MobileQuickBar';
 
 export const viewport: Viewport = {
-  themeColor: '#2563eb',
+  themeColor: '#042026',
   width: 'device-width',
   initialScale: 1,
 };
@@ -75,7 +75,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 pb-16 md:pb-0">
+      <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-teal-100 selection:text-teal-900 pb-16 md:pb-0 font-sans">
         <JsonLd />
         <Navbar />
         <main className="flex-1">{children}</main>

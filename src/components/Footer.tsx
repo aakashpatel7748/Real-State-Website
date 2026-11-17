@@ -29,9 +29,9 @@ export function Footer() {
             </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              India&apos;s leading Real Estate Colony &amp; Plotted Development ERP software. 
-              Double-booking rokna, automated milestone demand letters bhejna, aur Khasra-Khata zameen se lekar 
-              registry tak ka har ek hisab maintain karna.
+              India&apos;s leading Colony &amp; Plotted Real Estate ERP system. 
+              Eliminate double bookings, automate milestone installment demand notices, and track 
+              land parcels from Khasra purchase to registry handover.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3 text-xs">
@@ -39,7 +39,7 @@ export function Footer() {
                 <ShieldCheck className="h-4 w-4" />
                 <span>100% RERA &amp; GST Ready</span>
               </div>
-              <div className="flex items-center gap-1.5 rounded-lg border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-blue-400 font-semibold">
+              <div className="flex items-center gap-1.5 rounded-lg border border-teal-500/30 bg-teal-500/10 px-3 py-1 text-teal-300 font-semibold">
                 <CheckCircle2 className="h-4 w-4" />
                 <span>Double-Entry Ledgers</span>
               </div>
@@ -48,7 +48,7 @@ export function Footer() {
             <div className="mt-6 space-y-2 text-xs text-slate-400">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>Serving Colonizers across MP, Rajasthan, Gujarat, NCR, Maharashtra</span>
+                <span>Serving Developers across MP, UP, Rajasthan, Gujarat, NCR &amp; Maharashtra</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-emerald-400 shrink-0" />
@@ -74,12 +74,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/modules/inventory-and-map" className="hover:text-white transition-colors">
-                  Interactive Colony Naksha (Map)
+                  Interactive Layout Map
                 </Link>
               </li>
               <li>
                 <Link href="/modules/post-sales" className="hover:text-white transition-colors">
-                  Post-Sales &amp; Demand Letters
+                  Post-Sales &amp; Demand Notices
                 </Link>
               </li>
               <li>
@@ -98,17 +98,17 @@ export function Footer() {
           {/* Column 2: Key Capabilities */}
           <div>
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">
-              Key Features
+              Platform Features
             </h4>
             <ul className="mt-4 space-y-2.5 text-xs text-slate-400">
               <li>
                 <Link href="/#screenshots" className="hover:text-white transition-colors">
-                  Live Software Screenshots
+                  Software Screenshots
                 </Link>
               </li>
               <li>
                 <Link href="/#interactive-map" className="hover:text-white transition-colors">
-                  Color-Coded Plot Inventory
+                  Interactive Vector Map
                 </Link>
               </li>
               <li>
@@ -117,60 +117,54 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/modules/accounting" className="hover:text-white transition-colors">
-                  PDC Clearance Register
+                <Link href="/#about" className="hover:text-white transition-colors">
+                  About Plotline
                 </Link>
               </li>
               <li>
-                <Link href="/modules/accounting" className="hover:text-white transition-colors">
-                  GST Vouchers &amp; Reports
-                </Link>
-              </li>
-              <li>
-                <Link href="/modules/land-and-construction" className="hover:text-white transition-colors">
-                  Farmer Payment Capital Ledgers
+                <Link href="/pricing" className="hover:text-white transition-colors">
+                  Plans &amp; Pricing
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Contact & Demo */}
+          {/* Column 3: Contact & Legal */}
           <div>
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">
-              Support &amp; Demo
+              Company &amp; Legal
             </h4>
             <ul className="mt-4 space-y-2.5 text-xs text-slate-400">
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
-                  Book 1-on-1 Free Live Demo
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
-                  Transparent Pricing Plans
+                  Schedule Live Demo
                 </Link>
               </li>
               <li>
                 <a href="tel:+919876543210" className="hover:text-white transition-colors">
-                  Direct Helpline: +91 98765 43210
+                  Customer Support
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-emerald-400">
-                  Chat on WhatsApp
-                </a>
+                <span className="text-slate-500">RERA Escrow Compliant</span>
+              </li>
+              <li>
+                <span className="text-slate-500">256-bit SSL Cloud Hosted</span>
+              </li>
+              <li>
+                <span className="text-slate-500">Made for Indian Colonizers</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 flex flex-col items-center justify-between border-t border-slate-800 pt-8 sm:flex-row text-xs text-slate-400">
-          <p>© {new Date().getFullYear()} Plotline Technologies Pvt Ltd. All rights reserved.</p>
-          <div className="mt-3 flex items-center space-x-4 sm:mt-0">
-            <span>Built for Indian Colonizers &amp; Developers</span>
-            <span>•</span>
-            <span className="text-emerald-400 font-semibold">100% Server Rendered (Next.js)</span>
+        {/* Bottom Rights Bar */}
+        <div className="mt-12 border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+          <div>
+            &copy; {new Date().getFullYear()} Plotline Technologies Pvt Ltd. All rights reserved.
+          </div>
+          <div className="mt-2 sm:mt-0 flex items-center gap-4">
+            <span>Enterprise Colony Management Cloud</span>
           </div>
         </div>
       </div>

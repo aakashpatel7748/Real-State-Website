@@ -3,77 +3,77 @@ import { Check, X, Building2 } from 'lucide-react';
 
 const COMPARISON_ROWS = [
   {
-    feature: 'Colony SVG Layout Map with Live Status',
+    feature: 'Vector Colony Layout Map with Live Status',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Hara (Available), Peela (Reserved), Laal (Booked) color-coded interactive naksha with zoom/pan.',
+    detail: 'Real-time color-coded map: Green (Available), Yellow (Reserved), Red (Booked) with smooth zoom and pan.',
   },
   {
-    feature: 'Zero Double-Booking Guarantee',
+    feature: '0% Double-Booking Atomic Lock',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Database lock se ek plot ko ek sath do sales executive reserve nahi kar sakte.',
+    detail: 'Database-level lock prevents two sales executives from placing token reservations on the same unit.',
   },
   {
-    feature: 'Milestone Demand Letters (Bulk PDF)',
+    feature: 'Bulk Milestone Demand Letters (PDF)',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Plinth, Road, ya Slab complete hote hi project ke sabhi buyers ko automated demand notice.',
+    detail: 'One-click automated generation and dispatch of official demand notices upon construction certification.',
   },
   {
-    feature: 'Post-Dated Cheques (PDC) Vault & Clearance',
+    feature: 'Post-Dated Cheques (PDC) Vault & Realization',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Advance cheques vault me safe rehte hain; bank se pass hone par hi official receipt banti hai.',
+    detail: 'Secure cheque tracking with maturity alerts; official receipts and ledger credits trigger only upon bank clearance.',
   },
   {
-    feature: '99acres, MagicBricks & Housing Webhooks',
+    feature: '99acres, MagicBricks & Meta Lead Webhooks',
     excel: false,
     genericCrm: true,
     plotline: true,
-    detail: 'Direct portal leads integration with SHA-256 de-duplication aur 1-click WhatsApp message.',
+    detail: 'Direct real-time webhook sync with SHA-256 deduplication and 1-click WhatsApp customer messaging.',
   },
   {
     feature: 'Khasra / Khata Land Acquisition Ledgers',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Agricultural zameen purchase, kisan payments, bayana agreement, aur registry ledger tracking.',
+    detail: 'Agricultural land purchases, farmer payment milestones, bayana agreements, and registry ledger tracking.',
   },
   {
-    feature: 'Double-Entry Accounts & GST Vouchers',
+    feature: 'Double-Entry Accounting & GST Vouchers',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Complete Trial Balance, P&L, Balance Sheet, aur CGST/SGST/IGST tax calculation.',
+    detail: 'Tally-grade Trial Balance, P&L, Balance Sheet, and automated CGST/SGST/IGST tax calculation.',
   },
   {
-    feature: 'Dynamic Rate & Price Indexes',
+    feature: 'Dynamic Rate & Price Indexing',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Development ke sath bache hue unsold plots ka rate badhana bina purani bookings ko badle.',
+    detail: 'Adjust prices on unsold inventory as colony development progresses without altering prior buyer agreements.',
   },
 ];
 
 export function ComparisonTable() {
   return (
-    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section className="py-14 sm:py-20 bg-white border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
-            Kyu Generic Software Colonizers ke Liye Fail Ho Jaate Hain
+            Why Generic Software Fails Indian Colonizers
           </span>
           <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-            Excel Sheets vs Generic CRMs vs <br />
+            Spreadsheets vs Generic CRMs vs <br />
             <span className="text-[#0d9488]">Plotline Real Estate ERP</span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Generic CRM na toh Khasra-Khata samajhte hain, na hi PDC cheque clearance aur colony naksha:
+            Generic CRMs do not comprehend Khasra land ledgers, PDC cheque clearances, or interactive colony layout maps:
           </p>
         </div>
 
@@ -98,33 +98,30 @@ export function ComparisonTable() {
             </thead>
             <tbody className="divide-y divide-slate-100 text-slate-700">
               {COMPARISON_ROWS.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                <tr
+                  key={idx}
+                  className="hover:bg-slate-50/70 transition-colors"
+                >
                   <td className="py-4 px-5">
                     <div className="font-bold text-slate-900">{row.feature}</div>
                     <div className="text-[11px] text-slate-500 mt-0.5">{row.detail}</div>
                   </td>
-
-                  {/* Excel */}
                   <td className="py-4 px-4 text-center">
                     {row.excel ? (
                       <Check className="h-5 w-5 text-emerald-600 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-rose-400 mx-auto" />
+                      <X className="h-5 w-5 text-slate-300 mx-auto" />
                     )}
                   </td>
-
-                  {/* Generic CRM */}
                   <td className="py-4 px-4 text-center">
                     {row.genericCrm ? (
                       <Check className="h-5 w-5 text-emerald-600 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-rose-400 mx-auto" />
+                      <X className="h-5 w-5 text-slate-300 mx-auto" />
                     )}
                   </td>
-
-                  {/* Plotline ERP */}
-                  <td className="py-4 px-4 text-center bg-blue-50/40 border-x border-blue-200">
-                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 font-bold">
+                  <td className="py-4 px-4 text-center bg-teal-50/30 border-x border-teal-100">
+                    <div className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                       <Check className="h-4 w-4 stroke-[3]" />
                     </div>
                   </td>

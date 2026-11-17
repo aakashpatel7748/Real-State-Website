@@ -71,49 +71,49 @@ export function ContactForm() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       {/* Left Details Info (5 Cols) */}
       <div className="lg:col-span-5 space-y-6">
-        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8 shadow-md">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 mb-4">
-            <Sparkles className="h-3.5 w-3.5" />
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-4">
+            <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>1-on-1 Free Live Walkthrough</span>
           </span>
 
-          <h3 className="text-2xl font-black text-slate-900">
-            Apni Colony ke Naksha aur Data ke Sath Demo Dekhein
+          <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+            Preview the Demo with Your Own Colony Layout &amp; Data
           </h3>
 
-          <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-            30 minute ka customized live session schedule karein. Hum aapki colony ka sample layout naksha load karke, 
-            milestone demand notice generate karke, aur PDC cheque vault live chala kar dikhayenge.
+          <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+            Schedule a 30-minute tailored live session. We will load a sample layout map, 
+            generate a milestone installment notice, and demonstrate the PDC cheque vault live.
           </p>
 
           <div className="mt-8 space-y-4 text-xs sm:text-sm text-slate-700">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-700 font-bold">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700 font-bold border border-teal-100">
                 <Clock className="h-5 w-5" />
               </div>
               <div>
-                <div className="font-bold text-slate-900">Immediate Response</div>
-                <div className="text-slate-500 text-xs">ERP consultant 2 ghante ke andar connect karega</div>
+                <div className="font-bold text-slate-900">Rapid Response</div>
+                <div className="text-slate-500 text-xs">An ERP specialist connects within 2 business hours</div>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 font-bold">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold border border-emerald-100">
                 <ShieldCheck className="h-5 w-5" />
               </div>
               <div>
-                <div className="font-bold text-slate-900">100% Confidential &amp; Multi-Tenant</div>
-                <div className="text-slate-500 text-xs">Aapka project data poori tarah secure aur private rehta hai</div>
+                <div className="font-bold text-slate-900">100% Confidential &amp; Isolated</div>
+                <div className="text-slate-500 text-xs">Your project inventory and customer records stay private</div>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-800 font-bold">
-                <Phone className="h-5 w-5" />
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 font-bold border border-slate-200">
+                <Phone className="h-5 w-5 text-teal-700" />
               </div>
               <div>
                 <div className="font-bold text-slate-900">Direct Helpline</div>
-                <div className="text-slate-500 text-xs">+91 98765 43210 (WhatsApp par bhi available)</div>
+                <div className="text-slate-500 text-xs">+91 98765 43210 (Direct phone &amp; WhatsApp)</div>
               </div>
             </div>
           </div>
@@ -121,22 +121,22 @@ export function ContactForm() {
       </div>
 
       {/* Right Form Card (7 Cols) */}
-      <div className="lg:col-span-7 rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-xl">
+      <div className="lg:col-span-7 rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-10 shadow-xl shadow-slate-900/5">
         {status === 'success' ? (
           <div className="rounded-2xl border border-emerald-300 bg-emerald-50 p-8 text-center space-y-4">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-200 text-emerald-800 mb-2">
               <CheckCircle2 className="h-8 w-8" />
             </div>
-            <h4 className="text-2xl font-black text-slate-900">Aapka Demo Request Mil Gaya!</h4>
-            <p className="text-sm text-slate-700 max-w-md mx-auto">
-              Shukriya! Hamare real estate ERP specialist aapko jaldi hi call ya WhatsApp karenge taaki 
-              aapke project ke hisab se software ka live session shuru kiya ja sake.
+            <h4 className="text-2xl font-bold text-slate-900">Demo Request Received!</h4>
+            <p className="text-sm text-slate-700 max-w-md mx-auto leading-relaxed">
+              Thank you! Our real estate ERP consultant will reach out via Phone or WhatsApp shortly 
+              to coordinate your live interactive walkthrough.
             </p>
             <button
               onClick={() => setStatus('idle')}
-              className="mt-4 rounded-xl bg-blue-600 px-6 py-2.5 text-xs font-bold text-white hover:bg-blue-700 transition-colors"
+              className="mt-4 rounded-xl bg-[#042026] px-6 py-2.5 text-xs font-semibold text-white hover:bg-[#073640] transition-colors"
             >
-              Ek Aur Inquiry Bhejein
+              Submit Another Request
             </button>
           </div>
         ) : (
@@ -149,8 +149,8 @@ export function ContactForm() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
-                  Aapka Naam <span className="text-rose-500">*</span>
+                <label className="block font-semibold text-slate-800 mb-1.5">
+                  Your Full Name <span className="text-rose-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -158,13 +158,13 @@ export function ContactForm() {
                   placeholder="e.g. Rajesh Singhania"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 />
               </div>
 
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
-                  Mobile / WhatsApp Number <span className="text-rose-500">*</span>
+                <label className="block font-semibold text-slate-800 mb-1.5">
+                  Phone / WhatsApp Number <span className="text-rose-500">*</span>
                 </label>
                 <input
                   type="tel"
@@ -172,65 +172,65 @@ export function ContactForm() {
                   placeholder="+91 98765 00000"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
-                  Developer / Colony Firm ka Naam
+                <label className="block font-semibold text-slate-800 mb-1.5">
+                  Developer / Firm Name
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. Royal Greens Developers"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 />
               </div>
 
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
-                  Shehar &amp; Rajya (City &amp; State)
+                <label className="block font-semibold text-slate-800 mb-1.5">
+                  City &amp; State
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. Bhopal, MP ya Jaipur, RJ"
+                  placeholder="e.g. Bhopal, MP or Jaipur, RJ"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
-                  Project ka Type
+                <label className="block font-semibold text-slate-800 mb-1.5">
+                  Project Type
                 </label>
                 <select
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 >
                   <option>Plotted Colony / Township (Plots)</option>
                   <option>Residential High-Rise Flats</option>
                   <option>Luxury Duplex Villas / Row Houses</option>
-                  <option>Commercial Complex / Shops</option>
-                  <option>Mixed Development Project</option>
+                  <option>Commercial Complex / Retail Shops</option>
+                  <option>Mixed Township Development</option>
                 </select>
               </div>
 
               <div>
-                <label className="block font-bold text-slate-800 mb-1.5">
+                <label className="block font-semibold text-slate-800 mb-1.5">
                   Total Units (Approx)
                 </label>
                 <select
                   value={formData.units}
                   onChange={(e) => setFormData({ ...formData, units: e.target.value })}
-                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
                 >
                   <option>Under 50 Units</option>
                   <option>50 - 150 Units</option>
@@ -241,29 +241,29 @@ export function ContactForm() {
             </div>
 
             <div>
-              <label className="block font-bold text-slate-800 mb-1.5">
-                Koi Khaas Zarurat ya Sawaal?
+              <label className="block font-semibold text-slate-800 mb-1.5">
+                Specific Requirements or Current Workflow
               </label>
               <textarea
                 rows={3}
-                placeholder="e.g. Abhi Excel par 150 plot manage kar rahe hain. Automated kist demand notice aur colony naksha chahiye."
+                placeholder="e.g. Currently managing 120 plots in spreadsheets. Need automated installment demand notices and an interactive plot layout map."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600"
+                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-600"
               />
             </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 py-4 text-sm font-bold text-white shadow-lg shadow-blue-600/25 hover:bg-blue-700 disabled:opacity-50 transition-all cursor-pointer"
+              className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-sm font-semibold text-white shadow-md transition-all cursor-pointer disabled:opacity-50"
             >
               {loading ? (
-                <span>Request Bheji Jaa Rahi Hai...</span>
+                <span>Submitting Your Request...</span>
               ) : (
                 <>
-                  <Send className="h-4 w-4" />
-                  <span>Free Live ERP Demo Book Karein</span>
+                  <Send className="h-4 w-4 text-emerald-400" />
+                  <span>Book Free 1-on-1 Live Demo</span>
                 </>
               )}
             </button>

@@ -48,24 +48,24 @@ export default function HomePage() {
                 <span>About Plotline ERP</span>
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-                Kyu Plotline Bharat ke Colonizers ki Pehli Pasand Hai?
+                Why Plotline is the First Choice of Indian Colonizers
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                Generic CRMs (jaise Salesforce ya HubSpot) real estate colonizers ke ground workflows ko nahi samajhte. 
-                Unme Khasra-Khata zameen ka hisab, CAD/SVG layout naksha, construction milestone kist demands aur PDC cheque vault nahi hote.
+                Generic enterprise software (like Salesforce or HubSpot) does not comprehend the ground operations of plotted developments. 
+                They lack Khasra land acquisition ledgers, CAD/SVG layout map rendering, milestone installment demand generation, and PDC cheque vaults.
               </p>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                Plotline ERP ko specifically Indian plotted township developers, colonizers aur builders ke liye banaya gaya hai — taaki site par ghoom rahe sales rep se lekar registry office aur accounts team tak sab ek hi platform par live synchronize rahein.
+                Plotline ERP was designed specifically for Indian plotted township developers, colonizers, and builders—ensuring on-site sales agents, town planning teams, registry officers, and accounts departments stay synchronized in real time.
               </p>
               
               <div className="pt-2 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
                   <div className="text-sm sm:text-base font-bold text-slate-900">100% Cloud Native</div>
-                  <div className="text-xs text-slate-500 mt-0.5">Mobile aur laptop dono par live access.</div>
+                  <div className="text-xs text-slate-500 mt-0.5">Live access from mobile and desktop with zero server maintenance.</div>
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
                   <div className="text-sm sm:text-base font-bold text-[#0d9488]">RERA &amp; GST Ready</div>
-                  <div className="text-xs text-slate-500 mt-0.5">Tax invoices &amp; escrow accounts tracking.</div>
+                  <div className="text-xs text-slate-500 mt-0.5">Automated tax invoices, demand notices &amp; escrow reconciliation.</div>
                 </div>
               </div>
             </div>
@@ -77,20 +77,20 @@ export default function HomePage() {
                   <span>The Plotline Commitment</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug">
-                  Zero Double-Booking &bull; Fast Kist Recovery &bull; Clean Accounts
+                  Zero Double-Bookings &bull; Fast Installment Recovery &bull; Audit-Ready Accounts
                 </h3>
                 <div className="mt-5 space-y-3.5 text-xs sm:text-sm text-slate-300">
                   <div className="flex items-start gap-2.5">
                     <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
-                    <span><strong>Free Onboarding &amp; Map Setup:</strong> Aapka puraana Excel data aur CAD/SVG colony naksha hamari technical team free setup karke deti hai.</span>
+                    <span><strong>Free Onboarding &amp; Map Setup:</strong> Our dedicated onboarding team migrates your existing Excel unit data and converts CAD/SVG colony layouts free of charge.</span>
                   </div>
                   <div className="flex items-start gap-2.5">
                     <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
-                    <span><strong>Dedicated Support:</strong> Phone, WhatsApp aur screen share par complete customer assistance.</span>
+                    <span><strong>Dedicated Technical Support:</strong> Direct assistance via Phone, WhatsApp, and screen share whenever your sales or finance teams need help.</span>
                   </div>
                   <div className="flex items-start gap-2.5">
                     <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
-                    <span><strong>Bank-Grade Data Security:</strong> Daily automatic cloud backups aur 256-bit SSL encryption.</span>
+                    <span><strong>Bank-Grade Data Security:</strong> Daily automated cloud backups, role-based user access controls, and 256-bit SSL encryption.</span>
                   </div>
                 </div>
               </div>
@@ -104,13 +104,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
-              Bharat ke Leading Colonizers dwara Bharosemand
+              Trusted by Leading Indian Developers
             </span>
             <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-              Colonizers aur Township Builders Ka Feedback
+              What Colonizers &amp; Township Builders Say
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-              Dekhein un colonizers ne kya kaha jinhone Excel sheets band karke Plotline ERP shuru kiya:
+              Read how real estate colonizers eliminated manual registers and switched to Plotline ERP:
             </p>
           </div>
 
@@ -120,9 +120,9 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;Pehle har Sunday site par double booking ka jhagda hota tha. Plotline ke live SVG map se 
-                sales executive phone se hi real-time status dekh lete hain. Hamara 45 din ka installment collection 
-                ab 12 din me complete ho raha hai.&rdquo;
+                &ldquo;Earlier, double-booking conflicts occurred every Sunday on site. With Plotline&apos;s live SVG layout map, 
+                sales reps check real-time unit status on their phones. Our 45-day installment collection cycle is now 
+                completed in under 12 days.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="h-10 w-10 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-xs">
@@ -140,9 +140,9 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;Post-dated cheques (PDC) manage karna sabse bada sar-dard tha. Plotline me cheque vault 
-                me save hota hai aur bank clearance par hi receipt generate hoti hai. RERA audit ke time ek click me 
-                saara customer ledger download ho gaya.&rdquo;
+                &ldquo;Managing advance post-dated cheques (PDCs) used to be a massive administrative bottleneck. In Plotline, 
+                cheques are logged in a secure vault, and receipts generate only upon bank clearance. During RERA audits, 
+                our entire buyer ledger was exported in one click.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="h-10 w-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
@@ -160,8 +160,8 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;99acres aur MagicBricks se aane wali leads pehle Excel me kho jaati thi. Inke webhook aur 
-                WhatsApp integration se inquiry aate hi sales rep ko notification milta hai. Conversion 35% badh gaya hai.&rdquo;
+                &ldquo;Inquiries from 99acres and MagicBricks previously slipped through messy spreadsheets. With Plotline&apos;s 
+                instant webhooks and WhatsApp integration, reps are alerted in seconds. Our lead conversion jumped by 35%.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="h-10 w-10 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-xs">
@@ -185,16 +185,16 @@ export default function HomePage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-emerald-950/80 border border-emerald-700/50 px-4 py-1.5 text-xs font-semibold text-emerald-300 mb-5">
             <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
-            <span>Ready for Instant Deployment on Cloud</span>
+            <span>Ready for Instant Cloud Deployment</span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-white leading-tight">
-            Apni Colony ya Township ko Digital Banayein
+            Digitize Your Colony or Township Today
           </h2>
 
           <p className="mt-3.5 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Excel sheets ki galatiyon aur double-booking ke jhagde se mukti paayein. 
-            Apni colony ke sample naksha ke sath 1-on-1 personalized live demo schedule karein.
+            Eliminate double-booking disputes and spreadsheet errors. 
+            Schedule a personalized 1-on-1 live demo configured with your colony layout map.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
@@ -218,15 +218,15 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300 font-medium">
             <div className="flex items-center gap-1.5">
               <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
-              <span>Kisi bhi On-Premise Server ki Zarurat Nahi</span>
+              <span>Zero On-Premise Server Needed</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
-              <span>Excel se Unit Data Import Free</span>
+              <span>Free Excel Unit Data Migration</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
-              <span>RERA aur GST Ready Architecture</span>
+              <span>RERA &amp; GST Ready Architecture</span>
             </div>
           </div>
         </div>

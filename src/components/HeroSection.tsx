@@ -10,8 +10,6 @@ import {
   Calendar,
   Sparkles,
   TrendingUp,
-  FileCheck2,
-  Clock,
   Check
 } from 'lucide-react';
 
@@ -32,9 +30,9 @@ export function HeroSection() {
             {/* Top Category Tag */}
             <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4 shadow-sm">
               <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>India&apos;s #1 Colony &amp; Real Estate ERP</span>
+              <span>India&apos;s #1 Real Estate ERP</span>
               <span className="text-teal-400">•</span>
-              <span className="text-teal-700">Plotted Developers</span>
+              <span className="text-teal-700">Plotted Colonies &amp; Townships</span>
             </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
@@ -51,12 +49,12 @@ export function HeroSection() {
 
             {/* Subtitle in clean Poppins 16px */}
             <p className="mt-4 text-base sm:text-[17px] text-slate-600 leading-relaxed font-normal">
-              Ab Excel sheets aur register chodiye.{' '}
-              <strong className="font-semibold text-slate-800">Interactive Colony Naksha (Layout Map)</strong>,{' '}
-              <strong className="font-semibold text-slate-800">Live Unit Status</strong> (Sold, Unsold, Hold),{' '}
-              <strong className="font-semibold text-slate-800">Kist (Installment) Demand Letters</strong>,{' '}
-              <strong className="font-semibold text-slate-800">PDC Vault</strong>, aur{' '}
-              <strong className="font-semibold text-slate-800">Khasra-Khata Land Management</strong> — sab kuch ek hi platform me.
+              Say goodbye to scattered spreadsheets and manual registers.{' '}
+              <strong className="font-semibold text-slate-800">Interactive Vector Colony Layout Map</strong>,{' '}
+              <strong className="font-semibold text-slate-800">Live Plot Status</strong> (Available, Reserved, Booked),{' '}
+              <strong className="font-semibold text-slate-800">Milestone Installment Demand Notices</strong>,{' '}
+              <strong className="font-semibold text-slate-800">PDC Cheque Vault</strong>, and{' '}
+              <strong className="font-semibold text-slate-800">Khasra Land Acquisition Ledgers</strong> — all in one unified cloud system.
             </p>
 
             {/* 4 Key Value Checkpoints */}
@@ -65,7 +63,7 @@ export function HeroSection() {
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
-                <span>Interactive SVG Colony Naksha</span>
+                <span>Interactive Vector Layout Map</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
@@ -77,13 +75,13 @@ export function HeroSection() {
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
-                <span>Automated Kist Demand Notices (PDF)</span>
+                <span>Automated Milestone Demand PDFs</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
-                <span>Khasra Land &amp; Farmer Registry Records</span>
+                <span>Khasra Land &amp; Farmer Registry</span>
               </div>
             </div>
 
@@ -116,11 +114,11 @@ export function HeroSection() {
               <span>•</span>
               <span>Zero Setup Fee</span>
               <span>•</span>
-              <span>Free Old Data &amp; Naksha Migration</span>
+              <span>Free Legacy Data &amp; Map Migration</span>
             </div>
           </div>
 
-          {/* Right Column: Prominent Real Product Preview (Directly on Fold!) */}
+          {/* Right Column: Real Product Preview */}
           <div className="lg:col-span-6 relative">
             
             {/* Browser Window Frame Wrapper */}
@@ -187,15 +185,15 @@ export function HeroSection() {
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
             <div className="text-xl sm:text-2xl font-bold text-[#0d9488]">4.5x</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Tez Kist (EMI) Recovery with Notices</div>
+            <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
             <div className="text-xl sm:text-2xl font-bold text-emerald-600">0%</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Lock)</div>
+            <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
             <div className="text-xl sm:text-2xl font-bold text-[#042026]">All-in-One</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Naksha + CRM + Kist + Accounts + Land</div>
+            <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Kist + Accounts + Land</div>
           </div>
         </div>
 

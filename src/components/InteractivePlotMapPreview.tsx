@@ -48,45 +48,45 @@ export function InteractivePlotMapPreview() {
   };
 
   return (
-    <section id="interactive-map" className="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="interactive-map" className="py-14 sm:py-20 bg-white border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <MapPin className="h-3.5 w-3.5 text-teal-600" />
-            <span>Interactive Colony Naksha</span>
+            <span>Interactive Layout Feature</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
             Live Colony Naksha (Plot Layout Map)
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Kisi bhi plot par click karke dekhein. Site par sales rep ya office staff sabhi ko real-time status dikhta hai:
+            Click on any plot to preview live status, dimensions, facing, and customer payment progress:
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Interactive Plot Grid (8 Columns) */}
-          <div className="lg:col-span-8 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-lg">
+          <div className="lg:col-span-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-6">
               <div>
                 <span className="text-xs uppercase tracking-wider font-bold text-slate-400">
                   Township Project
                 </span>
-                <h3 className="text-lg font-black text-slate-900">Royal Palm Enclave — Sector A &amp; B</h3>
+                <h3 className="text-lg font-bold text-slate-900">Royal Palm Enclave — Sector A &amp; B</h3>
               </div>
 
               {/* Status Legend */}
               <div className="flex flex-wrap items-center gap-3 text-xs font-semibold">
                 <span className="flex items-center gap-1.5">
                   <span className="h-3 w-3 rounded-md bg-emerald-500 shadow-sm" />
-                  <span className="text-slate-700">Available (Hara)</span>
+                  <span className="text-slate-700">Available (Green)</span>
                 </span>
                 <span className="flex items-center gap-1.5">
                   <span className="h-3 w-3 rounded-md bg-amber-500 shadow-sm" />
-                  <span className="text-slate-700">Reserved (Peela)</span>
+                  <span className="text-slate-700">Reserved (Yellow)</span>
                 </span>
                 <span className="flex items-center gap-1.5">
                   <span className="h-3 w-3 rounded-md bg-rose-500 shadow-sm" />
-                  <span className="text-slate-700">Booked (Laal)</span>
+                  <span className="text-slate-700">Booked (Red)</span>
                 </span>
                 <span className="flex items-center gap-1.5">
                   <span className="h-3 w-3 rounded-md bg-slate-500" />
@@ -99,84 +99,61 @@ export function InteractivePlotMapPreview() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {SAMPLE_PLOTS.map((plot) => {
                 const isSelected = selectedPlot.id === plot.id;
-                let bgStyle = '';
-                let borderStyle = '';
-                let textBadge = '';
+                let bgStyle = 'bg-emerald-50 border-emerald-300 text-emerald-950 hover:bg-emerald-100';
+                let badgeStyle = 'bg-emerald-600 text-white';
+                let label = 'Available';
 
-                if (plot.status === 'available') {
-                  bgStyle = 'bg-emerald-50 hover:bg-emerald-100 text-emerald-900';
-                  borderStyle = isSelected ? 'border-emerald-600 ring-2 ring-emerald-500/30' : 'border-emerald-300';
-                  textBadge = 'bg-emerald-600 text-white';
-                } else if (plot.status === 'reserved') {
-                  bgStyle = 'bg-amber-50 hover:bg-amber-100 text-amber-900';
-                  borderStyle = isSelected ? 'border-amber-600 ring-2 ring-amber-500/30' : 'border-amber-300';
-                  textBadge = 'bg-amber-600 text-white';
+                if (plot.status === 'reserved') {
+                  bgStyle = 'bg-amber-50 border-amber-300 text-amber-950 hover:bg-amber-100';
+                  badgeStyle = 'bg-amber-500 text-white';
+                  label = 'Reserved';
                 } else if (plot.status === 'booked') {
-                  bgStyle = 'bg-rose-50 hover:bg-rose-100 text-rose-900';
-                  borderStyle = isSelected ? 'border-rose-600 ring-2 ring-rose-500/30' : 'border-rose-300';
-                  textBadge = 'bg-rose-600 text-white';
-                } else {
-                  bgStyle = 'bg-slate-100 hover:bg-slate-200 text-slate-800';
-                  borderStyle = isSelected ? 'border-slate-600 ring-2 ring-slate-400' : 'border-slate-300';
-                  textBadge = 'bg-slate-600 text-white';
+                  bgStyle = 'bg-rose-50 border-rose-300 text-rose-950 hover:bg-rose-100';
+                  badgeStyle = 'bg-rose-600 text-white';
+                  label = 'Booked';
+                } else if (plot.status === 'registered') {
+                  bgStyle = 'bg-slate-100 border-slate-300 text-slate-800 hover:bg-slate-200';
+                  badgeStyle = 'bg-slate-600 text-white';
+                  label = 'Registry Done';
                 }
 
                 return (
                   <button
                     key={plot.id}
                     onClick={() => setSelectedPlot(plot)}
-                    className={`flex flex-col text-left p-4 rounded-2xl border transition-all duration-200 cursor-pointer ${bgStyle} ${borderStyle}`}
+                    className={`rounded-xl border-2 p-3 text-left transition-all cursor-pointer relative ${bgStyle} ${
+                      isSelected ? 'ring-2 ring-teal-600 ring-offset-2 scale-102 shadow-md' : 'shadow-2xs'
+                    }`}
                   >
-                    <div className="flex items-center justify-between w-full mb-1">
-                      <span className="text-base font-black">{plot.number}</span>
-                      <span className={`text-[9px] font-bold uppercase px-1.5 py-0.5 rounded ${textBadge}`}>
-                        {plot.status}
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-sm font-black tracking-tight">{plot.number}</span>
+                      <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded ${badgeStyle}`}>
+                        {label}
                       </span>
                     </div>
-                    <div className="text-xs font-semibold opacity-90">{plot.sizeSqFt} sq.ft</div>
-                    <div className="text-[10px] opacity-75 mt-0.5 line-clamp-1">{plot.facing}</div>
+                    <div className="text-[11px] font-medium opacity-80">{plot.dimensions}</div>
+                    <div className="text-[11px] font-bold mt-1">₹ {plot.ratePerSqFt} / sq.ft</div>
                   </button>
                 );
               })}
             </div>
-
-            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 rounded-xl bg-white p-3.5 border border-slate-200 text-xs text-slate-600 shadow-sm">
-              <div className="flex items-center gap-2">
-                <Info className="h-4 w-4 text-blue-600 shrink-0" />
-                <span>AutoCAD / CorelDraw / Town Planning se nikla SVG naksha direct support hota hai.</span>
-              </div>
-              <span className="font-bold text-emerald-700">Pinch-to-Zoom Supported</span>
-            </div>
           </div>
 
-          {/* Plot Inspector Drawer (4 Columns) */}
-          <div className="lg:col-span-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
-              <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                  Unit Inspector
-                </span>
-                <h4 className="text-2xl font-black text-slate-900">Plot {selectedPlot.number}</h4>
-              </div>
-              <span
-                className={`rounded-lg px-2.5 py-1 text-xs font-bold uppercase ${
-                  selectedPlot.status === 'available'
-                    ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
-                    : selectedPlot.status === 'reserved'
-                    ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                    : selectedPlot.status === 'booked'
-                    ? 'bg-rose-100 text-rose-800 border border-rose-300'
-                    : 'bg-slate-200 text-slate-800'
-                }`}
-              >
-                {selectedPlot.status}
-              </span>
+          {/* Selected Unit Details (4 Columns) */}
+          <div className="lg:col-span-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
+              <Info className="h-4 w-4 text-teal-600" />
+              <span>Selected Unit Details</span>
             </div>
+            <h3 className="text-2xl font-bold text-slate-900">
+              Plot {selectedPlot.number}
+            </h3>
+            <p className="text-xs text-slate-500 mt-0.5">{selectedPlot.sector}</p>
 
-            <div className="space-y-3 text-xs sm:text-sm">
+            <div className="mt-5 space-y-2 text-xs sm:text-sm">
               <div className="flex justify-between py-1.5 border-b border-slate-100">
-                <span className="text-slate-500 font-medium">Sector / Block</span>
-                <span className="font-bold text-slate-900">{selectedPlot.sector}</span>
+                <span className="text-slate-500 font-medium">Status</span>
+                <span className="font-bold capitalize text-slate-900">{selectedPlot.status}</span>
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-100">
                 <span className="text-slate-500 font-medium">Dimensions</span>
@@ -206,7 +183,7 @@ export function InteractivePlotMapPreview() {
                   {selectedPlot.paidPercent && (
                     <div className="mt-2">
                       <div className="flex justify-between text-[11px] text-slate-500 mb-1">
-                        <span>Milestone Kist Paid</span>
+                        <span>Milestone Installment Paid</span>
                         <span className="text-emerald-700 font-bold">{selectedPlot.paidPercent}%</span>
                       </div>
                       <div className="h-2 w-full bg-slate-200 rounded-full overflow-hidden">
@@ -224,10 +201,10 @@ export function InteractivePlotMapPreview() {
             <div className="mt-6 pt-2">
               <Link
                 href="/contact"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all"
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all text-center"
               >
                 <Sparkles className="h-4 w-4 text-emerald-400" />
-                <span>Apni Colony ka Naksha Dekhne ke Liye Demo Book Karein</span>
+                <span>Upload Your Colony Map for a Demo</span>
               </Link>
             </div>
           </div>

@@ -25,18 +25,18 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <div className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3.5 py-1 text-xs font-bold text-blue-700 border border-blue-200 mb-3">
-            <Phone className="h-3.5 w-3.5" />
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
+            <Phone className="h-3.5 w-3.5 text-teal-600" />
             <span>Direct Advisory &amp; Live Walkthrough</span>
           </span>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Apni Colony ke Liye Free Demo Book Karein
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-slate-900 tracking-tight leading-tight">
+            Schedule a Free 1-on-1 Live Demo
           </h1>
-          <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Humein apne plotted township ya residential project ki basic detail batayein. Hum sample layout naksha aur demand notice ke sath live session arrange karenge.
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+            Tell us about your plotted colony, residential township, or high-rise development. We will prepare a live session tailored with sample layout mapping and milestone demand schedules.
           </p>
         </div>
 
@@ -44,22 +44,22 @@ export default function ContactPage() {
         <ContactForm />
 
         {/* Office & Regional Presence Info */}
-        <div className="mt-16 border-t border-slate-200 pt-14">
-          <h3 className="text-xl font-black text-slate-900 text-center mb-8">
-            Major Real Estate Hubs me Hamari Service
+        <div className="mt-16 border-t border-slate-200 pt-12">
+          <h3 className="text-xl font-bold text-slate-900 text-center mb-8">
+            Regional Advisory &amp; Support Hubs
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs sm:text-sm">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-black text-slate-900 text-base">Central India Hub</div>
-              <div className="text-blue-700 font-bold mt-1">Bhopal &amp; Indore, MP</div>
+              <div className="font-bold text-slate-900 text-base">Central India Hub</div>
+              <div className="text-teal-700 font-bold mt-1">Bhopal &amp; Indore, MP</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 Plotline Technologies Center, MP Nagar Zone II, Bhopal, Madhya Pradesh 462011
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-black text-slate-900 text-base">North India Hub</div>
+              <div className="font-bold text-slate-900 text-base">North India Hub</div>
               <div className="text-emerald-700 font-bold mt-1">Delhi NCR &amp; Jaipur, RJ</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 Cyber City Phase II, Sector 24, Gurugram, Haryana 122002
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-black text-slate-900 text-base">Western India Hub</div>
+              <div className="font-bold text-slate-900 text-base">Western India Hub</div>
               <div className="text-amber-700 font-bold mt-1">Ahmedabad &amp; Surat, GJ</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 SG Highway Corporate Park, Bodakdev, Ahmedabad, Gujarat 380054
@@ -75,8 +75,8 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-black text-slate-900 text-base">Helpline Channels</div>
-              <div className="text-cyan-700 font-bold mt-1">Direct Call &amp; WhatsApp</div>
+              <div className="font-bold text-slate-900 text-base">Direct Channels</div>
+              <div className="text-teal-800 font-bold mt-1">Phone &amp; WhatsApp</div>
               <div className="mt-2 text-slate-500 text-xs space-y-1">
                 <div>Phone: +91 98765 43210</div>
                 <div>Landline: +91 755 4900000</div>

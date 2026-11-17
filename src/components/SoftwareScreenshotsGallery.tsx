@@ -19,43 +19,43 @@ const SCREENSHOT_TABS = [
   {
     id: 'main-dashboard',
     title: 'Main ERP Dashboard',
-    tag: 'Master Colonizer Overview',
-    subtitle: 'Real-time sales velocity, collections, overdue installments & plot inventory',
+    tag: 'Executive Overview',
+    subtitle: 'Real-time sales velocity, cash collections, overdue installments & plot inventory',
     icon: LayoutDashboard,
     image: '/screenshots/plotline-main-dashboard-clean.svg',
     points: [
-      'Total Plots, Booked Units, Available Inventory (₹1.04 Cr) aur Outstanding Receivables (₹1.71 Cr) ek hi screen par.',
-      'Monthly Collections (₹24.39 L) aur Overdue Dues (₹5.57 L - 4 installments past due) ka live alert.',
-      'Land acquisition costs (₹50 L paid of ₹1 Cr) aur Site development expenses (₹2.5 L) ka real-time tracking.',
-      'One-click global search (Ctrl+K) se kisi bhi customer, booking ID, ya plot number ko instantly khojein.',
+      'Single screen visibility of Total Inventory (₹1.04 Cr unsold), Booked Units, and Outstanding Receivables (₹1.71 Cr).',
+      'Instant alerts for Monthly Collections (₹24.39 L) and Overdue Dues (₹5.57 L past due across 4 installments).',
+      'Real-time tracking of Land Acquisition payments (₹50 L paid of ₹1 Cr) and Site Development expense vouchers.',
+      'One-click global search (Ctrl+K) to retrieve any booking record, customer ledger, or plot number instantly.',
     ],
   },
   {
     id: 'leads-crm',
     title: 'Leads & Enquiries CRM',
-    tag: 'Pre-Sales Pipeline Board',
-    subtitle: 'Portal leads (99acres, MagicBricks, Meta, Walk-in) Kanban tracking',
+    tag: 'Pre-Sales Pipeline',
+    subtitle: 'Automated lead capture from 99acres, MagicBricks, Meta ads & walk-in visitors',
     icon: Users,
     image: '/screenshots/plotline-leads-board-clean.svg',
     points: [
-      'New Leads, Contacted, Site Visit Done, aur Negotiation stage ka clean visual Kanban board.',
-      'Har lead card par direct phone number, project tag (RGVE), source (99acres, Facebook, Walk-in), aur next follow-up date.',
-      'Site Visit scheduling aur follow-ups due alert system — koi bhi customer lead miss nahi hoti.',
-      'Executive-wise lead assignment aur conversion percentage (Won/Lost) automatic calculation.',
+      'Visual Kanban pipeline stages: New Leads, Contacted, Site Visit Done, and Price Negotiation.',
+      'Instant lead cards featuring direct buyer contact, project tags (RGVE), source attribution, and next follow-up dates.',
+      'Automated site visit scheduling and follow-up alert notifications ensure zero buyer inquiries are lost.',
+      'Executive-level workload distribution with automated conversion velocity calculations.',
     ],
   },
   {
     id: 'sales-analytics',
-    title: 'Sales Dashboard & Conversions',
-    tag: 'Weekly Performance Tracking',
-    subtitle: 'Enquiries vs bookings weekly trend, conversion pipeline & revenue velocity',
+    title: 'Sales & Conversion Analytics',
+    tag: 'Performance Metrics',
+    subtitle: 'Weekly enquiries vs. bookings trend, conversion stages & revenue pipeline',
     icon: TrendingUp,
     image: '/screenshots/plotline-sales-pipeline-clean.svg',
     points: [
-      'Weekly Enquiries vs Bookings graphical trend chart (W45 metrics and conversions).',
-      'Open Pipeline stages (New, Contacted, Site Visit, Negotiation) ka live capacity progress indicator.',
-      'Total active quotations value (₹1.95 Cr across 5 quotations) aur conversion velocity.',
-      'Date-range filters (From - To) se custom monthly, quarterly aur annual sales reports nikalein.',
+      'Weekly Enquiry vs. Booking trend graphs illustrating real-time sales conversion velocities.',
+      'Open pipeline capacity progress indicators across all sales stages.',
+      'Comprehensive active quotations overview (₹1.95 Cr across 5 active quotations).',
+      'Custom date-range filters to generate monthly, quarterly, and fiscal year sales audit reports.',
     ],
   },
   {
@@ -66,24 +66,24 @@ const SCREENSHOT_TABS = [
     icon: MapPin,
     image: '/screenshots/colony-map-preview.svg',
     points: [
-      'Available (Hara), Reserved (Peela), aur Booked (Laal) status map par real-time update hota hai.',
-      'AutoCAD ya Town Planning se nikla vector SVG layout map direct software me upload karein.',
-      'Plot par click karte hi dimensions (30x50, 40x60), carpet area, facing, aur rate index price samne aa jati hai.',
-      'Zero Double-Booking atomic lock — do sales executives ek plot ko ek sath book nahi kar sakte.',
+      'Color-coded plot availability: Available (Green), Reserved (Yellow), and Booked (Red).',
+      'Direct upload and rendering of vector SVG layout maps exported from AutoCAD or Town Planning.',
+      'Click any plot to inspect exact dimensions (30x50, 40x60), carpet area, facing, and rate index pricing.',
+      'Atomic database lock guarantees zero double-bookings when multiple sales executives reserve units.',
     ],
   },
   {
     id: 'kist-demand',
-    title: 'Kist (Installment) Demand Letter',
+    title: 'Milestone Demand Notices',
     tag: 'Automated Billing & Recovery',
-    subtitle: 'Official branded milestone demand notice & payment receipt PDF',
+    subtitle: 'Official branded milestone demand notice & customer payment receipt PDFs',
     icon: FileText,
     image: '/screenshots/installment-receipt.svg',
     points: [
-      'Construction milestone complete hote hi (Plinth, Road, Sewer, Registry) bulk demand letters generate karein.',
-      'Har customer ke naam, plot number, purana paid hisab, aur abhi kitna due hai, sab table me transparent aata hai.',
-      'Company letterhead, authorized seal, signature, aur RERA Escrow Bank RTGS details ke sath legal PDF.',
-      '1-Click par WhatsApp aur Email par customer ko send ho jata hai.',
+      '1-Click bulk demand notice generation upon construction milestone certification (Plinth, Road, Sewer, Slab).',
+      'Transparent buyer payment statement outlining past receipts, current installment dues, and payment schedules.',
+      'Company letterhead, authorized seal, signature stamp, and RERA Escrow Bank RTGS payment instructions.',
+      'Automated dispatch to buyers via WhatsApp and Email in one single click.',
     ],
   },
 ];
@@ -100,13 +100,13 @@ export function SoftwareScreenshotsGallery() {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
-            <span>Asli Product UI Screenshots</span>
+            <span>Actual Product Interface</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-            Hamare Real Estate ERP ka Actual Interface
+            Explore the Real Estate ERP Interface
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Niche diye gaye tabs par click karke dekhiye ki software ke andar Main Dashboard, Leads CRM, Sales Analytics, Colony Naksha aur Demand Notice kaisa dikhta hai:
+            Click through the tabs below to preview the Main Dashboard, Leads CRM, Sales Analytics, Interactive Layout Map, and Milestone Demand Notices:
           </p>
         </div>
 
@@ -136,7 +136,7 @@ export function SoftwareScreenshotsGallery() {
         <div className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-900/5">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            {/* Visual Screenshot Display (7 Cols on desktop) */}
+            {/* Visual Screenshot Display */}
             <div className="lg:col-span-8 flex justify-center">
               <div className="w-full rounded-xl overflow-hidden border border-slate-200 shadow-lg bg-slate-900">
                 {/* Browser Title Bar for Screenshot */}
@@ -167,7 +167,7 @@ export function SoftwareScreenshotsGallery() {
               </div>
             </div>
 
-            {/* Feature Details Column (4 Cols on desktop) */}
+            {/* Feature Details Column */}
             <div className="lg:col-span-4 space-y-4">
               <div>
                 <span className="inline-block rounded-md bg-teal-50 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-teal-800 border border-teal-200/60 mb-2">
@@ -200,7 +200,7 @@ export function SoftwareScreenshotsGallery() {
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-colors text-center"
                 >
                   <Calendar className="h-3.5 w-3.5 text-emerald-400" />
-                  <span>Iska Live Demo Dekhein</span>
+                  <span>Schedule Live Demo</span>
                   <ArrowRight className="h-3.5 w-3.5 text-slate-400" />
                 </Link>
 

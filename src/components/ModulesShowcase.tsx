@@ -19,130 +19,130 @@ const MODULES_DATA = [
   {
     id: 'pre-sales',
     title: 'Pre-Sales & Lead CRM',
-    tagline: '99acres, MagicBricks aur WhatsApp leads ek jagah',
+    tagline: 'Centralize 99acres, MagicBricks, Meta ads & WhatsApp leads',
     icon: Sparkles,
     badge: 'Marketing & Sales',
     link: '/modules/pre-sales',
     features: [
       {
-        title: 'Property Portals se Direct Leads (Webhooks)',
-        desc: '99acres, MagicBricks, Housing.com aur Facebook ads se aane wali inquiries turant CRM me store hoti hain. SHA-256 de-duplication se duplicate inquiry nahi banti.',
+        title: 'Direct Portal Lead Webhooks',
+        desc: 'Instant lead capture from 99acres, MagicBricks, Housing.com, and Meta ads. SHA-256 deduplication eliminates duplicate contact entries.',
       },
       {
-        title: 'WhatsApp Click-to-Chat & Template Logs',
-        desc: 'Sales executive bina number save kiye ek click me customer ko WhatsApp par greeting message, brochure, aur layout map bhej sakte hain.',
+        title: '1-Click WhatsApp Chat & Template Logs',
+        desc: 'Sales executives can initiate WhatsApp chats with greeting templates, layout brochures, and price cards without manually saving phone numbers.',
       },
       {
-        title: 'Cost Sheet & Quotation PDF',
-        desc: 'Plot rate, PLC charges, corner charges aur installment schedule jodkar turant branded Quotation PDF banti hai, jise ek click me booking me convert kar sakte hain.',
+        title: 'Branded Cost Sheet & Quotation PDFs',
+        desc: 'Automatically generate instant quotation PDFs including base rate, PLC charges, corner premium, and milestone installment schedules.',
       },
       {
-        title: 'Automated Follow-Up Reminder',
-        desc: 'Har 30 minute me system sales team ko alert bhejta hai taaki koi bhi customer site visit ya follow-up call miss na ho.',
+        title: 'Automated Follow-Up Reminders',
+        desc: 'Built-in alert engines remind the sales team of upcoming site visits and promise-to-pay calls to maximize lead conversion rates.',
       },
     ],
   },
   {
     id: 'inventory-map',
     title: 'Colony Naksha & Inventory',
-    tagline: 'Live interactive plot map with double-booking lock',
+    tagline: 'Interactive SVG plot layout map with double-booking lock',
     icon: MapPin,
     badge: 'Inventory Management',
     link: '/modules/inventory-and-map',
     features: [
       {
-        title: 'Interactive SVG Colony Naksha',
-        desc: 'Plotting map me zoom-in, zoom-out karein aur live status dekhein. Har plot ka color (Available: Hara, Reserved: Peela, Booked: Laal) auto update hota hai.',
+        title: 'Interactive Vector Layout Map',
+        desc: 'Zoom in, pan, and inspect plots in real-time. Automatic color updates indicate unit status (Available: Green, Reserved: Yellow, Booked: Red).',
       },
       {
         title: 'Zero Double-Booking Guarantee',
-        desc: 'Database lock technology: jaise hi koi executive token bayana reserve karta hai, wo plot dusre kisi bhi sales person ke liye lock ho jata hai.',
+        desc: 'Atomic database locking: the instant an executive places a token reservation, that unit is instantly locked across all other devices.',
       },
       {
-        title: 'Dynamic Rate Index (Auto Repricing)',
-        desc: 'Jaise-jaise colony me development badhe (sadak, boundary wall), aap bache hue plots ka rate badha sakte hain bina purani bookings ko chhede.',
+        title: 'Dynamic Rate Indexing',
+        desc: 'Adjust unsold plot prices as township development advances (roads, boundary walls) without altering past customer agreements.',
       },
       {
-        title: 'Plot, Flat, Villa aur Dukanen (Shops)',
-        desc: 'Plotted colony, multistory flats, duplex villas aur commercial shops sabhi ki inventory dimensions, carpet area, aur parking slots ke sath manage karein.',
+        title: 'Plots, Villas, Floors & Commercial Shops',
+        desc: 'Manage plotted layouts, residential towers, duplex villas, and commercial retail shops with exact dimensions and carpet area indices.',
       },
     ],
   },
   {
     id: 'post-sales',
-    title: 'Post-Sales & Demand Letters',
-    tagline: 'Construction milestone par automated demand notice',
+    title: 'Post-Sales & Demand Notices',
+    tagline: 'Automated milestone demand letters & payment recovery',
     icon: FileText,
     badge: 'Customer Operations',
     link: '/modules/post-sales',
     features: [
       {
         title: 'Bulk Milestone Demand Letters (PDF)',
-        desc: 'Site par Plinth, Road ya Slab complete hote hi us milestone se jude sabhi customers ke demand notice ek sath generate karein aur WhatsApp/Email karein.',
+        desc: 'Generate and dispatch milestone demand notices (Plinth, Road, Slab) in one click with transparent past receipts and current dues.',
       },
       {
         title: 'Builder-Buyer Agreement (BBA) Tracking',
-        desc: 'BBA drafting, customer signature, stamp duty aur RERA compliance ki complete digital tracking taaki legal compliance 100% rahe.',
+        desc: 'Track BBA drafting, buyer signatures, stamp duty compliance, and possession certificates to ensure 100% legal compliance.',
       },
       {
-        title: 'Dues Aging Buckets (30, 60, 90+ Din)',
-        desc: 'Kaunsa customer kitne din se installment nahi de raha hai, uski aging report dekhein aur phone follow-up promises log karein.',
+        title: 'Dues Aging Reports (30, 60, 90+ Days)',
+        desc: 'Monitor overdue installment aging buckets and log communication promises to accelerate cash collections.',
       },
       {
-        title: 'Allotment, Registry aur Possession Letters',
-        desc: 'Registry execution aur final dues clear hone par official branded possession letter aur handover certificate generate karein.',
+        title: 'Allotment & Possession Handover Letters',
+        desc: 'Generate official branded allotment letters, registry clearance certificates, and final possession handover documents.',
       },
     ],
   },
   {
     id: 'accounting-pdc',
     title: 'Accounts, PDC & Finance',
-    tagline: 'Colonizer double-entry accounts aur cheque vault',
+    tagline: 'Double-entry colonizer accounting & post-dated cheque vault',
     icon: ReceiptIndianRupee,
     badge: 'Finance & Accounts',
     link: '/modules/accounting',
     features: [
       {
         title: 'PDC Cheque Vault & Realization',
-        desc: 'Aage ki tareekh ke cheques (Post-Dated Cheques) vault me save karein. Bank me deposit hone aur clear hone par hi receipt aur accounts entry hoti hai.',
+        desc: 'Securely register advance post-dated cheques. Receipts and ledger credits are triggered only after successful bank clearance.',
       },
       {
         title: 'Double-Entry Accounting System',
-        desc: 'Customer receipt, vendor payment, broker commission, aur site kharche sabhi standardized Chart of Accounts ke sath tally-grade accuracy me balance hote hain.',
+        desc: 'Customer collections, vendor bills, broker commissions, and site overheads balance seamlessly in a standardized Chart of Accounts.',
       },
       {
-        title: 'Broker / Channel Partner Commission',
-        desc: 'Agent-wise commission slab (2%, 3%, 5%) define karein. Jaise-jaise customer se booking amount aata hai, agent commission stage-wise unlock hota hai.',
+        title: 'Channel Partner & Broker Commissions',
+        desc: 'Define custom commission slabs (2%, 3%, 5%). Commission milestones unlock automatically as buyer payments are credited.',
       },
       {
         title: 'GST & RERA Escrow Reconciliation',
-        desc: 'GSTR-1 aur GSTR-3B audit-ready reports, plus RERA 70% escrow account deposit ratio ki automatic audit sheet.',
+        desc: 'Generate GSTR-1 and GSTR-3B audit-ready summaries, alongside automated tracking for RERA 70% escrow account deposit ratios.',
       },
     ],
   },
   {
     id: 'land-works',
     title: 'Land (Khasra) & Site Works',
-    tagline: 'Zameen khareed hisab aur site development cost',
+    tagline: 'Land acquisition ledger, farmer payments & development costs',
     icon: HardHat,
     badge: 'Land & Site Works',
     link: '/modules/land-and-construction',
     features: [
       {
-        title: 'Khasra, Khata & Land Parcel Ledger',
-        desc: 'Kisan (farmer) ya land owner se kiya gaya agreement, kul khet ka area (Bigha/Acres/Hectares), aur token/bayana payments ka record.',
+        title: 'Khasra, Khata & Land Parcel Ledgers',
+        desc: 'Record farmer agreements, total land area (Acres/Bigha/Hectares), registry status, and milestone payments to landowners.',
       },
       {
-        title: 'Contractor Work Orders & Measurements',
-        desc: 'Sadak, naali, boundary wall, street lights aur sewerage ke vendor work orders bano, RA bills verify karo aur payment schedule track karo.',
+        title: 'Contractor Work Orders & RA Bills',
+        desc: 'Issue work orders for roads, drainage, boundary walls, and sewerage. Verify contractor measurement sheets and track bill payments.',
       },
       {
-        title: 'Material Consumption (Cement, Rod, Sand)',
-        desc: 'Site par kitna sariya, cement aur mitti aayi aur kitni consume hui, uska daily supervisor entry system.',
+        title: 'Material Consumption (Cement, Steel, Sand)',
+        desc: 'Supervisor daily log of incoming and consumed raw materials on site to prevent site wastage and pilferage.',
       },
       {
-        title: 'True Land Cost Per Sq.Ft.',
-        desc: 'Zameen ki khareed kimat + registry charges + development kharcha milakar exact costing nikalta hai taaki profit margin accurate rahe.',
+        title: 'True Land Cost per Sq.Ft.',
+        desc: 'Calculate exact land cost by combining raw purchase price, registry fees, and infrastructure development expenses.',
       },
     ],
   },
@@ -160,10 +160,10 @@ export function ModulesShowcase() {
             <span>5 Core Colonizer Modules</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-            Indian Colonizers ke Real Workflows ke Liye Banaya Gaya
+            Engineered for Real Indian Township Workflows
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Koi generic software nahi — ye platform zameen khareed se lekar registry aur possession tak ka har ek step handle karta hai:
+            Not a generic CRM — Plotline handles every phase from agricultural land acquisition to plotting layout, installment recovery, and registry handover:
           </p>
         </div>
 
@@ -209,7 +209,7 @@ export function ModulesShowcase() {
               href={activeData.link}
               className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-teal-800 hover:text-teal-950 transition-colors"
             >
-              <span>{activeData.title} ki Poori Detail Dekhein</span>
+              <span>Explore {activeData.title}</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

@@ -21,22 +21,22 @@ export function InstallmentCalculator() {
   const hoursSavedPerMonth = Math.round(totalUnits * 1.5);
 
   return (
-    <section id="roi-calculator" className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <section id="roi-calculator" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <Calculator className="h-3.5 w-3.5 text-teal-600" />
-            <span>Builder Cashflow Calculator</span>
+            <span>Builder Cashflow Recovery Calculator</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
-            Dekhein Aapki Kist (Installment) Recovery Kitni Fast Hogi
+            See How Fast Your Installment Collections Accelerate
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Manual phone call aur Word me notice banane ki jagah automated milestone demand letters se kitna samay aur paisa bachega:
+            Replace manual phone calls and spreadsheet reminders with automated milestone demand notices:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-10 shadow-xl shadow-slate-900/5">
           {/* Controls Side (6 Cols) */}
           <div className="lg:col-span-6 space-y-8">
             <div>
@@ -56,8 +56,8 @@ export function InstallmentCalculator() {
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#0d9488]"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400 mt-1">
-                <span>Small Colony (20 Units)</span>
-                <span>Large Township (500 Units)</span>
+                <span>Small Plotted Enclave (20 Units)</span>
+                <span>Large Integrated Township (500 Units)</span>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export function InstallmentCalculator() {
                 <label className="text-sm font-bold text-slate-800">
                   Average Plot / Unit Price:
                 </label>
-                <span className="text-lg font-black text-emerald-700">₹ {avgPriceLakhs} Lakhs</span>
+                <span className="text-lg font-bold text-teal-800">₹ {avgPriceLakhs} Lakhs</span>
               </div>
               <input
                 type="range"
@@ -75,7 +75,7 @@ export function InstallmentCalculator() {
                 step="5"
                 value={avgPriceLakhs}
                 onChange={(e) => setAvgPriceLakhs(Number(e.target.value))}
-                className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
+                className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#0d9488]"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400 mt-1">
                 <span>Affordable Plots (₹10 L)</span>
@@ -86,8 +86,8 @@ export function InstallmentCalculator() {
             <div className="rounded-2xl border border-teal-100 bg-teal-50/60 p-4 text-xs sm:text-sm text-slate-700 space-y-1.5">
               <div className="font-bold text-teal-900">Automated ERP Advantage:</div>
               <p>
-                Milestone certify hote hi (Plinth, Slab, Road) sabhi buyers ke demand notice WhatsApp aur Email par ek sath nikalte hain. 
-                Pehle jo paisa aane me 45 din lagte the, wo 10 se 12 din me account me credit ho jata hai.
+                As soon as a site milestone is certified (Plinth, Road, Slab), milestone demand letters are dispatched automatically via WhatsApp and Email. 
+                Collections that previously took 45+ days are realized in 10 to 12 days.
               </p>
             </div>
           </div>
@@ -101,10 +101,10 @@ export function InstallmentCalculator() {
             <div className="mt-6 space-y-5">
               <div className="flex items-center justify-between border-b border-slate-200 pb-3.5">
                 <div>
-                  <div className="text-xs font-semibold text-slate-500">Total Project Value</div>
-                  <div className="text-[11px] text-slate-400">Sabhi phases ko jodkar</div>
+                  <div className="text-xs font-semibold text-slate-500">Total Project Gross Value</div>
+                  <div className="text-[11px] text-slate-400">Combined phase valuation</div>
                 </div>
-                <div className="text-2xl font-black text-slate-900">
+                <div className="text-2xl font-bold text-slate-900">
                   ₹ {totalProjectValueCr.toFixed(2)} Cr
                 </div>
               </div>
@@ -112,27 +112,27 @@ export function InstallmentCalculator() {
               <div className="flex items-center justify-between border-b border-slate-200 pb-3.5">
                 <div>
                   <div className="text-xs font-semibold text-slate-500">Faster Cashflow Unlocked</div>
-                  <div className="text-[11px] text-slate-400">Attki hui kist 11 din me recover</div>
+                  <div className="text-[11px] text-slate-400">Recover stuck installments in ~12 days</div>
                 </div>
-                <div className="text-2xl font-black text-emerald-700">
+                <div className="text-2xl font-bold text-emerald-700">
                   ₹ {estimatedStuckCashFlowLakhs.toLocaleString('en-IN')} Lakh
                 </div>
               </div>
 
               <div className="flex items-center justify-between border-b border-slate-200 pb-3.5">
                 <div>
-                  <div className="text-xs font-semibold text-slate-500">Bank Interest Saved</div>
+                  <div className="text-xs font-semibold text-slate-500">Bank Interest Expenses Saved</div>
                   <div className="text-[11px] text-slate-400">Early home loan &amp; installment realization</div>
                 </div>
-                <div className="text-2xl font-black text-amber-600">
+                <div className="text-2xl font-bold text-amber-600">
                   ₹ {annualInterestSavedLakhs} Lakh
                 </div>
               </div>
 
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-semibold text-slate-500">Staff Time Saved</div>
-                  <div className="text-[11px] text-slate-400">Manual calling aur receipt typing ki bachat</div>
+                  <div className="text-xs font-semibold text-slate-500">Staff Labor Hours Saved</div>
+                  <div className="text-[11px] text-slate-400">Manual calling &amp; paper typing eliminated</div>
                 </div>
                 <div className="text-2xl font-bold text-teal-800">
                   {hoursSavedPerMonth} Hours / Month
@@ -143,10 +143,10 @@ export function InstallmentCalculator() {
             <div className="mt-8 pt-4 border-t border-slate-200">
               <Link
                 href="/contact"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all"
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all text-center"
               >
                 <Sparkles className="h-4 w-4 text-emerald-400" />
-                <span>Apni Colony ke Liye Free Demo Book Karein</span>
+                <span>Book a Free 1-on-1 Cashflow Consultation</span>
                 <ArrowRight className="h-4 w-4 text-slate-300" />
               </Link>
             </div>

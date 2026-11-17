@@ -5,34 +5,34 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const FAQS = [
   {
-    question: 'Plotline ERP me Double Booking hone se kaise bacha jata hai?',
+    question: 'How does Plotline ERP prevent double-bookings across sales teams?',
     answer:
-      'Plotline database level par atomic transaction lock use karta hai. Jaise hi koi sales executive kisi customer ke liye token bayana ya reservation select karta hai, wo plot turant lock ho jata hai with a timer (jaise 48 hours). Dusra koi bhi sales executive us plot ko tab tak select ya book nahi kar sakta jab tak pehla token cancel ya expire na ho jaye.',
+      'Plotline utilizes database-level atomic transaction locks. The moment a sales executive selects a plot to create a token reservation or quotation, that unit is instantly locked across all user sessions with an expiry countdown timer (e.g., 48 hours). No other executive can book or hold that plot until the initial reservation is formally cancelled or expired.',
   },
   {
-    question: 'Kya hum apna AutoCAD ya CorelDraw me bana hua colony naksha upload kar sakte hain?',
+    question: 'Can we upload our AutoCAD or CorelDraw colony layout maps?',
     answer:
-      'Haan, bilkul! Plotline me SVG layout engine hai. Aap apne town planning, CAD ya CorelDraw se SVG vector export karke direct upload kar sakte hain. Software me built-in map editor bhi hai jisse aap plot boundary par click karke plot number assign kar sakte hain.',
+      'Yes, absolutely! Plotline features a built-in vector SVG layout engine. You can directly upload vector SVG files exported from town planning, AutoCAD, or CorelDraw. Our technical team also provides free map conversion and onboarding assistance to plot boundaries and assign unit numbers for you.',
   },
   {
-    question: 'Construction milestone ke hisab se demand letter kaise nikalte hain?',
+    question: 'How are milestone-based installment demand letters generated and sent?',
     answer:
-      'Post-Sales module me jab bhi aap kisi milestone ko complete mark karenge (jaise Plinth level, 1st Slab ya Road asphalt), system un sabhi customers ki list dikhayega jinki us milestone par kist banti hai. Ek click me sabhi customers ke official PDF demand notice ban jaate hain jisme purana balance, abhi ka amount aur bank RTGS details shamil hoti hain.',
+      'In the Post-Sales module, certifying a construction stage (such as Plinth, Road Asphalt, Sewer Line, or 1st Slab) automatically identifies all buyers due for that milestone. In a single click, official branded PDF demand notices are generated—detailing past payments, current dues, and RERA escrow bank RTGS details—and dispatched via WhatsApp and Email.',
   },
   {
-    question: 'Customer se liye gaye advance cheques (PDC) ka hisab kaise hota hai?',
+    question: 'How does the Post-Dated Cheque (PDC) Vault work?',
     answer:
-      'PDC Vault me har cheque ka number, bank ka naam, amount aur maturity date daali jaati hai. System date aane par alert deta hai. Sabse important baat ye hai ki customer ledger me credit aur official receipt sirf tab generate hoti hai jab aapke accounts team mark kare ki cheque bank me clear ho gaya hai.',
+      'The PDC Vault records cheque numbers, drawee banks, amounts, and maturity dates. The system triggers advance deposit alerts. Crucially, official customer receipts and ledger credits are generated only after your finance team verifies that the cheque has cleared through the bank.',
   },
   {
-    question: 'Kya 99acres, MagicBricks aur Facebook se aane wali leads direct CRM me aati hain?',
+    question: 'Do enquiries from 99acres, MagicBricks, and Meta ads sync automatically?',
     answer:
-      'Haan, Plotline har channel ke liye secret webhook URL deta hai. Inquiry aate hi bina kisi manual entry ke CRM me save ho jaati hai, duplicates filter ho jaate hain aur sales rep ko notification mil jata hai with direct WhatsApp click-to-chat button.',
+      'Yes. Plotline provides dedicated webhook endpoints for each advertising channel. Incoming inquiries are parsed instantly, deduplicated via SHA-256 phone number hashing, and assigned to sales executives with direct 1-click WhatsApp messaging capability.',
   },
   {
-    question: 'Kya ye software RERA aur GST ke rules ke anusaar hai?',
+    question: 'Is Plotline ERP compliant with Indian RERA and GST regulations?',
     answer:
-      'Haan, 100%. Customer agreement terms, allotment letters, interest calculation, aur GST vouchers (CGST/SGST/IGST breakdown) poori tarah se Indian Real Estate and RERA compliance ke standard format me tayyar kiye gaye hain.',
+      '100%. Plotline formats all buyer-builder agreements, allotment letters, interest penalty schedules, tax invoices, and double-entry voucher ledgers in strict accordance with Indian Real Estate (Regulation and Development) Act standards and GST tax accounting laws.',
   },
 ];
 
@@ -44,18 +44,18 @@ export function FaqSection() {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <HelpCircle className="h-3.5 w-3.5 text-teal-600" />
-            <span>Aapke Sawal aur Hamare Jawab</span>
+            <span>Questions &amp; Answers</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
             Frequently Asked Questions
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Real estate developers aur colonizers ke aam sawalon ke seedhe jawab:
+            Direct answers to common questions asked by real estate developers and colonizers:
           </p>
         </div>
 

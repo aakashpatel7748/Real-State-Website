@@ -14,8 +14,7 @@ import {
   ReceiptIndianRupee,
   HardHat,
   ArrowRight,
-  ShieldCheck,
-  CheckCircle2
+  ShieldCheck
 } from 'lucide-react';
 
 const MODULES_MENU = [
@@ -23,7 +22,7 @@ const MODULES_MENU = [
     name: 'Pre-Sales & Lead CRM',
     tag: 'Webhooks & WhatsApp',
     href: '/modules/pre-sales',
-    description: '99acres, MagicBricks, Meta leads webhook, 1-click WhatsApp & Quotation PDF.',
+    description: 'Instant 99acres/MagicBricks webhook sync, 1-click WhatsApp chat & Quotation PDFs.',
     icon: Sparkles,
     color: 'text-amber-600 bg-amber-50',
   },
@@ -31,7 +30,7 @@ const MODULES_MENU = [
     name: 'Colony Naksha (SVG Map)',
     tag: 'Live Inventory & Locks',
     href: '/modules/inventory-and-map',
-    description: 'Interactive plot map, Available/Booked color status & 0% double-booking atomic lock.',
+    description: 'Interactive plot layout map, real-time Available/Booked colors & 0% double-booking lock.',
     icon: MapPin,
     color: 'text-emerald-600 bg-emerald-50',
   },
@@ -63,6 +62,7 @@ const MODULES_MENU = [
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false); // Collapsed by default on mobile!
   const [featuresDropdownOpen, setFeaturesDropdownOpen] = useState(false);
   const pathname = usePathname();
 
@@ -70,7 +70,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/95 backdrop-blur-md shadow-xs">
       <div className="mx-auto flex h-16 sm:h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
-        {/* Brand Logo - 1:1 Match with Real ERP */}
+        {/* Brand Logo */}
         <Link href="/" className="group flex items-center gap-2.5">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#042026] text-white shadow-md shadow-teal-950/20 group-hover:bg-[#073640] transition-colors">
             {/* Plotline 4-Square Grid Icon */}
@@ -96,7 +96,7 @@ export function Navbar() {
           </div>
         </Link>
 
-        {/* Center: Exactly 3 Items (Home, Features with mast Hover, About) */}
+        {/* Center: Exactly 3 Items (Home, Features with hover menu, About) */}
         <nav className="hidden md:flex items-center gap-2 lg:gap-3">
           
           {/* 1. Home */}
@@ -111,7 +111,7 @@ export function Navbar() {
             Home
           </Link>
 
-          {/* 2. Features (Mast Hover Dropdown with All Modules) */}
+          {/* 2. Features (Hover Mega Dropdown) */}
           <div
             className="relative"
             onMouseEnter={() => setFeaturesDropdownOpen(true)}
@@ -242,10 +242,11 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer Menu (Features Collapsed by Default!) */}
       {mobileMenuOpen && (
         <div className="border-b border-slate-200 bg-white px-4 pb-6 pt-3 md:hidden">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-1.5">
+            {/* 1. Home Link */}
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
@@ -254,25 +255,35 @@ export function Navbar() {
               Home
             </Link>
 
-            <div className="pt-2 pb-1 border-t border-slate-100">
-              <span className="px-3 text-xs font-bold uppercase tracking-wider text-teal-800">
-                Features &amp; Modules
-              </span>
-              <div className="mt-2 space-y-1">
-                {MODULES_MENU.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900"
-                  >
-                    <item.icon className="h-4 w-4 text-teal-600" />
-                    <span>{item.name}</span>
-                  </Link>
-                ))}
-              </div>
+            {/* 2. Features Accordion - CLOSED BY DEFAULT */}
+            <div className="rounded-lg overflow-hidden border border-slate-100">
+              <button
+                onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
+                className="w-full flex items-center justify-between px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-teal-50 hover:text-teal-900 transition-colors text-left"
+              >
+                <span>Features</span>
+                <ChevronDown className={`h-4 w-4 text-slate-400 transition-transform duration-200 ${mobileFeaturesOpen ? 'rotate-180 text-teal-700' : ''}`} />
+              </button>
+
+              {/* Collapsed content - only opens when user taps Features */}
+              {mobileFeaturesOpen && (
+                <div className="bg-slate-50/80 px-2 py-2 space-y-1 border-t border-slate-100">
+                  {MODULES_MENU.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-xs font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900"
+                    >
+                      <item.icon className="h-4 w-4 text-teal-600 shrink-0" />
+                      <span>{item.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
+            {/* 3. About Link */}
             <Link
               href="/#about"
               onClick={() => setMobileMenuOpen(false)}
@@ -281,7 +292,8 @@ export function Navbar() {
               About Plotline
             </Link>
 
-            <div className="pt-3 border-t border-slate-100">
+            {/* 4. Action Button */}
+            <div className="pt-2">
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
