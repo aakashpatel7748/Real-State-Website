@@ -7,124 +7,124 @@ const COMPARISON_ROWS = [
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Real-time color-coded plot availability with built-in layout editor & AutoCAD SVG overlay.',
+    detail: 'Hara (Available), Peela (Reserved), Laal (Booked) color-coded interactive naksha with zoom/pan.',
   },
   {
     feature: 'Zero Double-Booking Guarantee',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Database transaction lock prevents two sales reps from reserving the same plot concurrently.',
+    detail: 'Database lock se ek plot ko ek sath do sales executive reserve nahi kar sakte.',
   },
   {
-    feature: 'Milestone-Linked Demand Letters (Bulk PDF)',
+    feature: 'Milestone Demand Letters (Bulk PDF)',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Generate project-wide demand letters when a construction stage is completed (Plinth, Slab, Possession).',
+    detail: 'Plinth, Road, ya Slab complete hote hi project ke sabhi buyers ko automated demand notice.',
   },
   {
     feature: 'Post-Dated Cheques (PDC) Vault & Clearance',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Cheques logged in vault. Receipts and ledger credits issued exactly once upon bank clearance.',
+    detail: 'Advance cheques vault me safe rehte hain; bank se pass hone par hi official receipt banti hai.',
   },
   {
     feature: '99acres, MagicBricks & Housing Webhooks',
     excel: false,
     genericCrm: true,
     plotline: true,
-    detail: 'Instant auto-capture with SHA-256 de-duplication and WhatsApp click-to-chat links.',
+    detail: 'Direct portal leads integration with SHA-256 de-duplication aur 1-click WhatsApp message.',
   },
   {
     feature: 'Khasra / Khata Land Acquisition Ledgers',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Track agricultural land parcels, owner negotiation, agreements, registry and capital development costs.',
+    detail: 'Agricultural zameen purchase, kisan payments, bayana agreement, aur registry ledger tracking.',
   },
   {
-    feature: 'Double-Entry Accounting & GST Vouchers',
+    feature: 'Double-Entry Accounts & GST Vouchers',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Complete journal vouchers, trial balance, P&L, balance sheet and CGST/SGST/IGST tax calculation.',
+    detail: 'Complete Trial Balance, P&L, Balance Sheet, aur CGST/SGST/IGST tax calculation.',
   },
   {
     feature: 'Dynamic Rate & Price Indexes',
     excel: false,
     genericCrm: false,
     plotline: true,
-    detail: 'Reprice unsold inventory as colony development advances without changing existing signed agreements.',
+    detail: 'Development ke sath bache hue unsold plots ka rate badhana bina purani bookings ko badle.',
   },
 ];
 
 export function ComparisonTable() {
   return (
-    <section className="relative py-20 lg:py-28">
+    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400">
-            Why Generic Tools Fail Builders
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+            Kyu Generic Software Colonizers ke Liye Fail Ho Jaate Hain
           </span>
-          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Spreadsheets vs Generic CRMs vs <br />
-            <span className="text-gradient-primary">Plotline Real Estate ERP</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+            Excel Sheets vs Generic CRMs vs <br />
+            <span className="text-blue-600">Plotline Real Estate ERP</span>
           </h2>
-          <p className="mt-4 text-base text-slate-400">
-            Generic software doesn&apos;t understand Indian land laws, Khasra numbers, PLC charges, or post-dated cheques. See the difference:
+          <p className="mt-3 text-base text-slate-600">
+            Generic CRM na toh Khasra-Khata samajhte hain, na hi PDC cheque clearance aur colony naksha:
           </p>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-4 sm:p-8 backdrop-blur-xl overflow-x-auto">
+        <div className="rounded-3xl border border-slate-200 bg-white shadow-xl overflow-x-auto">
           <table className="w-full min-w-[650px] text-left text-xs sm:text-sm">
             <thead>
-              <tr className="border-b border-white/10 text-slate-300">
-                <th className="py-4 px-4 font-semibold w-2/5">Capability / Workflow</th>
-                <th className="py-4 px-4 text-center font-medium text-slate-400 w-1/5">
+              <tr className="border-b border-slate-200 bg-slate-50 text-slate-700">
+                <th className="py-4 px-5 font-bold w-2/5">Capability / Feature</th>
+                <th className="py-4 px-4 text-center font-bold text-slate-500 w-1/5">
                   Excel / Google Sheets
                 </th>
-                <th className="py-4 px-4 text-center font-medium text-slate-400 w-1/5">
-                  Generic CRMs
+                <th className="py-4 px-4 text-center font-bold text-slate-500 w-1/5">
+                  Generic CRMs (HubSpot etc)
                 </th>
-                <th className="py-4 px-4 text-center font-bold text-white bg-indigo-600/20 rounded-t-xl border-t border-x border-indigo-500/30 w-1/5">
-                  <div className="flex items-center justify-center gap-1.5 text-indigo-400 font-bold">
+                <th className="py-4 px-4 text-center font-black text-blue-800 bg-blue-50/70 border-x border-blue-200 w-1/5">
+                  <div className="flex items-center justify-center gap-1.5 text-blue-700 font-black">
                     <Building2 className="h-4 w-4" />
                     <span>Plotline ERP</span>
                   </div>
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/5 text-slate-300">
+            <tbody className="divide-y divide-slate-100 text-slate-700">
               {COMPARISON_ROWS.map((row, idx) => (
-                <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
-                  <td className="py-4 px-4">
-                    <div className="font-semibold text-white">{row.feature}</div>
-                    <div className="text-[11px] text-slate-400 mt-0.5">{row.detail}</div>
+                <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                  <td className="py-4 px-5">
+                    <div className="font-bold text-slate-900">{row.feature}</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">{row.detail}</div>
                   </td>
 
                   {/* Excel */}
                   <td className="py-4 px-4 text-center">
                     {row.excel ? (
-                      <Check className="h-5 w-5 text-emerald-400 mx-auto" />
+                      <Check className="h-5 w-5 text-emerald-600 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-slate-400 mx-auto" />
+                      <X className="h-5 w-5 text-rose-400 mx-auto" />
                     )}
                   </td>
 
                   {/* Generic CRM */}
                   <td className="py-4 px-4 text-center">
                     {row.genericCrm ? (
-                      <Check className="h-5 w-5 text-emerald-400 mx-auto" />
+                      <Check className="h-5 w-5 text-emerald-600 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-slate-400 mx-auto" />
+                      <X className="h-5 w-5 text-rose-400 mx-auto" />
                     )}
                   </td>
 
                   {/* Plotline ERP */}
-                  <td className="py-4 px-4 text-center bg-indigo-600/10 border-x border-indigo-500/20">
-                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                  <td className="py-4 px-4 text-center bg-blue-50/40 border-x border-blue-200">
+                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 font-bold">
                       <Check className="h-4 w-4 stroke-[3]" />
                     </div>
                   </td>

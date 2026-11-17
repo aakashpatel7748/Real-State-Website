@@ -3,9 +3,10 @@ import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
+import { MobileQuickBar } from '@/components/MobileQuickBar';
 
 export const viewport: Viewport = {
-  themeColor: '#070a13',
+  themeColor: '#2563eb',
   width: 'device-width',
   initialScale: 1,
 };
@@ -13,24 +14,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://plotline-erp.vercel.app'),
   title: {
-    default: 'Plotline ERP — India’s Leading Real Estate Colony Management Software',
+    default: 'Plotline ERP — Complete Colony & Real Estate Township Management Software',
     template: '%s | Plotline Real Estate ERP',
   },
   description:
-    'Complete multi-tenant ERP for Indian colonizers and township builders. From Khasra/Khata land acquisition to interactive SVG plot maps, WhatsApp lead capturing, automated milestone demand letters, PDC cheque clearance, and double-entry accounting. 100% RERA compliant.',
+    'India’s purpose-built ERP software for colonizers, plotted townships, and builders. Live interactive SVG layout map, WhatsApp lead CRM, automated milestone demand letters, PDC cheque clearance, and double-entry accounting. 100% RERA & GST compliant.',
   keywords: [
     'Real Estate ERP India',
     'Colony Management Software',
     'Plot Layout Map Software',
+    'Easy Colonizer Alternative',
+    'Colony Naksha Software',
     'Real Estate CRM India',
     'Khasra Khata Land Software',
     'Milestone Demand Letters PDF',
     'PDC Cheque Clearance Real Estate',
     'RERA Compliant ERP for Builders',
-    'Plotted Township Management Software',
-    'Builder Buyer Agreement Software',
-    'Township Double Entry Accounting',
-    '99acres MagicBricks Webhook Integration',
   ],
   authors: [{ name: 'Plotline Technologies' }],
   creator: 'Plotline Technologies',
@@ -72,15 +71,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen bg-[#070a13] text-slate-100 antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+      <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 pb-16 md:pb-0">
         <JsonLd />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileQuickBar />
       </body>
     </html>
   );

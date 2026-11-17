@@ -1,109 +1,130 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
-  Building, 
+  Building2, 
   MapPin, 
   ShieldCheck, 
   ArrowRight, 
   CheckCircle2, 
-  TrendingUp, 
-  Users, 
-  ReceiptIndianRupee,
+  Phone, 
+  Calendar,
+  Sparkles,
   Layers,
-  Sparkles
+  FileCheck2
 } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-      {/* Background Glows & Grids */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 h-[500px] w-[800px] rounded-full bg-gradient-to-tr from-indigo-600/20 via-primary-500/15 to-emerald-500/10 blur-3xl pointer-events-none animate-pulse-slow" />
-
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/40 via-white to-slate-50 pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          {/* Announcement Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-medium text-indigo-300 backdrop-blur-md mb-8">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="font-semibold text-emerald-400">Complete Builder ERP</span>
-            <span className="text-slate-400">|</span>
-            <span>Plotted Townships, Flats, Villas & Commercial Shops</span>
-            <ArrowRight className="h-3.5 w-3.5 text-indigo-400" />
+          {/* Top Pill */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-1.5 text-xs font-bold text-blue-700 shadow-sm mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span>Built Specifically for Indian Colonizers &amp; Plotted Developers</span>
+            <ArrowRight className="h-3.5 w-3.5" />
           </div>
 
-          {/* Main H1 - Crucial for SEO */}
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            The Purpose-Built ERP for <br />
-            <span className="text-gradient-primary">Indian Colonizers</span> &{' '}
-            <span className="text-gradient-emerald">Township Builders</span>
+          {/* Main H1 Title */}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.15]">
+            India&apos;s Complete <span className="text-blue-600">Colony &amp; Real Estate ERP</span> Software
           </h1>
 
-          {/* Subtitle with exact domain keywords */}
-          <p className="mt-6 text-base sm:text-lg lg:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto">
-            Stop losing lakhs in delayed installment demands, chaotic Excel sheets, and untracked broker commissions. 
-            From <strong>Khasra/Khata land acquisition</strong> to <strong>interactive SVG plot maps</strong>, 
-            <strong> WhatsApp lead capture</strong>, <strong>PDC cheque clearance</strong>, and <strong>double-entry accounting</strong> — 
-            all in one 100% server-rendered, RERA-compliant platform.
+          {/* Clean Legible Subheadline */}
+          <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            Ab Excel sheets aur purane register chodiye. <strong>Interactive Colony Naksha (Layout Map)</strong>, 
+            <strong> Live Unit Status (Sold, Unsold, Blocked)</strong>, <strong>Kist (Installment) Demand Letters</strong>, 
+            <strong> Post-Dated Cheque (PDC) Vault</strong>, aur <strong>Khasra-Khata Land Management</strong> — sab kuch ek hi software me.
           </p>
 
-          {/* Action CTAs */}
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Conversion Action Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <Link
               href="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-emerald-500 px-7 py-4 text-sm font-semibold text-white shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-blue-600/25 hover:bg-blue-700 transition-all hover:scale-[1.02]"
             >
-              <Sparkles className="h-4 w-4" />
-              <span>Schedule Live Product Demo</span>
-              <ArrowRight className="h-4 w-4" />
+              <Calendar className="h-4 w-4" />
+              <span>Book 1-on-1 Free Live Demo</span>
             </Link>
 
-            <Link
-              href="/#interactive-map"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-7 py-4 text-sm font-semibold text-slate-200 hover:bg-white/[0.08] hover:text-white backdrop-blur-md transition-all"
+            <a
+              href="tel:+919876543210"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-7 py-4 text-sm font-bold text-slate-800 hover:bg-slate-50 transition-all shadow-sm"
             >
-              <MapPin className="h-4 w-4 text-emerald-400" />
-              <span>Try Live Interactive Colony Map</span>
-            </Link>
+              <Phone className="h-4 w-4 text-blue-600" />
+              <span>Talk to Real Estate Consultant</span>
+            </a>
           </div>
 
-          {/* Trust Highlights */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+          {/* Trust Guarantees */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs font-semibold text-slate-600">
+            <span className="flex items-center gap-1.5 text-emerald-700">
+              <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+              <span>100% RERA &amp; GST Ready</span>
+            </span>
+            <span className="flex items-center gap-1.5 text-blue-700">
+              <CheckCircle2 className="h-4 w-4 text-blue-600" />
               <span>Zero Double-Booking Guarantee</span>
+            </span>
+            <span className="flex items-center gap-1.5 text-slate-700">
+              <CheckCircle2 className="h-4 w-4 text-slate-600" />
+              <span>Single-Entry PDC Clearance</span>
+            </span>
+          </div>
+        </div>
+
+        {/* Hero Product Screenshot (Actual Software Preview) */}
+        <div className="mt-12 sm:mt-16 relative mx-auto max-w-6xl">
+          <div className="rounded-2xl border-4 border-slate-300/80 bg-slate-900 p-1 sm:p-2 shadow-2xl shadow-slate-900/15">
+            {/* Visual Image / SVG Mockup */}
+            <img
+              src="/screenshots/dashboard-preview.svg"
+              alt="Plotline Real Estate ERP Dashboard Screenshot"
+              className="w-full h-auto rounded-xl block"
+              loading="eager"
+            />
+          </div>
+
+          {/* Floating Callout Badges */}
+          <div className="hidden md:flex absolute -bottom-6 -left-6 items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 font-bold">
+              <ShieldCheck className="h-5 w-5" />
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-              <span>Bulk Milestone Demand Letters (PDF)</span>
+            <div>
+              <div className="text-xs font-bold text-slate-900">Unit Locking Engine</div>
+              <div className="text-[11px] text-slate-500">Atomic lock stops double bookings</div>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-              <span>Single-Entry PDC Cheque Clearance</span>
+          </div>
+
+          <div className="hidden md:flex absolute -top-6 -right-6 items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100 text-blue-700 font-bold">
+              <FileCheck2 className="h-5 w-5" />
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-              <span>Multi-Company & Project RBAC</span>
+            <div>
+              <div className="text-xs font-bold text-slate-900">Bulk Milestone Demands</div>
+              <div className="text-[11px] text-slate-500">One-click PDF dispatch to all buyers</div>
             </div>
           </div>
         </div>
 
-        {/* Quick Metrics Bar */}
-        <div className="mt-16 grid grid-cols-2 gap-4 rounded-2xl border border-white/10 bg-slate-900/60 p-6 backdrop-blur-xl sm:grid-cols-4 lg:gap-8">
-          <div className="border-r border-white/5 pr-4">
-            <div className="text-3xl font-extrabold text-white">100%</div>
-            <div className="text-xs text-slate-400 mt-1">Audit-Ready RERA & GST Compliance</div>
+        {/* Key Quick Metrics Bar */}
+        <div className="mt-14 grid grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:grid-cols-4">
+          <div className="border-r border-slate-100 pr-4">
+            <div className="text-2xl sm:text-3xl font-black text-slate-900">100%</div>
+            <div className="text-xs font-semibold text-slate-500 mt-1">Audit-Ready RERA &amp; GST Compliance</div>
           </div>
-          <div className="sm:border-r border-white/5 pr-4">
-            <div className="text-3xl font-extrabold text-emerald-400">4.5x</div>
-            <div className="text-xs text-slate-400 mt-1">Faster Dues Collection with Aging Alerts</div>
+          <div className="sm:border-r border-slate-100 pr-4">
+            <div className="text-2xl sm:text-3xl font-black text-emerald-600">4.5x</div>
+            <div className="text-xs font-semibold text-slate-500 mt-1">Tez Kist (Installment) Recovery</div>
           </div>
-          <div className="border-r border-white/5 pr-4">
-            <div className="text-3xl font-extrabold text-indigo-400">0</div>
-            <div className="text-xs text-slate-400 mt-1">Double Bookings with Unit Locking Engine</div>
+          <div className="border-r border-slate-100 pr-4">
+            <div className="text-2xl sm:text-3xl font-black text-blue-600">0%</div>
+            <div className="text-xs font-semibold text-slate-500 mt-1">Double Booking Ka Khatra</div>
           </div>
           <div>
-            <div className="text-3xl font-extrabold text-amber-400">5-in-1</div>
-            <div className="text-xs text-slate-400 mt-1">CRM + Inventory + Accounts + Land + Billing</div>
+            <div className="text-2xl sm:text-3xl font-black text-amber-600">All-in-One</div>
+            <div className="text-xs font-semibold text-slate-500 mt-1">Map + CRM + Dues + Accounts + Land</div>
           </div>
         </div>
       </div>

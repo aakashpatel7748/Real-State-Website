@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="0" y="0" width="1100" height="700" rx="16" fill="#0b1120" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Top Toolbar -->
+  <rect x="0" y="0" width="1100" height="60" rx="16" fill="#1e293b"/>
+  <rect x="0" y="44" width="1100" height="16" fill="#1e293b"/>
+  
+  <text x="24" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Colony Layout Editor &amp; Live Map — Royal Palms Sector A &amp; B</text>
+
+  <!-- Legend in Header -->
+  <g transform="translate(620, 18)" font-family="system-ui, sans-serif" font-size="11">
+    <rect x="0" y="4" width="14" height="14" rx="3" fill="#10b981"/>
+    <text x="20" y="16" fill="#e2e8f0">Available (38)</text>
+
+    <rect x="110" y="4" width="14" height="14" rx="3" fill="#f59e0b"/>
+    <text x="130" y="16" fill="#e2e8f0">Reserved (18)</text>
+
+    <rect x="220" y="4" width="14" height="14" rx="3" fill="#ef4444"/>
+    <text x="240" y="16" fill="#e2e8f0">Booked (92)</text>
+
+    <rect x="330" y="4" width="14" height="14" rx="3" fill="#64748b"/>
+    <text x="350" y="16" fill="#e2e8f0">Registered</text>
+  </g>
+
+  <!-- Map Main Canvas -->
+  <g transform="translate(40, 80)" font-family="system-ui, sans-serif">
+    <!-- Outer boundary of Township -->
+    <rect x="0" y="0" width="700" height="580" rx="12" fill="#0f172a" stroke="#334155" stroke-dasharray="6"/>
+    
+    <!-- Entry Gate & Main Road -->
+    <rect x="320" y="560" width="60" height="20" fill="#3b82f6" rx="4"/>
+    <text x="328" y="574" fill="#ffffff" font-size="10" font-weight="bold">MAIN GATE</text>
+
+    <!-- 60 FT Central Boulevard Road -->
+    <rect x="310" y="0" width="80" height="560" fill="#1e293b"/>
+    <line x1="350" y1="10" x2="350" y2="550" stroke="#f59e0b" stroke-dasharray="10" stroke-width="2"/>
+    <text x="355" y="280" fill="#64748b" font-size="12" font-weight="bold" transform="rotate(90, 355, 280)" letter-spacing="4">60 FT MAIN BOULEVARD ROAD</text>
+
+    <!-- Cross Roads -->
+    <rect x="20" y="270" width="660" height="40" fill="#1e293b"/>
+    <text x="110" y="294" fill="#64748b" font-size="10" letter-spacing="2">40 FT SECTOR LINK ROAD</text>
+    <text x="440" y="294" fill="#64748b" font-size="10" letter-spacing="2">40 FT SECTOR LINK ROAD</text>
+
+    <!-- SECTOR A (Left Top) -->
+    <text x="30" y="30" fill="#94a3b8" font-size="12" font-weight="bold">SECTOR A (FRONT PLOTS)</text>
+    
+    <!-- Plot Grid Left Top -->
+    <!-- Row 1 -->
+    <g transform="translate(30, 45)">
+      <rect x="0" y="0" width="60" height="95" rx="4" fill="#ef4444" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="12" y="35" fill="#fff" font-weight="bold" font-size="13">A-101</text>
+      <text x="8" y="55" fill="#fee2e2" font-size="9">30x50 ft</text>
+      <text x="6" y="80" fill="#fff" font-weight="bold" font-size="9">BOOKED</text>
+
+      <rect x="68" y="0" width="60" height="95" rx="4" fill="#ef4444" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="80" y="35" fill="#fff" font-weight="bold" font-size="13">A-102</text>
+      <text x="76" y="55" fill="#fee2e2" font-size="9">30x50 ft</text>
+      <text x="74" y="80" fill="#fff" font-weight="bold" font-size="9">BOOKED</text>
+
+      <rect x="136" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7" stroke-width="2"/>
+      <text x="148" y="35" fill="#fff" font-weight="bold" font-size="13">A-103</text>
+      <text x="144" y="55" fill="#d1fae5" font-size="9">30x60 ft</text>
+      <text x="140" y="80" fill="#fff" font-weight="bold" font-size="9">AVAILABLE</text>
+
+      <rect x="204" y="0" width="60" height="95" rx="4" fill="#f59e0b" stroke="#fde68a" stroke-width="1.5"/>
+      <text x="216" y="35" fill="#fff" font-weight="bold" font-size="13">A-104</text>
+      <text x="212" y="55" fill="#fef3c7" font-size="9">30x60 ft</text>
+      <text x="210" y="80" fill="#fff" font-weight="bold" font-size="9">RESERVED</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(30, 155)">
+      <rect x="0" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7" stroke-width="1.5"/>
+      <text x="12" y="35" fill="#fff" font-weight="bold" font-size="13">A-105</text>
+      <text x="8" y="55" fill="#d1fae5" font-size="9">25x50 ft</text>
+      <text x="6" y="80" fill="#fff" font-weight="bold" font-size="9">AVAILABLE</text>
+
+      <rect x="68" y="0" width="60" height="95" rx="4" fill="#64748b" stroke="#cbd5e1" stroke-width="1.5"/>
+      <text x="80" y="35" fill="#fff" font-weight="bold" font-size="13">A-106</text>
+      <text x="76" y="55" fill="#f1f5f9" font-size="9">35x60 ft</text>
+      <text x="74" y="80" fill="#fff" font-weight="bold" font-size="9">REGISTRY</text>
+
+      <rect x="136" y="0" width="60" height="95" rx="4" fill="#ef4444" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="148" y="35" fill="#fff" font-weight="bold" font-size="13">A-107</text>
+      <text x="144" y="55" fill="#fee2e2" font-size="9">30x50 ft</text>
+      <text x="144" y="80" fill="#fff" font-weight="bold" font-size="9">BOOKED</text>
+
+      <rect x="204" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7" stroke-width="2"/>
+      <text x="216" y="35" fill="#fff" font-weight="bold" font-size="13">A-108</text>
+      <text x="212" y="55" fill="#d1fae5" font-size="9">30x50 ft</text>
+      <text x="208" y="80" fill="#fff" font-weight="bold" font-size="9">AVAILABLE</text>
+    </g>
+
+    <!-- Central Garden / Park (Right Top) -->
+    <rect x="410" y="45" width="260" height="205" rx="8" fill="#064e3b" stroke="#059669" stroke-width="2"/>
+    <text x="470" y="130" fill="#6ee7b7" font-size="16" font-weight="bold">CENTRAL PARK</text>
+    <text x="480" y="150" fill="#a7f3d0" font-size="11">Landscaped Garden &amp; Club</text>
+
+    <!-- SECTOR B (Bottom) -->
+    <text x="30" y="335" fill="#94a3b8" font-size="12" font-weight="bold">SECTOR B (GARDEN FACING)</text>
+    <g transform="translate(30, 350)">
+      <rect x="0" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7"/>
+      <text x="12" y="35" fill="#fff" font-weight="bold" font-size="13">B-201</text><text x="6" y="80" fill="#fff" font-size="9">AVAILABLE</text>
+      
+      <rect x="68" y="0" width="60" height="95" rx="4" fill="#ef4444" stroke="#fca5a5"/>
+      <text x="80" y="35" fill="#fff" font-weight="bold" font-size="13">B-202</text><text x="74" y="80" fill="#fff" font-size="9">BOOKED</text>
+      
+      <rect x="136" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7"/>
+      <text x="148" y="35" fill="#fff" font-weight="bold" font-size="13">B-203</text><text x="140" y="80" fill="#fff" font-size="9">AVAILABLE</text>
+      
+      <rect x="204" y="0" width="60" height="95" rx="4" fill="#f59e0b" stroke="#fde68a"/>
+      <text x="216" y="35" fill="#fff" font-weight="bold" font-size="13">B-204</text><text x="210" y="80" fill="#fff" font-size="9">RESERVED</text>
+    </g>
+
+    <g transform="translate(410, 350)">
+      <rect x="0" y="0" width="60" height="95" rx="4" fill="#64748b" stroke="#cbd5e1"/>
+      <text x="12" y="35" fill="#fff" font-weight="bold" font-size="13">B-205</text><text x="8" y="80" fill="#fff" font-size="9">REGISTRY</text>
+
+      <rect x="68" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7"/>
+      <text x="80" y="35" fill="#fff" font-weight="bold" font-size="13">B-206</text><text x="74" y="80" fill="#fff" font-size="9">AVAILABLE</text>
+
+      <rect x="136" y="0" width="60" height="95" rx="4" fill="#ef4444" stroke="#fca5a5"/>
+      <text x="148" y="35" fill="#fff" font-weight="bold" font-size="13">B-207</text><text x="144" y="80" fill="#fff" font-size="9">BOOKED</text>
+
+      <rect x="204" y="0" width="60" height="95" rx="4" fill="#10b981" stroke="#6ee7b7"/>
+      <text x="216" y="35" fill="#fff" font-weight="bold" font-size="13">B-208</text><text x="208" y="80" fill="#fff" font-size="9">AVAILABLE</text>
+    </g>
+  </g>
+
+  <!-- Side Plot Inspector Drawer (Right) -->
+  <g transform="translate(760, 80)" font-family="system-ui, sans-serif" filter="url(#shadow)">
+    <rect x="0" y="0" width="300" height="580" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Inspector Header -->
+    <rect x="0" y="0" width="300" height="60" rx="12" fill="#0f172a"/>
+    <text x="20" y="28" fill="#94a3b8" font-size="11" font-weight="600">SELECTED PLOT DETAILS</text>
+    <text x="20" y="48" fill="#ffffff" font-size="18" font-weight="bold">Plot No: A-103</text>
+    <rect x="200" y="24" width="80" height="24" rx="6" fill="#065f46"/>
+    <text x="212" y="40" fill="#34d399" font-size="11" font-weight="bold">AVAILABLE</text>
+
+    <!-- Details List -->
+    <g transform="translate(20, 80)" font-size="12">
+      <text x="0" y="20" fill="#94a3b8">Sector / Phase:</text>
+      <text x="260" y="20" fill="#ffffff" text-anchor="end" font-weight="600">Sector A (Front)</text>
+
+      <line x1="0" y1="35" x2="260" y2="35" stroke="#334155"/>
+
+      <text x="0" y="55" fill="#94a3b8">Plot Dimensions:</text>
+      <text x="260" y="55" fill="#ffffff" text-anchor="end" font-weight="600">30 ft x 60 ft</text>
+
+      <line x1="0" y1="70" x2="260" y2="70" stroke="#334155"/>
+
+      <text x="0" y="90" fill="#94a3b8">Total Plot Area:</text>
+      <text x="260" y="90" fill="#ffffff" text-anchor="end" font-weight="600">1,800 Sq.Ft (200 Sq.Yd)</text>
+
+      <line x1="0" y1="105" x2="260" y2="105" stroke="#334155"/>
+
+      <text x="0" y="125" fill="#94a3b8">Facing Attribute:</text>
+      <text x="260" y="125" fill="#34d399" text-anchor="end" font-weight="bold">Park Facing (10% PLC)</text>
+
+      <line x1="0" y1="140" x2="260" y2="140" stroke="#334155"/>
+
+      <text x="0" y="160" fill="#94a3b8">Rate Index Rate:</text>
+      <text x="260" y="160" fill="#ffffff" text-anchor="end" font-weight="600">₹ 3,100 / Sq.Ft</text>
+
+      <line x1="0" y1="175" x2="260" y2="175" stroke="#334155"/>
+
+      <text x="0" y="205" fill="#ffffff" font-size="14" font-weight="bold">Total Cost Sheet:</text>
+      <text x="260" y="205" fill="#38bdf8" text-anchor="end" font-size="18" font-weight="bold">₹ 55,80,000</text>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(20, 360)">
+      <rect x="0" y="0" width="260" height="44" rx="8" fill="#2563eb"/>
+      <text x="130" y="27" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">⚡ Instant Unit Lock (48h Token)</text>
+
+      <rect x="0" y="55" width="260" height="44" rx="8" fill="#0f172a" stroke="#334155"/>
+      <text x="130" y="82" fill="#94a3b8" font-size="13" font-weight="bold" text-anchor="middle">📄 Generate Quotation (PDF)</text>
+
+      <rect x="0" y="110" width="260" height="44" rx="8" fill="#065f46" stroke="#059669"/>
+      <text x="130" y="137" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">💬 Send WhatsApp Cost Sheet</text>
+    </g>
+  </g>
+</svg>

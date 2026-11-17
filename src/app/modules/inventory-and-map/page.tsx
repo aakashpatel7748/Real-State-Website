@@ -7,7 +7,6 @@ import {
   CheckCircle2, 
   TrendingUp, 
   Car, 
-  Sparkles, 
   ShieldCheck,
   Building
 } from 'lucide-react';
@@ -15,123 +14,108 @@ import {
 export const metadata: Metadata = {
   title: 'Interactive SVG Colony Plot Layout Map & Master Inventory Management',
   description:
-    'Visual SVG layout map with live unit status (Available, Reserved, Booked, Registered). Zero double-bookings with transactional locks, dynamic price index repricing, and parking slot management for plotted townships & high-rises.',
-  keywords: [
-    'Interactive Colony Layout Map Software',
-    'Real Estate SVG Plot Map',
-    'Real Estate Plot Inventory Management',
-    'AutoCAD plot layout overlay software',
-    'Dynamic property price index repricing',
-    'Township parking slot management software',
-  ],
+    'Visual SVG layout map with live unit status (Available, Reserved, Booked, Registered). Zero double-bookings with transactional locks, dynamic price index repricing, and parking slot management.',
 };
 
 export default function InventoryMapPage() {
   return (
-    <div className="relative py-16 lg:py-24">
+    <div className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb & Header */}
         <div className="max-w-3xl">
-          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 mb-3 uppercase tracking-wider">
-            <Link href="/" className="hover:text-emerald-300">Home</Link>
+          <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 mb-3 uppercase tracking-wider">
+            <Link href="/" className="hover:text-emerald-900">Home</Link>
             <span>/</span>
-            <span>ERP Modules</span>
+            <span>Modules</span>
             <span>/</span>
-            <span className="text-slate-400">Inventory & Layout Map</span>
+            <span className="text-slate-500">Colony Naksha &amp; Inventory</span>
           </div>
 
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Interactive Colony Layout Map & <br />
-            <span className="text-gradient-emerald">Master Inventory Control</span>
+          <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-900">
+            Interactive Colony Naksha &amp; <br />
+            <span className="text-emerald-700">Master Inventory Control</span>
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
-            Replace static flex banners and confusing CAD prints with a real-time, interactive SVG layout map. 
-            Color-coded unit statuses update across your team within milliseconds, completely eliminating the risk 
-            of selling the same plot twice.
+          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Flex banner aur purane prints ki jagah digital interactive SVG layout map use karein. 
+            Hara (Available), Peela (Reserved), aur Laal (Booked) status real-time sync hota hai, jisse double booking ka khatra 0% ho jata hai.
           </p>
         </div>
 
         {/* Feature Grid */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 mb-4">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold mb-4">
               <MapPin className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Live SVG Colony Plot Map</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Smooth pan, zoom, and SVG vector inspection. Upload your town planning map directly or use our built-in 
-              layout coordinate editor to assign polygon coordinates to plot numbers.
+            <h2 className="text-lg font-black text-slate-900">Live SVG Colony Naksha</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              AutoCAD ya town planning se nikla SVG vector map direct upload karein. Built-in editor se plots ke coordinate define kar sakte hain.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400 mb-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-700 font-bold mb-4">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Zero Double-Booking Lock</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              When a sales executive initiates a token reservation, the unit is atomically locked in the database. 
-              No other user can touch it until the token period either completes or expires via background crons.
+            <h2 className="text-lg font-black text-slate-900">Zero Double-Booking Lock</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Token bayana select hote hi database lock active ho jata hai. Koi doosra sales person us plot ko book nahi kar sakta jab tak timer khatam na ho.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400 mb-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700 font-bold mb-4">
               <TrendingUp className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Dynamic Rate & Price Indexes</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              As roads, parks, and boundary walls are built, increase your rate per sq.ft across remaining unsold plots 
-              automatically. Existing customer bookings and signed payment schedules remain 100% untouched.
+            <h2 className="text-lg font-black text-slate-900">Dynamic Rate Index (Auto Reprice)</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Colony me development progress ke hisab se unsold plots ka rate per sq.ft badha dein. Purani bookings aur agreement bilkul surakshit rehte hain.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400 mb-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 font-bold mb-4">
               <Building className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Plotted, Flats, Villas & Commercial</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Supports mixed-use townships with residential plots, multi-storey apartment towers, luxury villas, 
-              and commercial retail shops. Manage phases, towers, floor numbers, carpet and super areas seamlessly.
+            <h2 className="text-lg font-black text-slate-900">Plots, Flats, Villas &amp; Commercial</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Plotted development ke sath multi-storey towers, duplex villas aur commercial shops sabhi ki inventory sectors aur blocks ke hisab se manage hoti hai.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400 mb-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-50 text-violet-700 font-bold mb-4">
               <Car className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Parking Slot Allocation</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Track stilt, basement, and open parking slots. Link parking numbers directly to unit allotment letters 
-              to avoid handover disputes during final possession.
+            <h2 className="text-lg font-black text-slate-900">Parking Slots Management</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Stilt aur open parking slots ka hisab. Parking number customer ke allotment letter aur agreement me link ho jata hai taaki possession ke time vivad na ho.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-xl">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500/10 text-rose-400 mb-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700 font-bold mb-4">
               <Layers className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-white">Charge Master (PLC & Club)</h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Standardize preferential location charges (PLC) for corner plots, park-facing units, and main road frontages. 
-              Automatically add development charges and club membership fees into the booking summary.
+            <h2 className="text-lg font-black text-slate-900">PLC &amp; Charge Master</h2>
+            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Corner plots, park facing plots aur main road plots par preferential location charge (PLC), maintenance fees aur club membership auto-calculate hoti hai.
             </p>
           </div>
         </div>
 
         {/* CTA Banner */}
-        <div className="mt-16 rounded-3xl border border-white/10 bg-gradient-to-r from-emerald-950/60 to-slate-900 p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-14 rounded-3xl border border-slate-200 bg-white p-8 sm:p-12 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-2xl font-bold text-white">Want to see your colony map rendered on Plotline?</h3>
-            <p className="text-sm text-slate-300 mt-1">Send us your layout PDF/CAD, and we will demonstrate it live.</p>
+            <h3 className="text-2xl font-black text-slate-900">Apni colony ka naksha software par dekhna chahte hain?</h3>
+            <p className="text-sm text-slate-500 mt-1">Humein apna layout PDF ya image bhejein, hum session me render karke dikhayenge.</p>
           </div>
           <Link
             href="/contact"
-            className="rounded-xl bg-gradient-to-r from-emerald-500 to-indigo-500 px-6 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-lg hover:shadow-emerald-500/30 transition-all shrink-0"
+            className="rounded-xl bg-emerald-700 px-7 py-4 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-emerald-800 transition-all shrink-0"
           >
-            Upload Layout & Schedule Demo
+            Layout Demo Book Karein
           </Link>
         </div>
       </div>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 760" width="100%" height="100%">
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Smartphone Bezel (Titanium frame) -->
+  <rect x="10" y="10" width="360" height="740" rx="44" fill="#090d16" stroke="#334155" stroke-width="4" filter="url(#phoneShadow)"/>
+  <rect x="18" y="18" width="344" height="724" rx="36" fill="#0f172a"/>
+
+  <!-- Dynamic Island / Speaker Notch -->
+  <rect x="135" y="28" width="110" height="24" rx="12" fill="#000000"/>
+  <circle cx="225" cy="40" r="4" fill="#1e293b"/>
+
+  <!-- Mobile App Status Bar -->
+  <g transform="translate(36, 44)" font-family="system-ui, sans-serif" font-size="11" fill="#ffffff" font-weight="600">
+    <text x="0" y="0">9:41</text>
+    <text x="270" y="0" text-anchor="end">5G  100%</text>
+  </g>
+
+  <!-- Mobile App Header Bar -->
+  <g transform="translate(32, 70)" font-family="system-ui, sans-serif">
+    <rect x="0" y="0" width="316" height="52" rx="12" fill="#1e293b" stroke="#334155"/>
+    <circle cx="26" cy="26" r="14" fill="#2563eb"/>
+    <text x="26" y="31" fill="#fff" font-weight="bold" font-size="14" text-anchor="middle">P</text>
+    
+    <text x="48" y="23" fill="#ffffff" font-weight="bold" font-size="13">Royal Palm Enclave</text>
+    <text x="48" y="38" fill="#10b981" font-size="10">● Live Site Map (48 Plots)</text>
+
+    <!-- Bell icon badge -->
+    <circle cx="290" cy="26" r="12" fill="#0f172a"/>
+    <circle cx="296" cy="18" r="4" fill="#ef4444"/>
+  </g>
+
+  <!-- Mobile Metric Pills -->
+  <g transform="translate(32, 134)" font-family="system-ui, sans-serif">
+    <rect x="0" y="0" width="98" height="60" rx="10" fill="#064e3b" stroke="#059669"/>
+    <text x="12" y="24" fill="#a7f3d0" font-size="10" font-weight="bold">AVAILABLE</text>
+    <text x="12" y="48" fill="#ffffff" font-size="18" font-weight="bold">38</text>
+
+    <rect x="108" y="0" width="98" height="60" rx="10" fill="#78350f" stroke="#d97706"/>
+    <text x="120" y="24" fill="#fde68a" font-size="10" font-weight="bold">RESERVED</text>
+    <text x="120" y="48" fill="#ffffff" font-size="18" font-weight="bold">18</text>
+
+    <rect x="216" y="0" width="100" height="60" rx="10" fill="#7f1d1d" stroke="#dc2626"/>
+    <text x="228" y="24" fill="#fecaca" font-size="10" font-weight="bold">BOOKED</text>
+    <text x="228" y="48" fill="#ffffff" font-size="18" font-weight="bold">92</text>
+  </g>
+
+  <!-- Touch-Friendly Colony Map Snippet -->
+  <g transform="translate(32, 206)" font-family="system-ui, sans-serif">
+    <rect x="0" y="0" width="316" height="200" rx="12" fill="#090d16" stroke="#334155"/>
+    <text x="14" y="22" fill="#94a3b8" font-size="11" font-weight="bold">Touch Colony Naksha (Pinch to Zoom)</text>
+
+    <!-- Mini grid for mobile -->
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="65" height="50" rx="4" fill="#ef4444"/><text x="12" y="30" fill="#fff" font-size="11" font-weight="bold">A-101</text>
+      <rect x="72" y="0" width="65" height="50" rx="4" fill="#ef4444"/><text x="84" y="30" fill="#fff" font-size="11" font-weight="bold">A-102</text>
+      <rect x="144" y="0" width="65" height="50" rx="4" fill="#10b981" stroke="#34d399" stroke-width="2"/><text x="156" y="30" fill="#fff" font-size="11" font-weight="bold">A-103</text>
+      <rect x="216" y="0" width="65" height="50" rx="4" fill="#f59e0b"/><text x="228" y="30" fill="#fff" font-size="11" font-weight="bold">A-104</text>
+
+      <rect x="0" y="58" width="281" height="16" fill="#1e293b" rx="2"/>
+      <text x="90" y="70" fill="#64748b" font-size="9" letter-spacing="1">40 FT MAIN ROAD</text>
+
+      <rect x="0" y="82" width="65" height="50" rx="4" fill="#10b981"/><text x="12" y="112" fill="#fff" font-size="11" font-weight="bold">A-105</text>
+      <rect x="72" y="82" width="65" height="50" rx="4" fill="#64748b"/><text x="84" y="112" fill="#fff" font-size="11" font-weight="bold">A-106</text>
+      <rect x="144" y="82" width="65" height="50" rx="4" fill="#ef4444"/><text x="156" y="112" fill="#fff" font-size="11" font-weight="bold">A-107</text>
+      <rect x="216" y="82" width="65" height="50" rx="4" fill="#10b981"/><text x="228" y="112" fill="#fff" font-size="11" font-weight="bold">A-108</text>
+    </g>
+
+    <!-- Tap to inspect badge -->
+    <rect x="70" y="165" width="176" height="24" rx="12" fill="#1e293b" stroke="#3b82f6"/>
+    <text x="158" y="181" fill="#60a5fa" font-size="10" font-weight="bold" text-anchor="middle">👆 Tap Plot A-103 to Lock Unit</text>
+  </g>
+
+  <!-- Inbound Lead Action Card -->
+  <g transform="translate(32, 420)" font-family="system-ui, sans-serif">
+    <rect x="0" y="0" width="316" height="175" rx="12" fill="#1e293b" stroke="#334155"/>
+    <text x="14" y="24" fill="#94a3b8" font-size="11" font-weight="bold">HOT LEAD FROM 99ACRES WEBHOOK</text>
+    <rect x="235" y="12" width="68" height="18" rx="4" fill="#78350f"/>
+    <text x="269" y="25" fill="#fde68a" font-size="9" font-weight="bold" text-anchor="middle">NEW TODAY</text>
+
+    <text x="14" y="52" fill="#ffffff" font-size="14" font-weight="bold">Vikramaditya Sharma</text>
+    <text x="14" y="70" fill="#94a3b8" font-size="11">Looking for: 1500 sq.ft Corner Plot (Sector A)</text>
+    <text x="14" y="86" fill="#64748b" font-size="11">Budget: ₹ 40 - 45 Lakhs | Location: Bhopal</text>
+
+    <!-- Action Buttons -->
+    <g transform="translate(14, 105)">
+      <!-- WhatsApp Button -->
+      <rect x="0" y="0" width="138" height="42" rx="8" fill="#059669"/>
+      <text x="69" y="26" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">💬 WhatsApp</text>
+
+      <!-- Direct Call Button -->
+      <rect x="148" y="0" width="138" height="42" rx="8" fill="#2563eb"/>
+      <text x="217" y="26" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">📞 Direct Call</text>
+    </g>
+  </g>
+
+  <!-- Mobile Bottom Nav -->
+  <g transform="translate(32, 610)" font-family="system-ui, sans-serif">
+    <rect x="0" y="0" width="316" height="56" rx="14" fill="#090d16" stroke="#334155"/>
+    <text x="36" y="32" fill="#3b82f6" font-size="10" font-weight="bold" text-anchor="middle">Layout Map</text>
+    <text x="110" y="32" fill="#94a3b8" font-size="10" text-anchor="middle">Leads</text>
+    <text x="190" y="32" fill="#94a3b8" font-size="10" text-anchor="middle">PDC Vault</text>
+    <text x="270" y="32" fill="#94a3b8" font-size="10" text-anchor="middle">Demands</text>
+  </g>
+</svg>

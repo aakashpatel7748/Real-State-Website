@@ -9,21 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#090d16',
-        surface: '#0f172a',
-        'surface-elevated': '#1e293b',
-        primary: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
+        brand: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          500: '#2563eb',
+          600: '#1d4ed8',
+          700: '#1e40af',
+          800: '#1e3a8a',
+          900: '#0f172a',
         },
         emerald: {
-          400: '#34d399',
+          50: '#ecfdf5',
+          100: '#d1fae5',
           500: '#10b981',
           600: '#059669',
+          700: '#047857',
         },
       },
       fontFamily: {
@@ -36,18 +37,9 @@ const config: Config = {
           'sans-serif',
         ],
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15), transparent 70%)',
-      },
-      keyframes: {
-        pulseGlow: {
-          '0%, 100%': { opacity: '0.4' },
-          '50%': { opacity: '0.8' },
-        },
-      },
-      animation: {
-        'pulse-slow': 'pulseGlow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      boxShadow: {
+        'soft-xl': '0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 1px 1px rgba(15, 23, 42, 0.05)',
+        'soft-2xl': '0 25px 50px -12px rgba(15, 23, 42, 0.12)',
       },
     },
   },
