@@ -58,7 +58,7 @@ export function InteractivePlotMapPreview() {
             <span>Interactive Layout Feature</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
-            Live Colony Naksha (Plot Layout Map)
+            Live Interactive Colony Plot Layout Map
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Click on any plot to preview live status, dimensions, facing, and customer payment progress:

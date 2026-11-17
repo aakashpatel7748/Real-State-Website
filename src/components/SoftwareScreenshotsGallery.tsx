@@ -61,7 +61,7 @@ const SCREENSHOT_TABS = [
   },
   {
     id: 'naksha-map',
-    title: 'Colony Naksha (Layout Map)',
+    title: 'Plot Layout Map (Interactive)',
     tag: 'Interactive Vector Map',
     subtitle: 'Live interactive plot availability layout map with color-coded unit statuses',
     icon: MapPin,

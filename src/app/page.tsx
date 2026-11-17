@@ -7,13 +7,13 @@ import { InteractivePlotMapPreview } from '@/components/InteractivePlotMapPrevie
 import { InstallmentCalculator } from '@/components/InstallmentCalculator';
 import { FaqSection } from '@/components/FaqSection';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { 
-  Building2, 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Phone, 
+import {
+  Building2,
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Phone,
   Calendar,
   Check
 } from 'lucide-react';
@@ -30,7 +30,7 @@ export default function HomePage() {
       {/* 3. Five Core Modules in Clean High-Contrast Cards */}
       <ModulesShowcase />
 
-      {/* 4. Interactive Colony Naksha (Plot Layout Map) */}
+      {/* 4. Interactive Colony Plot Layout Map */}
       <InteractivePlotMapPreview />
 
       {/* 5. Builder Cashflow Recovery & ROI Calculator */}
@@ -49,13 +49,13 @@ export default function HomePage() {
                 Why Plotline is the First Choice of Indian Colonizers
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                Generic enterprise software (like Salesforce or HubSpot) does not comprehend the ground operations of plotted developments. 
+                Generic enterprise software (like Salesforce or HubSpot) does not comprehend the ground operations of plotted developments.
                 They lack Khasra land acquisition ledgers, CAD/SVG layout map rendering, milestone installment demand generation, and PDC cheque vaults.
               </p>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
                 Plotline ERP was designed specifically for Indian plotted township developers, colonizers, and builders—ensuring on-site sales agents, town planning teams, registry officers, and accounts departments stay synchronized in real time.
               </p>
-              
+
               <div className="pt-2 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 hover:-translate-y-0.5 hover:border-teal-300 transition-all duration-200">
                   <div className="text-sm sm:text-base font-semibold text-slate-800">100% Cloud Native</div>
@@ -121,8 +121,8 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;Earlier, double-booking conflicts occurred every Sunday on site. With Plotline&apos;s live SVG layout map, 
-                sales reps check real-time unit status on their phones. Our 45-day installment collection cycle is now 
+                &ldquo;Earlier, double-booking conflicts occurred every Sunday on site. With Plotline&apos;s live SVG layout map,
+                sales reps check real-time unit status on their phones. Our 45-day installment collection cycle is now
                 completed in under 12 days.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
@@ -141,8 +141,8 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;Managing advance post-dated cheques (PDCs) used to be a massive administrative bottleneck. In Plotline, 
-                cheques are logged in a secure vault, and receipts generate only upon bank clearance. During RERA audits, 
+                &ldquo;Managing advance post-dated cheques (PDCs) used to be a massive administrative bottleneck. In Plotline,
+                cheques are logged in a secure vault, and receipts generate only upon bank clearance. During RERA audits,
                 our entire buyer ledger was exported in one click.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
@@ -161,7 +161,7 @@ export default function HomePage() {
                 ★★★★★
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                &ldquo;Inquiries from 99acres and MagicBricks previously slipped through messy spreadsheets. With Plotline&apos;s 
+                &ldquo;Inquiries from 99acres and MagicBricks previously slipped through messy spreadsheets. With Plotline&apos;s
                 instant webhooks and WhatsApp integration, reps are alerted in seconds. Our lead conversion jumped by 35%.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
@@ -184,8 +184,8 @@ export default function HomePage() {
       {/* 9. Final High-Impact Conversion CTA (Floating Modern Card) */}
       <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal 
-            direction="up" 
+          <ScrollReveal
+            direction="up"
             className="rounded-3xl bg-gradient-to-br from-[#063038] via-[#042026] to-[#021418] p-8 sm:p-14 text-white shadow-2xl shadow-teal-950/25 border border-teal-700/40 relative overflow-hidden text-center"
           >
             {/* Subtle atmospheric ambient glow effects */}
@@ -203,7 +203,7 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-3.5 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                Eliminate double-booking disputes and spreadsheet errors. 
+                Eliminate double-booking disputes and spreadsheet errors.
                 Schedule a personalized 1-on-1 live demo configured with your colony layout map.
               </p>
 

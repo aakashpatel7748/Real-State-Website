@@ -28,7 +28,7 @@ const MODULES_MENU = [
     color: 'text-amber-600 bg-amber-50',
   },
   {
-    name: 'Colony Naksha (SVG Map)',
+    name: 'Interactive Layout Map (SVG)',
     tag: 'Live Inventory & Locks',
     href: '/modules/inventory-and-map',
     description: 'Interactive plot layout map, real-time Available/Booked colors & 0% double-booking lock.',

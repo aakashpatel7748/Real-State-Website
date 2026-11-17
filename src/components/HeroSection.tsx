@@ -205,7 +205,7 @@ export function HeroSection() {
             style={{ animationDelay: '1300ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">All-in-One</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Kist + Accounts + Land</div>
+            <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Installments + Accounts + Land</div>
           </div>
         </div>
 

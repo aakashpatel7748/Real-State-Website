@@ -45,7 +45,7 @@ const MODULES_DATA = [
   },
   {
     id: 'inventory-map',
-    title: 'Colony Naksha & Inventory',
+    title: 'Interactive Layout Map & Inventory',
     tagline: 'Interactive SVG plot layout map with double-booking lock',
     icon: MapPin,
     badge: 'Inventory Management',
