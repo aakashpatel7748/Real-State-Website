@@ -38,7 +38,7 @@ const FAQS = [
 ];
 
 export function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -56,9 +56,7 @@ export function FaqSection() {
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Direct answers to common questions asked by real estate developers and colonizers:
-          </p>
+
         </ScrollReveal>
 
         <div className="space-y-3.5">
@@ -78,7 +76,7 @@ export function FaqSection() {
                   <span className="text-base sm:text-lg font-semibold text-slate-800 pr-4">
                     {faq.question}
                   </span>
-                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#042026] text-white' : ''}`}>
+                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#042026]' : ''}`}>
                     <ChevronDown className="h-4 w-4" />
                   </div>
                 </button>

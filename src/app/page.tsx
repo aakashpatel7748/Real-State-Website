@@ -56,16 +56,6 @@ export default function HomePage() {
                 Plotline ERP was designed specifically for Indian plotted township developers, colonizers, and builders—ensuring on-site sales agents, town planning teams, registry officers, and accounts departments stay synchronized in real time.
               </p>
 
-              <div className="pt-2 grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 hover:-translate-y-0.5 hover:border-teal-300 transition-all duration-200">
-                  <div className="text-sm sm:text-base font-semibold text-slate-800">100% Cloud Native</div>
-                  <div className="text-xs text-slate-500 mt-0.5">Live access from mobile and desktop with zero server maintenance.</div>
-                </div>
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 hover:-translate-y-0.5 hover:border-teal-300 transition-all duration-200">
-                  <div className="text-sm sm:text-base font-semibold text-[#0d9488]">RERA &amp; GST Ready</div>
-                  <div className="text-xs text-slate-500 mt-0.5">Automated tax invoices, demand notices &amp; escrow reconciliation.</div>
-                </div>
-              </div>
             </ScrollReveal>
 
             {/* Right Card with Scroll Reveal from Right */}

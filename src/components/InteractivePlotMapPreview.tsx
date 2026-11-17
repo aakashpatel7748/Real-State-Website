@@ -20,7 +20,7 @@ export function InteractivePlotMapPreview() {
   return (
     <section id="interactive-map" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading with Scroll Reveal */}
         <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
@@ -31,18 +31,18 @@ export function InteractivePlotMapPreview() {
             Live Colony Layout Map with 0% Double-Booking Lock
           </h2>
           <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-            Eliminate Excel spreadsheets and outdated paper blueprints. Here is how your colony layout map 
+            Eliminate Excel spreadsheets and outdated paper blueprints. Here is how your colony layout map
             displays live in the authentic <strong>Plotline ERP</strong> cloud interface:
           </p>
         </ScrollReveal>
 
         {/* 2-Column Balanced Grid (Image and Text Perfectly Aligned) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          
+
           {/* Left Column: Authentic Enterprise Product Interface (7 Cols) */}
           <ScrollReveal direction="left" delay={150} duration={850} className="lg:col-span-7">
             <div className="group relative rounded-2xl border border-slate-200/90 bg-white shadow-xl shadow-slate-900/10 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-teal-300">
-              
+
               {/* Modern macOS/SaaS Window Header Bar */}
               <div className="flex items-center justify-between border-b border-slate-200/90 bg-slate-100/95 px-4 py-2.5 select-none">
                 <div className="flex items-center gap-2">
@@ -121,9 +121,7 @@ export function InteractivePlotMapPreview() {
               <h3 className="text-xl sm:text-2xl lg:text-[26px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.35]">
                 Every Plot Synchronized Across Your Entire Sales Team
               </h3>
-              <p className="mt-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                Never allow two sales executives to take booking tokens on the same plot. The instant an agent holds a unit on mobile, it turns yellow/blue across all office screens within 200ms.
-              </p>
+
             </div>
 
             {/* 2x2 Balanced Feature Grid (Compact and Clean) */}
@@ -187,19 +185,7 @@ export function InteractivePlotMapPreview() {
                 <ArrowRight className="h-4 w-4 text-emerald-400 shrink-0" />
               </Link>
 
-              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 px-1">
-                <a
-                  href="tel:+919876543210"
-                  className="inline-flex items-center gap-1.5 font-semibold text-slate-800 hover:text-teal-700 transition-colors"
-                >
-                  <Phone className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>Call Helpline: +91 98765 43210</span>
-                </a>
-                <span className="text-emerald-700 font-medium inline-flex items-center gap-1 text-[11px]">
-                  <CheckCircle2 className="h-3 w-3 text-emerald-600" />
-                  <span>Free Excel Migration Included</span>
-                </span>
-              </div>
+
             </div>
 
           </ScrollReveal>

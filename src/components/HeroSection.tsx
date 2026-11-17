@@ -15,7 +15,7 @@ import {
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-6 pb-14 lg:pt-14 lg:pb-25 border-b border-slate-200/80">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-12 pb-20 sm:pt-16 sm:pb-24 lg:pt-24 lg:pb-32 border-b border-slate-200/80">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 right-1/4 -z-10 h-96 w-96 rounded-full bg-emerald-100/40 blur-3xl" />
       <div className="absolute top-20 left-10 -z-10 h-72 w-72 rounded-full bg-teal-100/30 blur-3xl" />
@@ -26,14 +26,6 @@ export function HeroSection() {
 
           {/* Left Column: Heading, Value Proposition & CTAs (Smooth Entrance from Left) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
-
-            {/* Top Category Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full /80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4">
-              {/* <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>India&apos;s #1 Real Estate ERP</span>
-              <span className="text-teal-400">•</span>
-              <span className="text-teal-700">Plotted Colonies &amp; Townships</span> */}
-            </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
             <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
@@ -169,37 +161,7 @@ export function HeroSection() {
 
         </div>
 
-        {/* 4 Bottom Micro-Metrics Bar (Staggered Entrance on Load) */}
-        <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <div
-            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '850ms' }}
-          >
-            <div className="text-xl sm:text-2xl font-semibold text-slate-800">100%</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">RERA &amp; GST Audit-Ready Invoicing</div>
-          </div>
-          <div
-            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '1000ms' }}
-          >
-            <div className="text-xl sm:text-2xl font-semibold text-[#0d9488]">4.5x</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
-          </div>
-          <div
-            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '1150ms' }}
-          >
-            <div className="text-xl sm:text-2xl font-semibold text-emerald-600">0%</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
-          </div>
-          <div
-            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '1300ms' }}
-          >
-            <div className="text-xl sm:text-2xl font-semibold text-slate-800">All-in-One</div>
-            <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Installments + Accounts + Land</div>
-          </div>
-        </div>
+
 
       </div>
     </section>
