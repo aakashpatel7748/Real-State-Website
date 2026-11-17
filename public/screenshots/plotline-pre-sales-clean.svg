@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <filter id="darkCardShadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="tooltipShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background (Dark SaaS Canvas) -->
+  <rect x="0" y="0" width="1200" height="700" rx="12" fill="#07151e" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Left Sidebar (Matching Plotline ERP dark teal theme) -->
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="220" height="700" rx="12" fill="#03151a"/>
+    <rect x="210" y="0" width="10" height="700" fill="#03151a"/>
+
+    <!-- Exact Plotline ERP Logo -->
+    <g transform="translate(18, 22)">
+      <rect width="28" height="28" rx="7" fill="#0f766e" />
+      <path d="M6 8h7v5H6zM15 8h7v5h-7zM6 15h7v5H6z" fill="#ecfdf5" />
+      <path d="M15 15h7v5h-7z" fill="#f59e0b" />
+      <text x="36" y="20" fill="#ffffff" font-family="'Poppins', sans-serif" font-weight="700" font-size="18">Plotline</text>
+    </g>
+
+    <!-- Company Badge -->
+    <g transform="translate(20, 70)" font-family="'Poppins', sans-serif">
+      <text x="0" y="10" fill="#2dd4bf" font-size="9" font-weight="600" letter-spacing="1">COMPANY</text>
+      <text x="0" y="26" fill="#ffffff" font-size="13" font-weight="600">Green Valley Realty</text>
+    </g>
+
+    <!-- Sidebar Menu Items -->
+    <g transform="translate(12, 116)" font-family="'Poppins', sans-serif" font-size="12">
+      <!-- Dashboard -->
+      <g transform="translate(0, 0)">
+        <rect x="16" y="10" width="6" height="6" rx="1" fill="#64748b"/>
+        <rect x="24" y="10" width="6" height="6" rx="1" fill="#64748b"/>
+        <rect x="16" y="18" width="6" height="6" rx="1" fill="#64748b"/>
+        <rect x="24" y="18" width="6" height="6" rx="1" fill="#64748b"/>
+        <text x="38" y="22" fill="#94a3b8" font-weight="500">Dashboard</text>
+      </g>
+
+      <!-- Administration -->
+      <g transform="translate(0, 38)">
+        <text x="16" y="22" fill="#64748b" font-size="12">⚙</text>
+        <text x="38" y="22" fill="#94a3b8" font-weight="500">Administration</text>
+        <path d="M 175 18 L 180 22 L 185 18" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      </g>
+
+      <!-- Master -->
+      <g transform="translate(0, 74)">
+        <text x="16" y="22" fill="#64748b" font-size="12">👥</text>
+        <text x="38" y="22" fill="#94a3b8" font-weight="500">Master</text>
+        <path d="M 175 18 L 180 22 L 185 18" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      </g>
+
+      <!-- Pre Sales (Expanded) -->
+      <g transform="translate(0, 110)">
+        <text x="16" y="22" fill="#2dd4bf" font-size="13">❇</text>
+        <text x="38" y="22" fill="#ffffff" font-weight="600">Pre Sales</text>
+        <path d="M 175 20 L 180 16 L 185 20" fill="none" stroke="#2dd4bf" stroke-width="1.5"/>
+
+        <!-- Sub-items under Pre Sales -->
+        <g transform="translate(0, 32)" font-size="11">
+          <!-- Active Sales Dashboard Pill -->
+          <rect x="8" y="0" width="180" height="32" rx="6" fill="#072b31" stroke="#0d9488" stroke-width="1"/>
+          <circle cx="24" cy="16" r="3" fill="#2dd4bf"/>
+          <text x="36" y="20" fill="#ffffff" font-weight="600">Sales Dashboard</text>
+
+          <text x="36" y="52" fill="#94a3b8" font-weight="500">Leads &amp; Enquiries</text>
+          <text x="36" y="80" fill="#94a3b8" font-weight="500">Lead Stages &amp; Sources</text>
+          <text x="36" y="108" fill="#94a3b8" font-weight="500">WhatsApp Templates</text>
+          <text x="36" y="136" fill="#94a3b8" font-weight="500">Portal Integrations</text>
+          <text x="36" y="164" fill="#94a3b8" font-weight="500">Cost Sheets &amp; Quotations</text>
+        </g>
+      </g>
+
+      <!-- Post Sales -->
+      <g transform="translate(0, 335)">
+        <text x="16" y="22" fill="#64748b" font-size="12">📄</text>
+        <text x="38" y="22" fill="#94a3b8" font-weight="500">Post Sales</text>
+        <path d="M 175 18 L 180 22 L 185 18" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      </g>
+
+      <!-- Account -->
+      <g transform="translate(0, 372)">
+        <text x="16" y="22" fill="#64748b" font-size="12">₹</text>
+        <text x="38" y="22" fill="#94a3b8" font-weight="500">Account</text>
+        <path d="M 175 18 L 180 22 L 185 18" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Top Navigation Header (x: 220 to 1200) -->
+  <g transform="translate(220, 0)">
+    <rect x="0" y="0" width="980" height="60" fill="#0d1b24" stroke="#1a2b38" stroke-width="1"/>
+
+    <!-- Search Input -->
+    <g transform="translate(24, 12)">
+      <rect x="0" y="0" width="380" height="36" rx="8" fill="#132430" stroke="#1f3747" stroke-width="1"/>
+      <circle cx="20" cy="18" r="6" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      <line x1="24.5" y1="22.5" x2="29" y2="27" stroke="#64748b" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="38" y="23" fill="#64748b" font-family="'Poppins', sans-serif" font-size="12">Search bookings, customers, plots...</text>
+      <rect x="325" y="8" width="44" height="20" rx="4" fill="#192d3b" stroke="#254255"/>
+      <text x="333" y="22" fill="#94a3b8" font-family="'Poppins', sans-serif" font-size="10" font-weight="600">Ctrl K</text>
+    </g>
+
+    <!-- Project Selector Dropdown -->
+    <g transform="translate(560, 12)">
+      <rect x="0" y="0" width="220" height="36" rx="8" fill="#132430" stroke="#1f3747" stroke-width="1"/>
+      <text x="16" y="23" fill="#f1f5f9" font-family="'Poppins', sans-serif" font-size="12" font-weight="600">Green Valley Enclave</text>
+      <path d="M 195 16 L 200 21 L 205 16" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+
+    <!-- Notification Bell -->
+    <g transform="translate(805, 20)">
+      <circle cx="10" cy="10" r="14" fill="#132430"/>
+      <path d="M6 14h8m-7 0v-4a3 3 0 016 0v4m-5 3a1.5 1.5 0 003 0" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+
+    <!-- User Profile: Admin -->
+    <g transform="translate(845, 12)" font-family="'Poppins', sans-serif">
+      <circle cx="18" cy="18" r="16" fill="#0f766e"/>
+      <text x="18" y="23" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">A</text>
+      <text x="42" y="18" fill="#ffffff" font-size="12" font-weight="600">Admin</text>
+      <text x="42" y="30" fill="#2dd4bf" font-size="10">Director</text>
+    </g>
+  </g>
+
+  <!-- Page Header & Date Range Filter (x: 244, y: 76) -->
+  <g transform="translate(244, 80)" font-family="'Poppins', sans-serif">
+    <text x="0" y="24" fill="#ffffff" font-size="22" font-weight="700">Sales Dashboard</text>
+    <text x="0" y="46" fill="#94a3b8" font-size="12">Green Valley Enclave • enquiries, conversions and bookings</text>
+
+    <!-- Date Range Picker Controls -->
+    <g transform="translate(680, 0)">
+      <text x="0" y="10" fill="#64748b" font-size="11">From</text>
+      <rect x="0" y="16" width="120" height="34" rx="6" fill="#10202b" stroke="#1f3747"/>
+      <text x="12" y="38" fill="#cbd5e1" font-size="11">01-10-2026 📅</text>
+
+      <text x="135" y="10" fill="#64748b" font-size="11">To</text>
+      <rect x="135" y="16" width="120" height="34" rx="6" fill="#10202b" stroke="#1f3747"/>
+      <text x="147" y="38" fill="#cbd5e1" font-size="11">17-11-2026 📅</text>
+    </g>
+  </g>
+
+  <!-- ROW 1: 4 Top Stat Cards (Matching User's Screenshot Exactly) -->
+  <g transform="translate(244, 150)" font-family="'Poppins', sans-serif">
+    
+    <!-- Card 1: New enquiries -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="220" height="96" rx="12" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      <text x="18" y="26" fill="#94a3b8" font-size="12" font-weight="500">New enquiries</text>
+      <circle cx="185" cy="24" r="14" fill="#072b31"/>
+      <circle cx="185" cy="24" r="6" fill="#2dd4bf"/>
+      <text x="18" y="62" fill="#ffffff" font-size="26" font-weight="700">4</text>
+      <text x="18" y="82" fill="#64748b" font-size="11">0 won • 0.0% conversion</text>
+    </g>
+
+    <!-- Card 2: Site visits -->
+    <g transform="translate(236, 0)">
+      <rect x="0" y="0" width="220" height="96" rx="12" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      <text x="18" y="26" fill="#94a3b8" font-size="12" font-weight="500">Site visits</text>
+      <circle cx="185" cy="24" r="14" fill="#072b31"/>
+      <text x="185" y="29" fill="#2dd4bf" font-size="12" font-weight="bold" text-anchor="middle">👣</text>
+      <text x="18" y="62" fill="#ffffff" font-size="26" font-weight="700">0</text>
+      <text x="18" y="82" fill="#64748b" font-size="11">0 scheduled this week</text>
+    </g>
+
+    <!-- Card 3: Bookings -->
+    <g transform="translate(472, 0)">
+      <rect x="0" y="0" width="220" height="96" rx="12" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      <text x="18" y="26" fill="#94a3b8" font-size="12" font-weight="500">Bookings</text>
+      <circle cx="185" cy="24" r="14" fill="#063223"/>
+      <text x="185" y="29" fill="#10b981" font-size="13" font-weight="bold" text-anchor="middle">₹</text>
+      <text x="18" y="62" fill="#ffffff" font-size="26" font-weight="700">5</text>
+      <text x="18" y="82" fill="#10b981" font-size="11" font-weight="600">₹1.95 Cr • 2 cancelled</text>
+    </g>
+
+    <!-- Card 4: Follow-ups due -->
+    <g transform="translate(708, 0)">
+      <rect x="0" y="0" width="220" height="96" rx="12" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      <text x="18" y="26" fill="#94a3b8" font-size="12" font-weight="500">Follow-ups due</text>
+      <circle cx="185" cy="24" r="14" fill="#321518"/>
+      <circle cx="185" cy="24" r="6" fill="#ef4444"/>
+      <text x="18" y="62" fill="#ffffff" font-size="26" font-weight="700">4</text>
+      <text x="18" y="82" fill="#f87171" font-size="11">4 overdue • 0 today</text>
+    </g>
+  </g>
+
+  <!-- ROW 2: Charts Area (Weekly Enquiries vs Bookings & Open Pipeline) -->
+  <g transform="translate(244, 268)" font-family="'Poppins', sans-serif">
+    
+    <!-- Left Card: Weekly enquiries vs bookings Chart -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="610" height="395" rx="14" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      
+      <text x="24" y="32" fill="#38bdf8" font-size="14">📈</text>
+      <text x="46" y="32" fill="#f1f5f9" font-size="14" font-weight="600">Weekly enquiries vs bookings</text>
+
+      <!-- Chart Canvas with Grid Lines -->
+      <g transform="translate(45, 60)">
+        <!-- Grid lines and Y-axis labels -->
+        <text x="-15" y="15" fill="#64748b" font-size="11" text-anchor="end">8</text>
+        <line x1="0" y1="10" x2="520" y2="10" stroke="#1a2d3c" stroke-width="1"/>
+
+        <text x="-15" y="80" fill="#64748b" font-size="11" text-anchor="end">6</text>
+        <line x1="0" y1="75" x2="520" y2="75" stroke="#1a2d3c" stroke-width="1"/>
+
+        <text x="-15" y="145" fill="#64748b" font-size="11" text-anchor="end">4</text>
+        <line x1="0" y1="140" x2="520" y2="140" stroke="#1a2d3c" stroke-width="1"/>
+
+        <text x="-15" y="210" fill="#64748b" font-size="11" text-anchor="end">2</text>
+        <line x1="0" y1="205" x2="520" y2="205" stroke="#1a2d3c" stroke-width="1"/>
+
+        <text x="-15" y="275" fill="#64748b" font-size="11" text-anchor="end">0</text>
+        <line x1="0" y1="270" x2="520" y2="270" stroke="#1a2d3c" stroke-width="1"/>
+
+        <!-- Vertical Timeline Marker for W45 -->
+        <line x1="260" y1="10" x2="260" y2="270" stroke="#334155" stroke-width="1.5"/>
+        <text x="260" y="290" fill="#94a3b8" font-size="11" text-anchor="middle">W45</text>
+
+        <!-- Chart Data Points -->
+        <circle cx="260" cy="110" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5"/>
+        <circle cx="260" cy="140" r="5" fill="#2dd4bf" stroke="#ffffff" stroke-width="1.5"/>
+
+        <!-- Data Popover Tooltip (Exact Replica from Software) -->
+        <g transform="translate(270, 75)" filter="url(#tooltipShadow)">
+          <rect x="0" y="0" width="105" height="70" rx="8" fill="#ffffff"/>
+          <text x="14" y="20" fill="#64748b" font-size="10" font-weight="600">2026-W45</text>
+          <text x="14" y="38" fill="#d97706" font-size="12" font-weight="700">Bookings : 5</text>
+          <text x="14" y="56" fill="#0d9488" font-size="12" font-weight="700">Enquiries : 4</text>
+        </g>
+      </g>
+
+      <!-- Bottom Legend -->
+      <g transform="translate(230, 375)">
+        <circle cx="0" cy="0" r="4" fill="#f59e0b"/>
+        <text x="10" y="4" fill="#f59e0b" font-size="11" font-weight="600">Bookings</text>
+
+        <circle cx="85" cy="0" r="4" fill="#2dd4bf"/>
+        <text x="95" y="4" fill="#2dd4bf" font-size="11" font-weight="600">Enquiries</text>
+      </g>
+    </g>
+
+    <!-- Right Card: Open Pipeline Stage Progress -->
+    <g transform="translate(630, 0)">
+      <rect x="0" y="0" width="298" height="395" rx="14" fill="#0e1d28" stroke="#1e3445" filter="url(#darkCardShadow)"/>
+      
+      <text x="22" y="32" fill="#f1f5f9" font-size="15" font-weight="700">Open pipeline</text>
+
+      <!-- Stage 1: New -->
+      <g transform="translate(22, 60)">
+        <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="500">New</text>
+        <text x="254" y="14" fill="#f1f5f9" font-size="12" font-weight="700" text-anchor="end">1</text>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#132735"/>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#2dd4bf"/>
+      </g>
+
+      <!-- Stage 2: Contacted -->
+      <g transform="translate(22, 115)">
+        <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="500">Contacted</text>
+        <text x="254" y="14" fill="#f1f5f9" font-size="12" font-weight="700" text-anchor="end">1</text>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#132735"/>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#2dd4bf"/>
+      </g>
+
+      <!-- Stage 3: Site Visit Done -->
+      <g transform="translate(22, 170)">
+        <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="500">Site Visit Done</text>
+        <text x="254" y="14" fill="#f1f5f9" font-size="12" font-weight="700" text-anchor="end">1</text>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#132735"/>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#2dd4bf"/>
+      </g>
+
+      <!-- Stage 4: Negotiation -->
+      <g transform="translate(22, 225)">
+        <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="500">Negotiation</text>
+        <text x="254" y="14" fill="#f1f5f9" font-size="12" font-weight="700" text-anchor="end">1</text>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#132735"/>
+        <rect x="0" y="24" width="254" height="8" rx="4" fill="#2dd4bf"/>
+      </g>
+
+      <!-- Divider line -->
+      <line x1="22" y1="285" x2="276" y2="285" stroke="#1f3747" stroke-width="1"/>
+
+      <!-- Quotations Summary Footer -->
+      <g transform="translate(22, 310)">
+        <text x="0" y="14" fill="#94a3b8" font-size="13">📄</text>
+        <text x="22" y="14" fill="#94a3b8" font-size="11">5 quotations (₹1.95 Cr) • 0 converted</text>
+      </g>
+
+      <!-- Sync Pill -->
+      <g transform="translate(22, 340)">
+        <rect x="0" y="0" width="254" height="36" rx="6" fill="#072b31" stroke="#0d9488" stroke-width="1"/>
+        <circle cx="16" cy="18" r="3" fill="#2dd4bf"/>
+        <text x="28" y="22" fill="#5eead4" font-size="11" font-weight="600">Portal Webhook Sync: Active</text>
+      </g>
+    </g>
+  </g>
+</svg>

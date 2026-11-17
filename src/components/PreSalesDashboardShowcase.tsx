@@ -166,10 +166,10 @@ export function PreSalesDashboardShowcase() {
                 </div>
               </div>
 
-              {/* Real Software Sales Dashboard Image (Cleaned, No Test Labels) */}
+              {/* Real Software Sales Dashboard Vector SVG (Zero patches, pure native vector) */}
               <div className="relative overflow-hidden bg-slate-950">
                 <img
-                  src="/screenshots/real-sales-dashboard-dark.png"
+                  src="/screenshots/plotline-pre-sales-clean.svg"
                   alt="Plotline ERP Live Pre-Sales & Sales Conversion Dashboard"
                   className="w-full h-auto object-cover"
                   loading="lazy"
