@@ -39,6 +39,66 @@ export default function HomePage() {
       {/* 6. Comparison Table (Excel vs Generic CRM vs Plotline) */}
       <ComparisonTable />
 
+      {/* 6.5 About Plotline ERP Section */}
+      <section id="about" className="py-14 sm:py-20 bg-white border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-6 space-y-4">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 shadow-xs">
+                <span>About Plotline ERP</span>
+              </span>
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+                Kyu Plotline Bharat ke Colonizers ki Pehli Pasand Hai?
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                Generic CRMs (jaise Salesforce ya HubSpot) real estate colonizers ke ground workflows ko nahi samajhte. 
+                Unme Khasra-Khata zameen ka hisab, CAD/SVG layout naksha, construction milestone kist demands aur PDC cheque vault nahi hote.
+              </p>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                Plotline ERP ko specifically Indian plotted township developers, colonizers aur builders ke liye banaya gaya hai — taaki site par ghoom rahe sales rep se lekar registry office aur accounts team tak sab ek hi platform par live synchronize rahein.
+              </p>
+              
+              <div className="pt-2 grid grid-cols-2 gap-3">
+                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
+                  <div className="text-sm sm:text-base font-bold text-slate-900">100% Cloud Native</div>
+                  <div className="text-xs text-slate-500 mt-0.5">Mobile aur laptop dono par live access.</div>
+                </div>
+                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
+                  <div className="text-sm sm:text-base font-bold text-[#0d9488]">RERA &amp; GST Ready</div>
+                  <div className="text-xs text-slate-500 mt-0.5">Tax invoices &amp; escrow accounts tracking.</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6">
+              <div className="rounded-2xl border border-slate-200 bg-[#042026] p-6 sm:p-8 text-white shadow-xl">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-3">
+                  <ShieldCheck className="h-4 w-4" />
+                  <span>The Plotline Commitment</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug">
+                  Zero Double-Booking &bull; Fast Kist Recovery &bull; Clean Accounts
+                </h3>
+                <div className="mt-5 space-y-3.5 text-xs sm:text-sm text-slate-300">
+                  <div className="flex items-start gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
+                    <span><strong>Free Onboarding &amp; Map Setup:</strong> Aapka puraana Excel data aur CAD/SVG colony naksha hamari technical team free setup karke deti hai.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
+                    <span><strong>Dedicated Support:</strong> Phone, WhatsApp aur screen share par complete customer assistance.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5 stroke-[2.5]" />
+                    <span><strong>Bank-Grade Data Security:</strong> Daily automatic cloud backups aur 256-bit SSL encryption.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 7. Colonizer & Developer Testimonials */}
       <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

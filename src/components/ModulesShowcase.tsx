@@ -153,7 +153,7 @@ export function ModulesShowcase() {
   const activeData = MODULES_DATA.find((m) => m.id === selectedModule) || MODULES_DATA[0];
 
   return (
-    <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
+    <section id="modules" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
