@@ -6,6 +6,7 @@ import { ModulesShowcase } from '@/components/ModulesShowcase';
 import { InteractivePlotMapPreview } from '@/components/InteractivePlotMapPreview';
 import { InstallmentCalculator } from '@/components/InstallmentCalculator';
 import { FaqSection } from '@/components/FaqSection';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { 
   Building2, 
   Sparkles, 
@@ -39,7 +40,8 @@ export default function HomePage() {
       <section id="about" className="py-14 sm:py-20 bg-white border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-6 space-y-4">
+            {/* Left Content with Scroll Reveal from Left */}
+            <ScrollReveal direction="left" className="lg:col-span-6 space-y-4">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 shadow-xs">
                 <span>About Plotline ERP</span>
               </span>
@@ -55,19 +57,20 @@ export default function HomePage() {
               </p>
               
               <div className="pt-2 grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
+                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 hover:-translate-y-0.5 hover:border-teal-300 transition-all duration-200">
                   <div className="text-sm sm:text-base font-semibold text-slate-800">100% Cloud Native</div>
                   <div className="text-xs text-slate-500 mt-0.5">Live access from mobile and desktop with zero server maintenance.</div>
                 </div>
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
+                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 hover:-translate-y-0.5 hover:border-teal-300 transition-all duration-200">
                   <div className="text-sm sm:text-base font-semibold text-[#0d9488]">RERA &amp; GST Ready</div>
                   <div className="text-xs text-slate-500 mt-0.5">Automated tax invoices, demand notices &amp; escrow reconciliation.</div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="lg:col-span-6">
-              <div className="rounded-2xl border border-slate-200 bg-[#042026] p-6 sm:p-8 text-white shadow-xl">
+            {/* Right Card with Scroll Reveal from Right */}
+            <ScrollReveal direction="right" delay={150} className="lg:col-span-6">
+              <div className="rounded-2xl border border-slate-200 bg-[#042026] p-6 sm:p-8 text-white shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-3">
                   <ShieldCheck className="h-4 w-4" />
                   <span>The Plotline Commitment</span>
@@ -90,7 +93,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -98,7 +101,8 @@ export default function HomePage() {
       {/* 7. Colonizer & Developer Testimonials */}
       <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          {/* Header with Scroll Reveal */}
+          <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
               Trusted by Leading Indian Developers
             </span>
@@ -108,10 +112,11 @@ export default function HomePage() {
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
               Read how real estate colonizers eliminated manual registers and switched to Plotline ERP:
             </p>
-          </div>
+          </ScrollReveal>
 
+          {/* Staggered Testimonial Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
+            <ScrollReveal direction="up" delay={100} className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -129,9 +134,9 @@ export default function HomePage() {
                   <div className="text-[11px] text-slate-500 font-medium">Managing Director, Royal Palm City (180 Acres Plotted)</div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
+            <ScrollReveal direction="up" delay={200} className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -149,9 +154,9 @@ export default function HomePage() {
                   <div className="text-[11px] text-slate-500 font-medium">Chief Financial Officer, Green Meadows Townships</div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
+            <ScrollReveal direction="up" delay={300} className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -168,7 +173,7 @@ export default function HomePage() {
                   <div className="text-[11px] text-slate-500 font-medium">Director of Sales, Shivalik High-Rise &amp; Villas</div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -178,7 +183,7 @@ export default function HomePage() {
 
       {/* 9. Final High-Impact Conversion CTA in ERP Dark Teal */}
       <section className="py-14 sm:py-20 bg-[#042026] text-white">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+        <ScrollReveal direction="up" className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-emerald-950/80 border border-emerald-700/50 px-4 py-1.5 text-xs font-semibold text-emerald-300 mb-5">
             <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
             <span>Ready for Instant Cloud Deployment</span>
@@ -196,7 +201,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <Link
               href="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02]"
+              className="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02] active:scale-95"
             >
               <Calendar className="h-4 w-4 text-[#042026]" />
               <span>Schedule Free 1-on-1 Live Demo</span>
@@ -204,7 +209,7 @@ export default function HomePage() {
 
             <a
               href="tel:+919876543210"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-7 py-3.5 text-sm font-semibold text-white transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 active:scale-95"
             >
               <Phone className="h-4 w-4 text-emerald-400" />
               <span>Call Helpline: +91 98765 43210</span>
@@ -225,7 +230,7 @@ export default function HomePage() {
               <span>RERA &amp; GST Ready Architecture</span>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </section>
     </div>
   );

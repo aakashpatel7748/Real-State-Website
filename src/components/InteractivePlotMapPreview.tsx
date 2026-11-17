@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { 
   MapPin, 
   CheckCircle2, 
@@ -50,7 +51,8 @@ export function InteractivePlotMapPreview() {
   return (
     <section id="interactive-map" className="py-14 sm:py-20 bg-white border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        {/* Section Heading with Scroll Reveal */}
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <MapPin className="h-3.5 w-3.5 text-teal-600" />
             <span>Interactive Layout Feature</span>
@@ -61,11 +63,11 @@ export function InteractivePlotMapPreview() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Click on any plot to preview live status, dimensions, facing, and customer payment progress:
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Interactive Plot Grid (8 Columns) */}
-          <div className="lg:col-span-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+          {/* Interactive Plot Grid (8 Columns) with Scroll Reveal from Left */}
+          <ScrollReveal direction="left" delay={100} className="lg:col-span-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-6">
               <div>
                 <span className="text-xs uppercase tracking-wider font-semibold text-slate-400">
@@ -121,7 +123,7 @@ export function InteractivePlotMapPreview() {
                   <button
                     key={plot.id}
                     onClick={() => setSelectedPlot(plot)}
-                    className={`rounded-xl border-2 p-3 text-left transition-all cursor-pointer relative ${bgStyle} ${
+                    className={`rounded-xl border-2 p-3 text-left transition-all duration-200 cursor-pointer relative hover:-translate-y-0.5 active:scale-95 ${bgStyle} ${
                       isSelected ? 'ring-2 ring-teal-600 ring-offset-2 scale-102 shadow-md' : 'shadow-2xs'
                     }`}
                   >
@@ -137,10 +139,10 @@ export function InteractivePlotMapPreview() {
                 );
               })}
             </div>
-          </div>
+          </ScrollReveal>
 
-          {/* Selected Unit Details (4 Columns) */}
-          <div className="lg:col-span-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          {/* Selected Unit Details (4 Columns) with Scroll Reveal from Right */}
+          <ScrollReveal direction="right" delay={200} className="lg:col-span-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-teal-800 mb-2">
               <Info className="h-4 w-4 text-teal-600" />
               <span>Selected Unit Details</span>
@@ -188,7 +190,7 @@ export function InteractivePlotMapPreview() {
                       </div>
                       <div className="h-2 w-full bg-slate-200 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-emerald-600 rounded-full"
+                          className="h-full bg-emerald-600 rounded-full transition-all duration-500"
                           style={{ width: `${selectedPlot.paidPercent}%` }}
                         />
                       </div>
@@ -201,13 +203,13 @@ export function InteractivePlotMapPreview() {
             <div className="mt-6 pt-2">
               <Link
                 href="/contact"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all text-center"
+                className="btn-shimmer w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all text-center hover:-translate-y-0.5 active:scale-95"
               >
                 <Sparkles className="h-4 w-4 text-emerald-400" />
                 <span>Upload Your Colony Map for a Demo</span>
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

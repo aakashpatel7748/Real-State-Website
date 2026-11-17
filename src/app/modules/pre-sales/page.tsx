@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { 
   Sparkles, 
   CheckCircle2, 
@@ -22,8 +23,8 @@ export default function PreSalesPage() {
   return (
     <div className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb & Header */}
-        <div className="max-w-3xl">
+        {/* Breadcrumb & Header with Scroll Reveal */}
+        <ScrollReveal direction="up" className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-bold text-teal-800 mb-3 uppercase tracking-wider">
             <Link href="/" className="hover:text-teal-950">Home</Link>
             <span>/</span>
@@ -41,11 +42,11 @@ export default function PreSalesPage() {
             Never miss an inbound inquiry from 99acres, MagicBricks, Housing.com, or Meta ads. 
             Automated SHA-256 deduplication, direct WhatsApp click-to-chat, and 1-click quotation PDF generation.
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Feature Grid */}
+        {/* Feature Grid with Staggered Scroll Reveal */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={50} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-50 text-teal-700 font-bold mb-4">
               <Share2 className="h-5 w-5" />
             </div>
@@ -53,9 +54,9 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Dedicated webhook endpoints for every portal. Incoming leads are validated for duplicates and routed immediately to available sales executives.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={120} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold mb-4">
               <PhoneCall className="h-5 w-5" />
             </div>
@@ -63,9 +64,9 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Send greeting templates, layout brochures, and price sheets directly via WhatsApp without manually saving buyer phone numbers.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={190} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700 font-bold mb-4">
               <FileText className="h-5 w-5" />
             </div>
@@ -73,9 +74,9 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Generate branded quotation PDFs factoring base rate, PLC charges, corner premiums, and installment schedules in under 10 seconds.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={260} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 font-bold mb-4">
               <Clock className="h-5 w-5" />
             </div>
@@ -83,9 +84,9 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Background schedulers remind sales teams of scheduled site visits and callback commitments so high-intent prospects stay engaged.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={330} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700 font-bold mb-4">
               <ShieldCheck className="h-5 w-5" />
             </div>
@@ -93,9 +94,9 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               When a prospect drops off, log root causes (Price, Distance, Loan Rejection) to optimize advertising campaigns and pricing strategies.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={400} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-700 font-bold mb-4">
               <CheckCircle2 className="h-5 w-5" />
             </div>
@@ -103,22 +104,22 @@ export default function PreSalesPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Property broker commissions accrue automatically upon confirmed bookings and unlock stage-wise as agreed buyer installments are cleared.
             </p>
-          </div>
+          </ScrollReveal>
         </div>
 
-        {/* CTA Banner */}
-        <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* CTA Banner with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={200} className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-xl transition-all duration-300">
           <div>
             <h3 className="text-xl sm:text-2xl font-semibold text-slate-800">See the Pre-Sales CRM in Action</h3>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">Schedule a 30-minute walkthrough to discover how colonizers accelerate lead conversion by 35%.</p>
           </div>
           <Link
             href="/contact"
-            className="rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all shrink-0"
+            className="btn-shimmer rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all shrink-0 active:scale-95"
           >
             Schedule Live Demo
           </Link>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   );

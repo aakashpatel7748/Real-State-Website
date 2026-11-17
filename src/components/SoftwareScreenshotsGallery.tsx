@@ -14,6 +14,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import Link from 'next/link';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 const SCREENSHOT_TABS = [
   {
@@ -96,8 +97,8 @@ export function SoftwareScreenshotsGallery() {
     <section id="screenshots" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Section Heading in Poppins */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        {/* Section Heading with Scroll Reveal */}
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>Actual Product Interface</span>
@@ -108,10 +109,10 @@ export function SoftwareScreenshotsGallery() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Click through the tabs below to preview the Main Dashboard, Leads CRM, Sales Analytics, Interactive Layout Map, and Milestone Demand Notices:
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Tab Navigation Pill Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8">
+        {/* Tab Navigation Pill Buttons with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={100} className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8">
           {SCREENSHOT_TABS.map((tab) => {
             const Icon = tab.icon;
             const isSelected = tab.id === activeTab;
@@ -119,7 +120,7 @@ export function SoftwareScreenshotsGallery() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:-translate-y-0.5 active:scale-95 ${
                   isSelected
                     ? 'bg-[#042026] text-white shadow-md shadow-teal-950/20 ring-1 ring-teal-700'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-xs'
@@ -130,10 +131,10 @@ export function SoftwareScreenshotsGallery() {
               </button>
             );
           })}
-        </div>
+        </ScrollReveal>
 
-        {/* Active Screenshot Display Showcase Card */}
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-900/5">
+        {/* Active Screenshot Display Showcase Card with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={200} className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-900/5 transition-all">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Visual Screenshot Display */}
@@ -214,7 +215,7 @@ export function SoftwareScreenshotsGallery() {
             </div>
 
           </div>
-        </div>
+        </ScrollReveal>
 
       </div>
     </section>

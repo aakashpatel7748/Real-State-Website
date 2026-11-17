@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { 
   ReceiptIndianRupee, 
   Clock, 
@@ -22,8 +23,8 @@ export default function AccountingPage() {
   return (
     <div className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb & Header */}
-        <div className="max-w-3xl">
+        {/* Breadcrumb & Header with Scroll Reveal */}
+        <ScrollReveal direction="up" className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-bold text-teal-800 mb-3 uppercase tracking-wider">
             <Link href="/" className="hover:text-teal-950">Home</Link>
             <span>/</span>
@@ -41,11 +42,11 @@ export default function AccountingPage() {
             Generic accounting software struggles with multi-installment schedules and post-dated cheques. 
             Plotline maintains synchronized customer receipts, contractor bills, landowner payments, and GST vouchers seamlessly.
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Feature Grid */}
+        {/* Feature Grid with Staggered Scroll Reveal */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={50} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700 font-bold mb-4">
               <Clock className="h-5 w-5" />
             </div>
@@ -53,9 +54,9 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Log advance post-dated cheques securely. Automated maturity notifications trigger ahead of deposit dates; receipts and ledger credits generate only upon verified clearance.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={120} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold mb-4">
               <ReceiptIndianRupee className="h-5 w-5" />
             </div>
@@ -63,9 +64,9 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               When buyers submit installment payments, incoming funds automatically settle earliest overdue milestones first. Partial settlements and advance balances stay fully traceable.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={190} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-50 text-teal-700 font-bold mb-4">
               <Scale className="h-5 w-5" />
             </div>
@@ -73,9 +74,9 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Standardized Chart of Accounts tailored for developers: Land Capital, Construction WIP, Customer Receivables, and Trade Payables with real-time Trial Balance and P&amp;L reports.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={260} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 font-bold mb-4">
               <Percent className="h-5 w-5" />
             </div>
@@ -83,9 +84,9 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Automated tax calculation across commercial property and construction milestones. Match input tax credits from contractor invoices against buyer collections for net tax liabilities.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={330} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-50 text-violet-700 font-bold mb-4">
               <FileSpreadsheet className="h-5 w-5" />
             </div>
@@ -93,9 +94,9 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Issue adjustment vouchers for promotional discounts, interest waivers, or supplementary development charges. Upon deal cancellation, adjustments unwind cleanly.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <ScrollReveal direction="up" delay={400} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700 font-bold mb-4">
               <BadgeIndianRupee className="h-5 w-5" />
             </div>
@@ -103,22 +104,22 @@ export default function AccountingPage() {
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Reconcile designated RERA escrow accounts (70% rule) independently from operational current accounts. Track deposit ratios, cheque clearances, and audit logs.
             </p>
-          </div>
+          </ScrollReveal>
         </div>
 
-        {/* CTA Banner */}
-        <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* CTA Banner with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={200} className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-xl transition-all duration-300">
           <div>
             <h3 className="text-xl sm:text-2xl font-semibold text-slate-800">Simplify Audits &amp; Financial Compliance</h3>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">Explore how the PDC vault and double-entry real estate ledgers provide audit-ready clarity.</p>
           </div>
           <Link
             href="/contact"
-            className="rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all shrink-0"
+            className="btn-shimmer rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all shrink-0 active:scale-95"
           >
             Schedule Finance Walkthrough
           </Link>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Check, Sparkles, Building2, ShieldCheck, ArrowRight, Phone } from 'lucide-react';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 export const metadata: Metadata = {
   title: 'Transparent Pricing Plans for Indian Colonizers & Real Estate Builders',
@@ -81,7 +82,8 @@ export default function PricingPage() {
   return (
     <div className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        {/* Header with Scroll Reveal */}
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-14">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>Transparent Investment Plans</span>
@@ -92,17 +94,19 @@ export default function PricingPage() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             No hidden fees, no per-plot transaction surcharges. Every plan includes free onboarding, colony map setup, and legacy spreadsheet data migration:
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Pricing Cards Grid */}
+        {/* Pricing Cards Grid with Staggered Scroll Reveal */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {TIERS.map((tier) => (
-            <div
+          {TIERS.map((tier, idx) => (
+            <ScrollReveal
               key={tier.name}
-              className={`rounded-2xl border p-6 sm:p-8 flex flex-col justify-between transition-all bg-white relative ${
+              direction="up"
+              delay={idx * 120}
+              className={`rounded-2xl border p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 bg-white relative hover:-translate-y-1 ${
                 tier.highlight
                   ? 'border-teal-600 shadow-2xl shadow-teal-950/10 ring-2 ring-teal-600'
-                  : 'border-slate-200 shadow-sm hover:shadow-md'
+                  : 'border-slate-200 shadow-sm hover:shadow-lg'
               }`}
             >
               {tier.badge && (
@@ -132,8 +136,8 @@ export default function PricingPage() {
                     Included Capabilities:
                   </span>
                   <ul className="mt-4 space-y-2.5 text-xs text-slate-700">
-                    {tier.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5">
+                    {tier.features.map((feat, fIdx) => (
+                      <li key={fIdx} className="flex items-start gap-2.5">
                         <div className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                           <Check className="h-2.5 w-2.5 stroke-[3]" />
                         </div>
@@ -147,7 +151,7 @@ export default function PricingPage() {
               <div className="mt-8 pt-6 border-t border-slate-100">
                 <Link
                   href="/contact"
-                  className={`w-full flex items-center justify-center gap-2 rounded-xl py-3 text-xs sm:text-sm font-semibold transition-all shadow-sm ${
+                  className={`btn-shimmer w-full flex items-center justify-center gap-2 rounded-xl py-3 text-xs sm:text-sm font-semibold transition-all shadow-sm active:scale-95 ${
                     tier.highlight
                       ? 'bg-[#042026] text-white hover:bg-[#083c47] shadow-teal-950/20'
                       : 'bg-slate-100 text-slate-800 hover:bg-slate-200'
@@ -157,14 +161,14 @@ export default function PricingPage() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 
-        {/* Free Migration Callout */}
-        <div className="mt-14 rounded-2xl border border-teal-200 bg-teal-50/70 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Free Migration Callout with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={200} className="mt-14 rounded-2xl border border-teal-200 bg-teal-50/70 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-teal-700 text-white">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-teal-700 text-white shadow-sm">
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
@@ -179,12 +183,12 @@ export default function PricingPage() {
 
           <Link
             href="/contact"
-            className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all"
+            className="btn-shimmer shrink-0 inline-flex items-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all active:scale-95"
           >
             <span>Talk to ERP Consultant</span>
             <ArrowRight className="h-4 w-4 text-emerald-400" />
           </Link>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   );

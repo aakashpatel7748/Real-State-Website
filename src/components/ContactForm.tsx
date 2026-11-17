@@ -256,7 +256,7 @@ export function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-sm font-semibold text-white shadow-md transition-all cursor-pointer disabled:opacity-50"
+              className="btn-shimmer w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-sm font-semibold text-white shadow-md transition-all cursor-pointer disabled:opacity-50 hover:-translate-y-0.5 hover:shadow-xl active:scale-95"
             >
               {loading ? (
                 <span>Submitting Your Request...</span>

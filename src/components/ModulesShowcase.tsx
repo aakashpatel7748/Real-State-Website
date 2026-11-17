@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { 
   Sparkles, 
   MapPin, 
@@ -155,7 +156,8 @@ export function ModulesShowcase() {
   return (
     <section id="modules" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        {/* Section Heading with Scroll Reveal */}
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <span>5 Core Colonizer Modules</span>
           </span>
@@ -165,10 +167,10 @@ export function ModulesShowcase() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Not a generic CRM — Plotline handles every phase from agricultural land acquisition to plotting layout, installment recovery, and registry handover:
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Module Selection Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8">
+        {/* Module Selection Pills with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={100} className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8">
           {MODULES_DATA.map((module) => {
             const Icon = module.icon;
             const isSelected = selectedModule === module.id;
@@ -176,7 +178,7 @@ export function ModulesShowcase() {
               <button
                 key={module.id}
                 onClick={() => setSelectedModule(module.id)}
-                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:-translate-y-0.5 active:scale-95 ${
                   isSelected
                     ? 'bg-[#042026] text-white shadow-md shadow-teal-950/20 ring-1 ring-teal-700'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-xs'
@@ -187,10 +189,10 @@ export function ModulesShowcase() {
               </button>
             );
           })}
-        </div>
+        </ScrollReveal>
 
-        {/* Selected Module Card Display */}
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-8 shadow-xl shadow-slate-900/5">
+        {/* Selected Module Card Display with Scroll Reveal */}
+        <ScrollReveal direction="up" delay={200} className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-8 shadow-xl shadow-slate-900/5">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-5 mb-6">
             <div className="flex items-center gap-3.5">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-teal-800 border border-teal-100">
@@ -207,19 +209,19 @@ export function ModulesShowcase() {
 
             <Link
               href={activeData.link}
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-teal-800 hover:text-teal-950 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-teal-800 hover:text-teal-950 transition-colors hover:translate-x-1 duration-200"
             >
               <span>Explore {activeData.title}</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
-          {/* 4 Feature Columns */}
+          {/* 4 Feature Columns with Staggered Scroll Animation */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {activeData.features.map((feat, idx) => (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-100 bg-slate-50/70 p-4 transition-all hover:border-teal-200 hover:bg-teal-50/20"
+                className="rounded-xl border border-slate-100 bg-slate-50/70 p-4 transition-all hover:border-teal-300 hover:bg-teal-50/30 hover:-translate-y-1 hover:shadow-sm duration-300"
               >
                 <div className="flex items-center gap-2 mb-1.5">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
@@ -233,7 +235,7 @@ export function ModulesShowcase() {
               </div>
             ))}
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 const FAQS = [
   {
@@ -46,7 +47,8 @@ export function FaqSection() {
   return (
     <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-10">
+        {/* Header with Scroll Reveal */}
+        <ScrollReveal direction="up" className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <HelpCircle className="h-3.5 w-3.5 text-teal-600" />
             <span>Questions &amp; Answers</span>
@@ -57,15 +59,17 @@ export function FaqSection() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Direct answers to common questions asked by real estate developers and colonizers:
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="space-y-3.5">
           {FAQS.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <div
+              <ScrollReveal
                 key={idx}
-                className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden transition-all"
+                direction="up"
+                delay={idx * 60}
+                className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden transition-all hover:border-slate-300"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
@@ -80,11 +84,11 @@ export function FaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-5 pb-6 sm:px-6 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-4 animate-in fade-in duration-200">
                     {faq.answer}
                   </div>
                 )}
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>

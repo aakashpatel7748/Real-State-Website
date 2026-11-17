@@ -24,8 +24,8 @@ export function HeroSection() {
         {/* 2-Column Responsive Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
-          {/* Left Column: Heading, Value Proposition & CTAs */}
-          <div className="lg:col-span-6 flex flex-col items-start text-left">
+          {/* Left Column: Heading, Value Proposition & CTAs (Smooth Entrance from Left) */}
+          <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
             
             {/* Top Category Tag */}
             <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4 shadow-sm">
@@ -59,25 +59,25 @@ export function HeroSection() {
 
             {/* 4 Key Value Checkpoints */}
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full">
-              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 transition-transform hover:translate-x-1 duration-200">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
                 <span>Interactive Vector Layout Map</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 transition-transform hover:translate-x-1 duration-200">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
                 <span>0% Double-Booking Atomic Lock</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 transition-transform hover:translate-x-1 duration-200">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
                 <span>Automated Milestone Demand PDFs</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 transition-transform hover:translate-x-1 duration-200">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                 </div>
@@ -89,7 +89,7 @@ export function HeroSection() {
             <div className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/20 transition-all hover:translate-y-[-1px] text-center"
+                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-950/20 transition-all hover:translate-y-[-2px] hover:shadow-xl text-center active:scale-95"
               >
                 <Calendar className="h-4 w-4 text-emerald-400" />
                 <span>Book 1-on-1 Free Live Demo</span>
@@ -98,7 +98,7 @@ export function HeroSection() {
 
               <a
                 href="tel:+919876543210"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3.5 text-sm font-semibold text-slate-800 transition-all shadow-sm text-center"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3.5 text-sm font-semibold text-slate-800 transition-all shadow-sm text-center hover:translate-y-[-1px] active:scale-95"
               >
                 <Phone className="h-4 w-4 text-[#0d9488]" />
                 <span>Call: +91 98765 43210</span>
@@ -118,11 +118,11 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Real Product Preview */}
-          <div className="lg:col-span-6 relative">
+          {/* Right Column: Real Product Preview (Smooth Entrance from Right) */}
+          <div className="lg:col-span-6 relative animate-hero-right">
             
             {/* Browser Window Frame Wrapper */}
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-2 sm:p-2.5 shadow-2xl shadow-slate-900/10 transition-transform hover:scale-[1.01] duration-300">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-2 sm:p-2.5 shadow-2xl shadow-slate-900/10 transition-transform hover:scale-[1.015] duration-300">
               
               {/* Window Title Bar */}
               <div className="flex items-center justify-between rounded-t-xl bg-slate-100/90 px-3 py-2 border-b border-slate-200 text-xs text-slate-500">
@@ -151,8 +151,8 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Floating Metric Badge 1: Sales & Bookings */}
-            <div className="hidden sm:flex absolute -bottom-5 -left-4 items-center gap-3 rounded-xl border border-slate-200/90 bg-white/95 backdrop-blur-md p-3 shadow-xl">
+            {/* Floating Metric Badge 1: Sales & Bookings (Subtle Floating Animation) */}
+            <div className="hidden sm:flex absolute -bottom-5 -left-4 items-center gap-3 rounded-xl border border-slate-200/90 bg-white/95 backdrop-blur-md p-3 shadow-xl animate-float-slow hover:pause">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
                 <TrendingUp className="h-5 w-5" />
               </div>
@@ -162,8 +162,8 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Floating Metric Badge 2: Unit Lock Engine */}
-            <div className="hidden sm:flex absolute -top-4 -right-3 items-center gap-2.5 rounded-xl border border-slate-200/90 bg-[#042026] text-white p-2.5 shadow-xl">
+            {/* Floating Metric Badge 2: Unit Lock Engine (Subtle Reverse Floating Animation) */}
+            <div className="hidden sm:flex absolute -top-4 -right-3 items-center gap-2.5 rounded-xl border border-slate-200/90 bg-[#042026] text-white p-2.5 shadow-xl animate-float-reverse hover:pause">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400">
                 <ShieldCheck className="h-4 w-4" />
               </div>
@@ -177,21 +177,33 @@ export function HeroSection() {
 
         </div>
 
-        {/* 4 Bottom Micro-Metrics Bar */}
+        {/* 4 Bottom Micro-Metrics Bar (Staggered Entrance on Load) */}
         <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
+          <div 
+            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            style={{ animationDelay: '150ms' }}
+          >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">100%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">RERA &amp; GST Audit-Ready Invoicing</div>
           </div>
-          <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
+          <div 
+            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            style={{ animationDelay: '250ms' }}
+          >
             <div className="text-xl sm:text-2xl font-semibold text-[#0d9488]">4.5x</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
           </div>
-          <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
+          <div 
+            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            style={{ animationDelay: '350ms' }}
+          >
             <div className="text-xl sm:text-2xl font-semibold text-emerald-600">0%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
           </div>
-          <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
+          <div 
+            className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            style={{ animationDelay: '450ms' }}
+          >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">All-in-One</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Kist + Accounts + Land</div>
           </div>

@@ -204,7 +204,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-xl bg-[#042026] hover:bg-[#073640] px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm transition-all hover:scale-[1.02]"
+            className="btn-shimmer inline-flex items-center gap-2 rounded-xl bg-[#042026] hover:bg-[#073640] px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm transition-all hover:scale-[1.02] active:scale-95"
           >
             <Calendar className="h-4 w-4 text-emerald-400" />
             <span>Book Free Demo</span>
