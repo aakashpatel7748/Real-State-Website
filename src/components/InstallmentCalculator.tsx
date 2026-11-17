@@ -23,15 +23,15 @@ export function InstallmentCalculator() {
   return (
     <section id="roi-calculator" className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3.5 py-1 text-xs font-bold text-blue-700 border border-blue-200 mb-3">
-            <Calculator className="h-3.5 w-3.5" />
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
+            <Calculator className="h-3.5 w-3.5 text-teal-600" />
             <span>Builder Cashflow Calculator</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
             Dekhein Aapki Kist (Installment) Recovery Kitni Fast Hogi
           </h2>
-          <p className="mt-3 text-base text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Manual phone call aur Word me notice banane ki jagah automated milestone demand letters se kitna samay aur paisa bachega:
           </p>
         </div>
@@ -44,7 +44,7 @@ export function InstallmentCalculator() {
                 <label className="text-sm font-bold text-slate-800">
                   Total Plotted / High-Rise Units:
                 </label>
-                <span className="text-lg font-black text-blue-700">{totalUnits} Plots / Units</span>
+                <span className="text-lg font-bold text-teal-800">{totalUnits} Plots / Units</span>
               </div>
               <input
                 type="range"
@@ -53,7 +53,7 @@ export function InstallmentCalculator() {
                 step="10"
                 value={totalUnits}
                 onChange={(e) => setTotalUnits(Number(e.target.value))}
-                className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#0d9488]"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400 mt-1">
                 <span>Small Colony (20 Units)</span>
@@ -83,8 +83,8 @@ export function InstallmentCalculator() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-blue-100 bg-blue-50/60 p-4 text-xs sm:text-sm text-slate-700 space-y-1.5">
-              <div className="font-bold text-blue-900">Automated ERP Advantage:</div>
+            <div className="rounded-2xl border border-teal-100 bg-teal-50/60 p-4 text-xs sm:text-sm text-slate-700 space-y-1.5">
+              <div className="font-bold text-teal-900">Automated ERP Advantage:</div>
               <p>
                 Milestone certify hote hi (Plinth, Slab, Road) sabhi buyers ke demand notice WhatsApp aur Email par ek sath nikalte hain. 
                 Pehle jo paisa aane me 45 din lagte the, wo 10 se 12 din me account me credit ho jata hai.
@@ -134,7 +134,7 @@ export function InstallmentCalculator() {
                   <div className="text-xs font-semibold text-slate-500">Staff Time Saved</div>
                   <div className="text-[11px] text-slate-400">Manual calling aur receipt typing ki bachat</div>
                 </div>
-                <div className="text-2xl font-black text-blue-700">
+                <div className="text-2xl font-bold text-teal-800">
                   {hoursSavedPerMonth} Hours / Month
                 </div>
               </div>
@@ -143,11 +143,11 @@ export function InstallmentCalculator() {
             <div className="mt-8 pt-4 border-t border-slate-200">
               <Link
                 href="/contact"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 py-3.5 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-all"
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all"
               >
-                <Sparkles className="h-4 w-4" />
+                <Sparkles className="h-4 w-4 text-emerald-400" />
                 <span>Apni Colony ke Liye Free Demo Book Karein</span>
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4 text-slate-300" />
               </Link>
             </div>
           </div>

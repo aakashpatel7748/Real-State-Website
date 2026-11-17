@@ -13,17 +13,18 @@ import {
   ArrowRight, 
   CheckCircle2, 
   ShieldCheck, 
-  Phone,
-  Calendar
+  Phone, 
+  Calendar,
+  Check
 } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    <div className="relative bg-white text-slate-900">
-      {/* 1. Hero Section with Live Software Dashboard Preview */}
+    <div className="relative bg-white text-slate-900 font-sans">
+      {/* 1. Hero Section with 2-Column Layout & Clean Live ERP Screenshot */}
       <HeroSection />
 
-      {/* 2. Actual Software Screenshots Gallery (EasyColonizer / Medorn Style) */}
+      {/* 2. Actual Software Screenshots Gallery (Cleaned Real ERP SVGs) */}
       <SoftwareScreenshotsGallery />
 
       {/* 3. Five Core Modules in Clean High-Contrast Cards */}
@@ -39,22 +40,22 @@ export default function HomePage() {
       <ComparisonTable />
 
       {/* 7. Colonizer & Developer Testimonials */}
-      <section className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
-              Bharat ke Leading Developers dwara Bharosemand
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
+              Bharat ke Leading Colonizers dwara Bharosemand
             </span>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Colonizers aur Builders Ka Feedback
+            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+              Colonizers aur Township Builders Ka Feedback
             </h2>
-            <p className="mt-3 text-base text-slate-600">
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
               Dekhein un colonizers ne kya kaha jinhone Excel sheets band karke Plotline ERP shuru kiya:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -63,8 +64,8 @@ export default function HomePage() {
                 sales executive phone se hi real-time status dekh lete hain. Hamara 45 din ka installment collection 
                 ab 12 din me complete ho raha hai.&rdquo;
               </p>
-              <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs">
+              <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
+                <div className="h-10 w-10 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-xs">
                   RS
                 </div>
                 <div>
@@ -74,7 +75,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -83,8 +84,8 @@ export default function HomePage() {
                 me save hota hai aur bank clearance par hi receipt generate hoti hai. RERA audit ke time ek click me 
                 saara customer ledger download ho gaya.&rdquo;
               </p>
-              <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs">
+              <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
+                <div className="h-10 w-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
                   AP
                 </div>
                 <div>
@@ -94,7 +95,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
               <div className="flex items-center gap-1 text-amber-500 text-sm mb-3">
                 ★★★★★
               </div>
@@ -102,8 +103,8 @@ export default function HomePage() {
                 &ldquo;99acres aur MagicBricks se aane wali leads pehle Excel me kho jaati thi. Inke webhook aur 
                 WhatsApp integration se inquiry aate hi sales rep ko notification milta hai. Conversion 35% badh gaya hai.&rdquo;
               </p>
-              <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs">
+              <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
+                <div className="h-10 w-10 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-xs">
                   VK
                 </div>
                 <div>
@@ -119,52 +120,52 @@ export default function HomePage() {
       {/* 8. FAQ Accordion */}
       <FaqSection />
 
-      {/* 9. Final High-Impact Conversion CTA */}
-      <section className="py-16 sm:py-24 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white">
+      {/* 9. Final High-Impact Conversion CTA in ERP Dark Teal */}
+      <section className="py-14 sm:py-20 bg-[#042026] text-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-blue-200 mb-6 backdrop-blur-md">
-            <Sparkles className="h-4 w-4 text-emerald-400" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-950/80 border border-emerald-700/50 px-4 py-1.5 text-xs font-semibold text-emerald-300 mb-5">
+            <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
             <span>Ready for Instant Deployment on Cloud</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-white leading-tight">
             Apni Colony ya Township ko Digital Banayein
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-blue-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-3.5 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Excel sheets ki galatiyon aur double-booking ke jhagde se mukti paayein. 
             Apni colony ke sample naksha ke sath 1-on-1 personalized live demo schedule karein.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <Link
               href="/contact"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-sm font-bold text-blue-900 shadow-xl hover:bg-slate-100 transition-all hover:scale-[1.02]"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-bold text-[#042026] shadow-xl transition-all hover:scale-[1.02]"
             >
-              <Calendar className="h-4 w-4 text-blue-700" />
+              <Calendar className="h-4 w-4 text-[#042026]" />
               <span>Schedule Free 1-on-1 Live Demo</span>
             </Link>
 
             <a
               href="tel:+919876543210"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white hover:bg-white/20 transition-all backdrop-blur-md"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-7 py-3.5 text-sm font-semibold text-white transition-all"
             >
-              <Phone className="h-4 w-4 text-emerald-300" />
+              <Phone className="h-4 w-4 text-emerald-400" />
               <span>Call Helpline: +91 98765 43210</span>
             </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-blue-200 font-medium">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300 font-medium">
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+              <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
               <span>Kisi bhi On-Premise Server ki Zarurat Nahi</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+              <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
               <span>Excel se Unit Data Import Free</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+              <Check className="h-4 w-4 text-emerald-400 stroke-[2.5]" />
               <span>RERA aur GST Ready Architecture</span>
             </div>
           </div>

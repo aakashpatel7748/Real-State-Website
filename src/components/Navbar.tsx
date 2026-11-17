@@ -3,19 +3,21 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { 
-  Building2, 
-  Menu, 
-  X, 
-  ChevronDown, 
-  MapPin, 
-  FileText, 
-  ReceiptIndianRupee, 
-  HardHat, 
+import {
+  Building2,
+  Menu,
+  X,
+  ChevronDown,
+  MapPin,
+  FileText,
+  ReceiptIndianRupee,
+  HardHat,
   Sparkles,
   Phone,
   ArrowRight,
-  ShieldCheck
+  ShieldCheck,
+  LayoutGrid,
+  Calendar
 } from 'lucide-react';
 
 const MODULES = [
@@ -57,45 +59,51 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-200/90 bg-white/95 backdrop-blur-md">
       {/* Top Advisory Bar */}
-      <div className="hidden sm:block border-b border-slate-100 bg-slate-50 px-4 py-1.5 text-xs text-slate-600">
+      <div className="hidden sm:block border-b border-slate-100 bg-[#042026] text-white px-4 py-1.5 text-xs">
         <div className="mx-auto flex max-w-7xl items-center justify-between sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-semibold text-slate-800">India&apos;s Complete Real Estate ERP</span>
-            <span className="text-slate-300">|</span>
-            <span>Plotted Colonies, High-Rise Towers &amp; Commercial Townships</span>
+            <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="font-semibold text-slate-100">India&apos;s Complete Real Estate ERP</span>
+            <span className="text-slate-500">|</span>
+            <span className="text-slate-300">Plotted Colonies, High-Rise Towers &amp; Townships</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+919876543210" className="flex items-center gap-1.5 font-semibold text-blue-700 hover:text-blue-800">
-              <Phone className="h-3.5 w-3.5" />
+            <a href="tel:+919876543210" className="flex items-center gap-1.5 font-semibold text-emerald-300 hover:text-emerald-200 transition-colors">
+              <Phone className="h-3 w-3" />
               <span>Helpline: +91 98765 43210</span>
             </a>
-            <span className="text-slate-300">|</span>
-            <span className="text-emerald-700 font-medium">100% RERA &amp; GST Ready</span>
+            <span className="text-slate-500">|</span>
+            <span className="text-emerald-400 font-medium">100% RERA &amp; GST Ready</span>
           </div>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <div className="mx-auto flex h-18 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Brand Logo */}
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/20 group-hover:bg-blue-700 transition-colors">
-            <Building2 className="h-6 w-6" />
+      <div className="mx-auto flex h-16 sm:h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Brand Logo - 1:1 Match with Real ERP */}
+        <Link href="/" className="group flex items-center gap-2.5">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#042026] text-white shadow-md shadow-teal-950/20 group-hover:bg-[#073640] transition-colors">
+            {/* Plotline 4-Square Grid Icon */}
+            <div className="grid grid-cols-2 gap-1 w-5 h-5 p-0.5">
+              <div className="rounded-[2px] bg-emerald-400" />
+              <div className="rounded-[2px] bg-teal-300" />
+              <div className="rounded-[2px] bg-teal-200" />
+              <div className="rounded-[2px] bg-emerald-500" />
+            </div>
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 font-sans">
+              <span className="text-xl font-bold tracking-tight text-slate-900 font-sans">
                 Plotline
               </span>
-              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-[10px] font-bold text-blue-800 border border-blue-200">
+              <span className="rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-bold text-teal-800 border border-teal-200">
                 ERP
               </span>
             </div>
             <span className="text-[11px] text-slate-500 font-medium">
-              Colony &amp; Township Management System
+              Colony &amp; Township Management
             </span>
           </div>
         </Link>
@@ -104,27 +112,26 @@ export function Navbar() {
         <nav className="hidden lg:flex items-center gap-1">
           <Link
             href="/"
-            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${
-              pathname === '/'
-                ? 'text-blue-700 bg-blue-50'
-                : 'text-slate-700 hover:text-blue-700 hover:bg-slate-50'
-            }`}
+            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${pathname === '/'
+                ? 'text-teal-900 bg-teal-50/80 font-bold'
+                : 'text-slate-700 hover:text-teal-800 hover:bg-slate-50'
+              }`}
           >
             Home
           </Link>
 
           {/* Modules Dropdown */}
-          <div 
+          <div
             className="relative"
             onMouseEnter={() => setModulesDropdownOpen(true)}
             onMouseLeave={() => setModulesDropdownOpen(false)}
           >
             <button
               onClick={() => setModulesDropdownOpen(!modulesDropdownOpen)}
-              className="flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-blue-700 hover:bg-slate-50 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-teal-800 hover:bg-slate-50 transition-colors cursor-pointer"
             >
               <span>Software Modules</span>
-              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${modulesDropdownOpen ? 'rotate-180 text-blue-600' : 'text-slate-400'}`} />
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${modulesDropdownOpen ? 'rotate-180 text-teal-600' : 'text-slate-400'}`} />
             </button>
 
             {modulesDropdownOpen && (
@@ -141,13 +148,13 @@ export function Navbar() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setModulesDropdownOpen(false)}
-                          className="flex items-start gap-3 rounded-xl p-2.5 transition-colors hover:bg-slate-50 group"
+                          className="flex items-start gap-3 rounded-xl p-2.5 transition-colors hover:bg-teal-50/60 group"
                         >
-                          <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                          <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-teal-700 group-hover:bg-[#0d9488] group-hover:text-white transition-colors">
                             <Icon className="h-4 w-4" />
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                            <div className="text-sm font-bold text-slate-900 group-hover:text-teal-800 transition-colors">
                               {item.name}
                             </div>
                             <div className="text-xs text-slate-500 line-clamp-1">
@@ -165,36 +172,34 @@ export function Navbar() {
 
           <Link
             href="/#screenshots"
-            className="rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-blue-700 hover:bg-slate-50 transition-colors"
+            className="rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-teal-800 hover:bg-slate-50 transition-colors"
           >
             Software Screenshots
           </Link>
 
           <Link
-            href="/#interactive-map"
-            className="rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-blue-700 hover:bg-slate-50 transition-colors"
+            href="/modules/inventory-and-map"
+            className="rounded-lg px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-teal-800 hover:bg-slate-50 transition-colors"
           >
             Colony Naksha (Map)
           </Link>
 
           <Link
             href="/pricing"
-            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${
-              pathname === '/pricing'
-                ? 'text-blue-700 bg-blue-50'
-                : 'text-slate-700 hover:text-blue-700 hover:bg-slate-50'
-            }`}
+            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${pathname === '/pricing'
+                ? 'text-teal-900 bg-teal-50/80 font-bold'
+                : 'text-slate-700 hover:text-teal-800 hover:bg-slate-50'
+              }`}
           >
             Pricing
           </Link>
 
           <Link
             href="/contact"
-            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${
-              pathname === '/contact'
-                ? 'text-blue-700 bg-blue-50'
-                : 'text-slate-700 hover:text-blue-700 hover:bg-slate-50'
-            }`}
+            className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${pathname === '/contact'
+                ? 'text-teal-900 bg-teal-50/80 font-bold'
+                : 'text-slate-700 hover:text-teal-800 hover:bg-slate-50'
+              }`}
           >
             Contact &amp; Support
           </Link>
@@ -204,10 +209,11 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             href="/contact"
-            className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-blue-600/20 hover:bg-blue-700 transition-all"
+            className="flex items-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-teal-950/20 transition-all hover:translate-y-[-1px]"
           >
+            <Calendar className="h-3.5 w-3.5 text-emerald-400" />
             <span>Book Live Demo</span>
-            <ArrowRight className="h-3.5 w-3.5" />
+            <ArrowRight className="h-3.5 w-3.5 text-slate-300" />
           </Link>
         </div>
 
@@ -243,9 +249,9 @@ export function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700"
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-800"
                   >
-                    <item.icon className="h-4 w-4 text-blue-600" />
+                    <item.icon className="h-4 w-4 text-teal-600" />
                     <span>{item.name}</span>
                   </Link>
                 ))}
@@ -261,11 +267,11 @@ export function Navbar() {
             </Link>
 
             <Link
-              href="/#interactive-map"
+              href="/modules/inventory-and-map"
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
             >
-              Colony Layout Map (Naksha)
+              Colony Naksha Layout Map
             </Link>
 
             <Link
@@ -273,7 +279,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
             >
-              Pricing Plans
+              Pricing &amp; Plans
             </Link>
 
             <Link
@@ -281,22 +287,24 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
             >
-              Contact Us
+              Contact &amp; Support
             </Link>
 
-            <div className="pt-4 flex flex-col gap-2">
+            <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center rounded-xl bg-blue-600 py-3 text-xs font-bold text-white shadow-md"
+                className="flex items-center justify-center gap-2 rounded-xl bg-[#042026] py-3 text-sm font-bold text-white shadow-md text-center"
               >
-                Schedule Free Live Demo
+                <Calendar className="h-4 w-4 text-emerald-400" />
+                <span>Book 1-on-1 Free Demo</span>
               </Link>
               <a
                 href="tel:+919876543210"
-                className="w-full text-center rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-xs font-bold text-slate-800"
+                className="flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white py-3 text-sm font-bold text-slate-800 text-center"
               >
-                📞 Call: +91 98765 43210
+                <Phone className="h-4 w-4 text-teal-600" />
+                <span>Call +91 98765 43210</span>
               </a>
             </div>
           </div>

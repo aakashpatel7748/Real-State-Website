@@ -99,50 +99,50 @@ const MODULES_DATA = [
     title: 'Accounts, PDC & Finance',
     tagline: 'Colonizer double-entry accounts aur cheque vault',
     icon: ReceiptIndianRupee,
-    badge: 'Financial Accounting',
+    badge: 'Finance & Accounts',
     link: '/modules/accounting',
     features: [
       {
-        title: 'Post-Dated Cheques (PDC) Vault',
-        desc: 'Customer se liye gaye advance cheques vault me secure rehte hain. Cheque bank me pass hone par hi receipt generate hoti hai aur ledger me credit hota hai.',
+        title: 'PDC Cheque Vault & Realization',
+        desc: 'Aage ki tareekh ke cheques (Post-Dated Cheques) vault me save karein. Bank me deposit hone aur clear hone par hi receipt aur accounts entry hoti hai.',
       },
       {
-        title: 'FIFO Kist (Installment) Allocation',
-        desc: 'Jab bhi customer payment kare, system sabse purani baaki kist ko pehle settle karta hai, jisse hisab-kitab me kabhi gadbadi nahi hoti.',
+        title: 'Double-Entry Accounting System',
+        desc: 'Customer receipt, vendor payment, broker commission, aur site kharche sabhi standardized Chart of Accounts ke sath tally-grade accuracy me balance hote hain.',
       },
       {
-        title: 'Double-Entry General Ledger',
-        desc: 'Complete Chart of Accounts: Trial Balance, Profit & Loss aur Balance Sheet system automatically database se compute karta hai.',
+        title: 'Broker / Channel Partner Commission',
+        desc: 'Agent-wise commission slab (2%, 3%, 5%) define karein. Jaise-jaise customer se booking amount aata hai, agent commission stage-wise unlock hota hai.',
       },
       {
-        title: 'GST Vouchers & Reversible Notes',
-        desc: 'CGST, SGST, IGST ka exact hisab aur input tax credit summary. Booking cancel hone par credit/debit notes automatically reverse ho jate hain.',
+        title: 'GST & RERA Escrow Reconciliation',
+        desc: 'GSTR-1 aur GSTR-3B audit-ready reports, plus RERA 70% escrow account deposit ratio ki automatic audit sheet.',
       },
     ],
   },
   {
-    id: 'land-construction',
+    id: 'land-works',
     title: 'Land (Khasra) & Site Works',
-    tagline: 'Khasra-Khata zameen khareed se site thekedar billing',
+    tagline: 'Zameen khareed hisab aur site development cost',
     icon: HardHat,
-    badge: 'Land & Site Control',
+    badge: 'Land & Site Works',
     link: '/modules/land-and-construction',
     features: [
       {
-        title: 'Khasra aur Khata Land Parcels',
-        desc: 'Kisan se agricultural land khareedne ke hisab: Khasra number, khata number, bigha/acre area, bayana payment, agreement, aur registry ledger.',
+        title: 'Khasra, Khata & Land Parcel Ledger',
+        desc: 'Kisan (farmer) ya land owner se kiya gaya agreement, kul khet ka area (Bigha/Acres/Hectares), aur token/bayana payments ka record.',
       },
       {
-        title: 'Owner Disbursements & Land Capital Ledger',
-        desc: 'Zameen malik ko diye gaye har installment ka payment direct Land & Development Capital account me post hota hai.',
+        title: 'Contractor Work Orders & Measurements',
+        desc: 'Sadak, naali, boundary wall, street lights aur sewerage ke vendor work orders bano, RA bills verify karo aur payment schedule track karo.',
       },
       {
-        title: 'Thekedar Work Orders aur Milestone Bills',
-        desc: 'Earthmoving, boundary wall, sewerage aur road ke thekedaro ko work order issue karein. Thekedar ka bill sanction limit se zyada pass nahi hota.',
+        title: 'Material Consumption (Cement, Rod, Sand)',
+        desc: 'Site par kitna sariya, cement aur mitti aayi aur kitni consume hui, uska daily supervisor entry system.',
       },
       {
-        title: 'Real Cost per Sq.Ft Analysis',
-        desc: 'Zameen khareed, licensing, development aur thekedar kharche jodkar exact cost per sq.ft nikaalein taaki profit margin accurate rahe.',
+        title: 'True Land Cost Per Sq.Ft.',
+        desc: 'Zameen ki khareed kimat + registry charges + development kharcha milakar exact costing nikalta hai taaki profit margin accurate rahe.',
       },
     ],
   },
@@ -153,22 +153,22 @@ export function ModulesShowcase() {
   const activeData = MODULES_DATA.find((m) => m.id === selectedModule) || MODULES_DATA[0];
 
   return (
-    <section className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <section className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3.5 py-1 text-xs font-bold text-blue-700 border border-blue-200 mb-3">
-            <span>5 Powerful Modules</span>
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
+            <span>5 Core Colonizer Modules</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
             Indian Colonizers ke Real Workflows ke Liye Banaya Gaya
           </h2>
-          <p className="mt-3 text-base text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Koi generic software nahi — ye platform zameen khareed se lekar registry aur possession tak ka har ek step handle karta hai:
           </p>
         </div>
 
         {/* Module Selection Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8">
           {MODULES_DATA.map((module) => {
             const Icon = module.icon;
             const isSelected = selectedModule === module.id;
@@ -176,13 +176,13 @@ export function ModulesShowcase() {
               <button
                 key={module.id}
                 onClick={() => setSelectedModule(module.id)}
-                className={`flex items-center gap-2 rounded-xl px-4 py-3 text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-blue-600 text-white shadow-md shadow-blue-600/25'
-                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+                    ? 'bg-[#042026] text-white shadow-md shadow-teal-950/20 ring-1 ring-teal-700'
+                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-xs'
                 }`}
               >
-                <Icon className={`h-4 w-4 ${isSelected ? 'text-white' : 'text-blue-600'}`} />
+                <Icon className={`h-4 w-4 ${isSelected ? 'text-emerald-400' : 'text-teal-700'}`} />
                 <span>{module.title}</span>
               </button>
             );
@@ -190,24 +190,24 @@ export function ModulesShowcase() {
         </div>
 
         {/* Selected Module Card Display */}
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-xl">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6 mb-8">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-8 shadow-xl shadow-slate-900/5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-5 mb-6">
             <div className="flex items-center gap-3.5">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
-                <activeData.icon className="h-6 w-6" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-teal-800 border border-teal-100">
+                <activeData.icon className="h-5 w-5 text-teal-700" />
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#0d9488]">
                   {activeData.badge}
                 </span>
-                <h3 className="text-2xl font-black text-slate-900">{activeData.title}</h3>
-                <p className="text-sm text-slate-500 font-medium">{activeData.tagline}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">{activeData.title}</h3>
+                <p className="text-xs sm:text-sm text-slate-500 font-normal">{activeData.tagline}</p>
               </div>
             </div>
 
             <Link
               href={activeData.link}
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-teal-800 hover:text-teal-950 transition-colors"
             >
               <span>{activeData.title} ki Poori Detail Dekhein</span>
               <ArrowRight className="h-4 w-4" />
@@ -215,19 +215,19 @@ export function ModulesShowcase() {
           </div>
 
           {/* 4 Feature Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {activeData.features.map((feat, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-100 bg-slate-50/70 p-5 transition-all hover:border-blue-200 hover:bg-blue-50/30"
+                className="rounded-xl border border-slate-100 bg-slate-50/70 p-4 transition-all hover:border-teal-200 hover:bg-teal-50/20"
               >
-                <div className="flex items-center gap-2.5 mb-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-md bg-emerald-100 text-emerald-700">
-                    <CheckCircle2 className="h-4 w-4" />
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                    <CheckCircle2 className="h-3.5 w-3.5 stroke-[2.5]" />
                   </div>
-                  <h4 className="text-base font-bold text-slate-900">{feat.title}</h4>
+                  <h4 className="text-sm font-bold text-slate-900">{feat.title}</h4>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-8">
+                <p className="text-xs text-slate-600 leading-relaxed pl-7 font-normal">
                   {feat.desc}
                 </p>
               </div>

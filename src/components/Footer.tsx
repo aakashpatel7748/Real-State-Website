@@ -4,20 +4,25 @@ import { Building2, ShieldCheck, Mail, Phone, MapPin, CheckCircle2 } from 'lucid
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-900 text-slate-300">
+    <footer className="border-t border-slate-800 bg-[#042026] text-slate-300">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand Info */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white font-bold">
-                <Building2 className="h-6 w-6" />
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 border border-teal-800/60 text-white font-bold">
+                <div className="grid grid-cols-2 gap-1 w-5 h-5 p-0.5">
+                  <div className="rounded-[2px] bg-emerald-400" />
+                  <div className="rounded-[2px] bg-teal-300" />
+                  <div className="rounded-[2px] bg-teal-200" />
+                  <div className="rounded-[2px] bg-emerald-500" />
+                </div>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-2xl font-black tracking-tight text-white font-sans">
+                <span className="text-2xl font-bold tracking-tight text-white font-sans">
                   Plotline
                 </span>
-                <span className="rounded bg-blue-500/20 px-1.5 py-0.5 text-[10px] font-bold text-blue-400 border border-blue-500/30">
+                <span className="rounded bg-teal-900/60 px-1.5 py-0.5 text-[10px] font-bold text-teal-300 border border-teal-700/50">
                   ERP
                 </span>
               </div>
@@ -42,15 +47,15 @@ export function Footer() {
 
             <div className="mt-6 space-y-2 text-xs text-slate-400">
               <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-blue-400 shrink-0" />
+                <MapPin className="h-4 w-4 text-emerald-400 shrink-0" />
                 <span>Serving Colonizers across MP, Rajasthan, Gujarat, NCR, Maharashtra</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-blue-400 shrink-0" />
+                <Phone className="h-4 w-4 text-emerald-400 shrink-0" />
                 <span>+91 98765 43210 / +91 755 4900000</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-blue-400 shrink-0" />
+                <Mail className="h-4 w-4 text-emerald-400 shrink-0" />
                 <span>sales@plotline-erp.com</span>
               </div>
             </div>

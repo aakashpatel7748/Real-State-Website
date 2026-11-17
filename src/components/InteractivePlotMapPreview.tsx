@@ -51,14 +51,14 @@ export function InteractivePlotMapPreview() {
     <section id="interactive-map" className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3.5 py-1 text-xs font-bold text-emerald-700 border border-emerald-200 mb-3">
-            <MapPin className="h-3.5 w-3.5" />
-            <span>Interactive Layout Feature</span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
+            <MapPin className="h-3.5 w-3.5 text-teal-600" />
+            <span>Interactive Colony Naksha</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
             Live Colony Naksha (Plot Layout Map)
           </h2>
-          <p className="mt-3 text-base text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Kisi bhi plot par click karke dekhein. Site par sales rep ya office staff sabhi ko real-time status dikhta hai:
           </p>
         </div>
@@ -196,7 +196,7 @@ export function InteractivePlotMapPreview() {
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-100">
                 <span className="text-slate-900 font-bold">Total Plot Value</span>
-                <span className="font-black text-lg text-blue-700">₹ {calculateTotal(selectedPlot)}</span>
+                <span className="font-bold text-lg text-teal-800">₹ {calculateTotal(selectedPlot)}</span>
               </div>
 
               {selectedPlot.customer && (
@@ -224,9 +224,9 @@ export function InteractivePlotMapPreview() {
             <div className="mt-6 pt-2">
               <Link
                 href="/contact"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-all"
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] py-3 text-xs sm:text-sm font-semibold text-white shadow-md transition-all"
               >
-                <Sparkles className="h-4 w-4" />
+                <Sparkles className="h-4 w-4 text-emerald-400" />
                 <span>Apni Colony ka Naksha Dekhne ke Liye Demo Book Karein</span>
               </Link>
             </div>
