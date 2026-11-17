@@ -5,7 +5,6 @@ import { SoftwareScreenshotsGallery } from '@/components/SoftwareScreenshotsGall
 import { ModulesShowcase } from '@/components/ModulesShowcase';
 import { InteractivePlotMapPreview } from '@/components/InteractivePlotMapPreview';
 import { InstallmentCalculator } from '@/components/InstallmentCalculator';
-import { ComparisonTable } from '@/components/ComparisonTable';
 import { FaqSection } from '@/components/FaqSection';
 import { 
   Building2, 
@@ -36,10 +35,7 @@ export default function HomePage() {
       {/* 5. Builder Cashflow Recovery & ROI Calculator */}
       <InstallmentCalculator />
 
-      {/* 6. Comparison Table (Excel vs Generic CRM vs Plotline) */}
-      <ComparisonTable />
-
-      {/* 6.5 About Plotline ERP Section */}
+      {/* 6. About Plotline ERP Section */}
       <section id="about" className="py-14 sm:py-20 bg-white border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
