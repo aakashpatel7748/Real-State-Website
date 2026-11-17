@@ -181,28 +181,28 @@ export function HeroSection() {
         <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div 
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '150ms' }}
+            style={{ animationDelay: '850ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">100%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">RERA &amp; GST Audit-Ready Invoicing</div>
           </div>
           <div 
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '250ms' }}
+            style={{ animationDelay: '1000ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-[#0d9488]">4.5x</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
           </div>
           <div 
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '350ms' }}
+            style={{ animationDelay: '1150ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-emerald-600">0%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
           </div>
           <div 
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            style={{ animationDelay: '450ms' }}
+            style={{ animationDelay: '1300ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">All-in-One</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Kist + Accounts + Land</div>

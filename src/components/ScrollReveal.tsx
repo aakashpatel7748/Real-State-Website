@@ -17,7 +17,7 @@ export function ScrollReveal({
   className = '',
   direction = 'up',
   delay = 0,
-  duration = 650,
+  duration = 750,
   threshold = 0.1,
   once = true,
 }: ScrollRevealProps) {
@@ -56,12 +56,12 @@ export function ScrollReveal({
     };
   }, [threshold, once]);
 
-  // Compute transform based on direction
-  let initialTransform = 'translate3d(0, 24px, 0)';
-  if (direction === 'left') initialTransform = 'translate3d(-28px, 0, 0)';
-  if (direction === 'right') initialTransform = 'translate3d(28px, 0, 0)';
-  if (direction === 'down') initialTransform = 'translate3d(0, -24px, 0)';
-  if (direction === 'scale') initialTransform = 'scale3d(0.96, 0.96, 1)';
+  // Compute transform based on direction (pronounced slide distance for clear visibility)
+  let initialTransform = 'translate3d(0, 36px, 0)';
+  if (direction === 'left') initialTransform = 'translate3d(-80px, 0, 0)';
+  if (direction === 'right') initialTransform = 'translate3d(80px, 0, 0)';
+  if (direction === 'down') initialTransform = 'translate3d(0, -36px, 0)';
+  if (direction === 'scale') initialTransform = 'scale3d(0.95, 0.95, 1)';
   if (direction === 'none') initialTransform = 'none';
 
   return (

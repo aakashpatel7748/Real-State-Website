@@ -40,7 +40,7 @@ export function InstallmentCalculator() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-10 shadow-xl shadow-slate-900/5">
           {/* Controls Side with Scroll Reveal from Left */}
-          <ScrollReveal direction="left" delay={100} className="lg:col-span-6 space-y-8">
+          <ScrollReveal direction="left" delay={150} duration={850} className="lg:col-span-6 space-y-8">
             <div>
               <div className="flex justify-between items-center mb-2">
                 <label className="text-sm font-medium text-slate-700">
@@ -95,7 +95,7 @@ export function InstallmentCalculator() {
           </ScrollReveal>
 
           {/* Results Side with Scroll Reveal from Right */}
-          <ScrollReveal direction="right" delay={200} className="lg:col-span-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+          <ScrollReveal direction="right" delay={450} duration={850} className="lg:col-span-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
             <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
               Estimated Financial Benefits
             </span>
