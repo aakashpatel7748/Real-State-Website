@@ -77,7 +77,7 @@ export function ContactForm() {
             <span>1-on-1 Free Live Walkthrough</span>
           </span>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+          <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 leading-snug">
             Preview the Demo with Your Own Colony Layout &amp; Data
           </h3>
 
@@ -92,7 +92,7 @@ export function ContactForm() {
                 <Clock className="h-5 w-5" />
               </div>
               <div>
-                <div className="font-bold text-slate-900">Rapid Response</div>
+                <div className="font-semibold text-slate-800">Rapid Response</div>
                 <div className="text-slate-500 text-xs">An ERP specialist connects within 2 business hours</div>
               </div>
             </div>
@@ -102,7 +102,7 @@ export function ContactForm() {
                 <ShieldCheck className="h-5 w-5" />
               </div>
               <div>
-                <div className="font-bold text-slate-900">100% Confidential &amp; Isolated</div>
+                <div className="font-semibold text-slate-800">100% Confidential &amp; Isolated</div>
                 <div className="text-slate-500 text-xs">Your project inventory and customer records stay private</div>
               </div>
             </div>
@@ -112,7 +112,7 @@ export function ContactForm() {
                 <Phone className="h-5 w-5 text-teal-700" />
               </div>
               <div>
-                <div className="font-bold text-slate-900">Direct Helpline</div>
+                <div className="font-semibold text-slate-800">Direct Helpline</div>
                 <div className="text-slate-500 text-xs">+91 98765 43210 (Direct phone &amp; WhatsApp)</div>
               </div>
             </div>
@@ -127,7 +127,7 @@ export function ContactForm() {
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-200 text-emerald-800 mb-2">
               <CheckCircle2 className="h-8 w-8" />
             </div>
-            <h4 className="text-2xl font-bold text-slate-900">Demo Request Received!</h4>
+            <h4 className="text-2xl font-semibold text-slate-800">Demo Request Received!</h4>
             <p className="text-sm text-slate-700 max-w-md mx-auto leading-relaxed">
               Thank you! Our real estate ERP consultant will reach out via Phone or WhatsApp shortly 
               to coordinate your live interactive walkthrough.

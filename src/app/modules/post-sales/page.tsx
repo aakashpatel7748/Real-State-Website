@@ -31,7 +31,7 @@ export default function PostSalesPage() {
             <span className="text-slate-500">Post-Sales Operations</span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-tight">
             Post-Sales Operations &amp; <br />
             <span className="text-[#0d9488]">Automated Demand Notices</span>
           </h1>
@@ -48,7 +48,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-50 text-teal-700 font-bold mb-4">
               <Download className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Bulk Milestone Demand Notices</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Bulk Milestone Demand Notices</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Upon certifying plinth or road asphalt completion, generate all buyer demand notices in 1 click. PDFs summarize historical receipts, current dues, and RERA bank RTGS instructions.
             </p>
@@ -58,7 +58,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold mb-4">
               <FileText className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Builder-Buyer Agreements (BBA)</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Builder-Buyer Agreements (BBA)</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Track BBA stamp paper drafting, customer signature dates, and statutory RERA terms. All signed agreements are securely archived in the customer cloud repository.
             </p>
@@ -68,7 +68,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700 font-bold mb-4">
               <AlertTriangle className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Dues Aging Buckets (30/60/90+ Days)</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Dues Aging Buckets (30/60/90+ Days)</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Segment receivables into aging categories. Log customer phone call promises, scheduled payment commitments, and automated reminder histories.
             </p>
@@ -78,7 +78,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 font-bold mb-4">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Official Allotment Letters</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Official Allotment Letters</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Generate tamper-proof allotment letters complete with developer branding, plot dimensions, co-applicant records, and home loan bank account endorsements.
             </p>
@@ -88,7 +88,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700 font-bold mb-4">
               <ReceiptIndianRupee className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Cancellations &amp; Reversible Ledgers</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Cancellations &amp; Reversible Ledgers</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Apply contractual forfeiture deductions and establish refund schedules upon cancellation. Journal entries and broker commissions reverse automatically.
             </p>
@@ -98,7 +98,7 @@ export default function PostSalesPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-50 text-violet-700 font-bold mb-4">
               <CheckCircle2 className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Sale Deed Registry &amp; Possession</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Sale Deed Registry &amp; Possession</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Track sub-registrar appointments, stamp duty clearance, registry execution, and issue final possession handover certificates upon 100% dues clearance.
             </p>
@@ -108,7 +108,7 @@ export default function PostSalesPage() {
         {/* CTA Banner */}
         <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Eliminate manual installment reminder calls</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-slate-800">Eliminate manual installment reminder calls</h3>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">Discover how automated milestone demand letters accelerate collections by 4.5x.</p>
           </div>
           <Link

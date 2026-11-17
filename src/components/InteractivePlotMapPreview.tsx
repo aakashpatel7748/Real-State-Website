@@ -55,7 +55,7 @@ export function InteractivePlotMapPreview() {
             <MapPin className="h-3.5 w-3.5 text-teal-600" />
             <span>Interactive Layout Feature</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
             Live Colony Naksha (Plot Layout Map)
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -68,10 +68,10 @@ export function InteractivePlotMapPreview() {
           <div className="lg:col-span-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-6">
               <div>
-                <span className="text-xs uppercase tracking-wider font-bold text-slate-400">
+                <span className="text-xs uppercase tracking-wider font-semibold text-slate-400">
                   Township Project
                 </span>
-                <h3 className="text-lg font-bold text-slate-900">Royal Palm Enclave — Sector A &amp; B</h3>
+                <h3 className="text-lg font-semibold text-slate-800">Royal Palm Enclave — Sector A &amp; B</h3>
               </div>
 
               {/* Status Legend */}
@@ -126,13 +126,13 @@ export function InteractivePlotMapPreview() {
                     }`}
                   >
                     <div className="flex items-center justify-between mb-1.5">
-                      <span className="text-sm font-black tracking-tight">{plot.number}</span>
-                      <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded ${badgeStyle}`}>
+                      <span className="text-sm font-semibold tracking-tight">{plot.number}</span>
+                      <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded ${badgeStyle}`}>
                         {label}
                       </span>
                     </div>
                     <div className="text-[11px] font-medium opacity-80">{plot.dimensions}</div>
-                    <div className="text-[11px] font-bold mt-1">₹ {plot.ratePerSqFt} / sq.ft</div>
+                    <div className="text-[11px] font-semibold mt-1">₹ {plot.ratePerSqFt} / sq.ft</div>
                   </button>
                 );
               })}
@@ -141,11 +141,11 @@ export function InteractivePlotMapPreview() {
 
           {/* Selected Unit Details (4 Columns) */}
           <div className="lg:col-span-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
+            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-teal-800 mb-2">
               <Info className="h-4 w-4 text-teal-600" />
               <span>Selected Unit Details</span>
             </div>
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h3 className="text-2xl font-semibold text-slate-800">
               Plot {selectedPlot.number}
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">{selectedPlot.sector}</p>
@@ -172,8 +172,8 @@ export function InteractivePlotMapPreview() {
                 <span className="font-bold text-slate-900">₹ {selectedPlot.ratePerSqFt.toLocaleString('en-IN')} / sq.ft</span>
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-100">
-                <span className="text-slate-900 font-bold">Total Plot Value</span>
-                <span className="font-bold text-lg text-teal-800">₹ {calculateTotal(selectedPlot)}</span>
+                <span className="text-slate-700 font-semibold">Total Plot Value</span>
+                <span className="font-semibold text-lg text-teal-800">₹ {calculateTotal(selectedPlot)}</span>
               </div>
 
               {selectedPlot.customer && (

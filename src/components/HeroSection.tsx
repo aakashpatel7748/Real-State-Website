@@ -36,7 +36,7 @@ export function HeroSection() {
             </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-slate-900 leading-[1.22] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-[1.22]">
               India&apos;s Complete{' '}
               <span className="text-[#0d9488] relative inline-block">
                 Colony &amp; Real Estate ERP
@@ -135,7 +135,7 @@ export function HeroSection() {
                   <span className="text-emerald-600">🔒</span>
                   <span>app.plotline.in/dashboard</span>
                 </div>
-                <div className="text-[10px] font-bold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
+                <div className="text-[10px] font-semibold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
                   Live ERP
                 </div>
               </div>
@@ -157,7 +157,7 @@ export function HeroSection() {
                 <TrendingUp className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-xs font-bold text-slate-900">₹1.95 Cr Bookings</div>
+                <div className="text-xs font-semibold text-slate-800">₹1.95 Cr Bookings</div>
                 <div className="text-[11px] text-slate-500">5 Units Booked this month</div>
               </div>
             </div>
@@ -168,7 +168,7 @@ export function HeroSection() {
                 <ShieldCheck className="h-4 w-4" />
               </div>
               <div>
-                <div className="text-xs font-bold text-white">0% Double-Booking</div>
+                <div className="text-xs font-semibold text-white">0% Double-Booking</div>
                 <div className="text-[10px] text-slate-300">Live atomic plot lock</div>
               </div>
             </div>
@@ -180,19 +180,19 @@ export function HeroSection() {
         {/* 4 Bottom Micro-Metrics Bar */}
         <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
-            <div className="text-xl sm:text-2xl font-bold text-slate-900">100%</div>
+            <div className="text-xl sm:text-2xl font-semibold text-slate-800">100%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">RERA &amp; GST Audit-Ready Invoicing</div>
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
-            <div className="text-xl sm:text-2xl font-bold text-[#0d9488]">4.5x</div>
+            <div className="text-xl sm:text-2xl font-semibold text-[#0d9488]">4.5x</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
-            <div className="text-xl sm:text-2xl font-bold text-emerald-600">0%</div>
+            <div className="text-xl sm:text-2xl font-semibold text-emerald-600">0%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
           </div>
           <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
-            <div className="text-xl sm:text-2xl font-bold text-[#042026]">All-in-One</div>
+            <div className="text-xl sm:text-2xl font-semibold text-slate-800">All-in-One</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Layout Map + CRM + Kist + Accounts + Land</div>
           </div>
         </div>

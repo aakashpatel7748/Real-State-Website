@@ -32,7 +32,7 @@ export default function LandConstructionPage() {
             <span className="text-slate-500">Land &amp; Site Works</span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-tight">
             Land Acquisition (Khasra/Khata) &amp; <br />
             <span className="text-[#0d9488]">Site Construction Management</span>
           </h1>
@@ -49,7 +49,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-50 text-purple-700 font-bold mb-4">
               <MapPin className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Khasra &amp; Khata Land Parcels</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Khasra &amp; Khata Land Parcels</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Log village names, survey numbers, Khasra/Khata IDs, bigha/acre areas, and agreed acquisition rates per acre. Maintain clear ownership share ratios across landowners.
             </p>
@@ -59,7 +59,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 font-bold mb-4">
               <FileText className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Bayana → Agreement → Registry</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Bayana → Agreement → Registry</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Manage acquisition stages: initial token bayana, legal title search clearance, registered agreement to sell, final deed execution, and T&amp;CP land diversion.
             </p>
@@ -69,7 +69,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700 font-bold mb-4">
               <ReceiptIndianRupee className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Land Capital Ledgers</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Land Capital Ledgers</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Payments to farmers debit directly to the Land &amp; Capital asset account. Maintain full audit trails for stamp duty, registration charges, and legal advocacy fees.
             </p>
@@ -79,7 +79,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 font-bold mb-4">
               <HardHat className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Contractor Work Orders &amp; RA Bills</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Contractor Work Orders &amp; RA Bills</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Issue formal work orders for earthmoving, boundary walls, sewerage, and road works. Invoices are strictly verified against approved rate contracts and measurements.
             </p>
@@ -89,7 +89,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700 font-bold mb-4">
               <TrendingUp className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">True Cost per Sq.Ft Analytics</h2>
+            <h2 className="text-lg font-semibold text-slate-800">True Cost per Sq.Ft Analytics</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Aggregate land acquisition, regulatory approvals, boundary construction, and road costs to compute actual landed cost per sq.ft and safeguard developer margins.
             </p>
@@ -99,7 +99,7 @@ export default function LandConstructionPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-700 font-bold mb-4">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <h2 className="text-lg font-bold text-slate-900">Digital Document Vault</h2>
+            <h2 className="text-lg font-semibold text-slate-800">Digital Document Vault</h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Site inspection photographs, town planning drawings, RERA sanctions, and diversion documents are securely archived with role-based access controls.
             </p>
@@ -109,7 +109,7 @@ export default function LandConstructionPage() {
         {/* CTA Banner */}
         <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Control Land Costs &amp; Contractor Budgets</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-slate-800">Control Land Costs &amp; Contractor Budgets</h3>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">Explore how Khasra parcel ledgers and work order management eliminate construction cost overruns.</p>
           </div>
           <Link

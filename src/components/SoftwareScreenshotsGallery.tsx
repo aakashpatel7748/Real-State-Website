@@ -102,7 +102,7 @@ export function SoftwareScreenshotsGallery() {
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>Actual Product Interface</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
             Explore the Real Estate ERP Interface
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -150,7 +150,7 @@ export function SoftwareScreenshotsGallery() {
                     <span>app.plotline.in/</span>
                     <span className="text-emerald-400">{activeTab}</span>
                   </div>
-                  <span className="text-[10px] bg-emerald-950 text-emerald-300 font-bold px-2 py-0.5 rounded border border-emerald-800">
+                  <span className="text-[10px] bg-emerald-950 text-emerald-300 font-medium px-2 py-0.5 rounded border border-emerald-800">
                     Live UI
                   </span>
                 </div>
@@ -170,10 +170,10 @@ export function SoftwareScreenshotsGallery() {
             {/* Feature Details Column */}
             <div className="lg:col-span-4 space-y-4">
               <div>
-                <span className="inline-block rounded-md bg-teal-50 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-teal-800 border border-teal-200/60 mb-2">
+                <span className="inline-block rounded-md bg-teal-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-teal-800 border border-teal-200/60 mb-2">
                   {current.tag}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 leading-snug">
                   {current.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal leading-relaxed">

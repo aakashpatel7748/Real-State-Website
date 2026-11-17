@@ -159,7 +159,7 @@ export function ModulesShowcase() {
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <span>5 Core Colonizer Modules</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
             Engineered for Real Indian Township Workflows
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -197,10 +197,10 @@ export function ModulesShowcase() {
                 <activeData.icon className="h-5 w-5 text-teal-700" />
               </div>
               <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[#0d9488]">
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#0d9488]">
                   {activeData.badge}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">{activeData.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 leading-snug">{activeData.title}</h3>
                 <p className="text-xs sm:text-sm text-slate-500 font-normal">{activeData.tagline}</p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export function ModulesShowcase() {
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                     <CheckCircle2 className="h-3.5 w-3.5 stroke-[2.5]" />
                   </div>
-                  <h4 className="text-sm font-bold text-slate-900">{feat.title}</h4>
+                  <h4 className="text-sm font-semibold text-slate-800">{feat.title}</h4>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed pl-7 font-normal">
                   {feat.desc}

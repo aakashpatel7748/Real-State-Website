@@ -16,7 +16,7 @@ export function Footer() {
                 <path d="M17 17h8v6h-8z" fill="#f59e0b" />
               </svg>
               <div className="flex items-center gap-1.5">
-                <span className="text-2xl font-bold tracking-tight text-white font-sans">
+                <span className="text-2xl font-semibold tracking-tight text-white font-sans">
                   Plotline
                 </span>
                 <span className="rounded bg-teal-900/60 px-1.5 py-0.5 text-[10px] font-bold text-teal-300 border border-teal-700/50">
@@ -60,7 +60,7 @@ export function Footer() {
 
           {/* Column 1: Core Modules */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
               Software Modules
             </h4>
             <ul className="mt-4 space-y-2.5 text-xs text-slate-400">
@@ -94,7 +94,7 @@ export function Footer() {
 
           {/* Column 2: Key Capabilities */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
               Platform Features
             </h4>
             <ul className="mt-4 space-y-2.5 text-xs text-slate-400">
@@ -128,7 +128,7 @@ export function Footer() {
 
           {/* Column 3: Contact & Legal */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
               Company &amp; Legal
             </h4>
             <ul className="mt-4 space-y-2.5 text-xs text-slate-400">

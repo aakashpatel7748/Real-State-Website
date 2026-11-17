@@ -84,7 +84,7 @@ export function Navbar() {
             href="/"
             className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${
               pathname === '/' && !featuresDropdownOpen
-                ? 'text-teal-900 bg-teal-50 font-bold'
+                ? 'text-teal-900 bg-teal-50 font-semibold'
                 : 'text-slate-700 hover:text-teal-900 hover:bg-slate-50'
             }`}
           >
@@ -101,7 +101,7 @@ export function Navbar() {
               onClick={() => setFeaturesDropdownOpen(!featuresDropdownOpen)}
               className={`flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors cursor-pointer ${
                 featuresDropdownOpen
-                  ? 'text-teal-900 bg-teal-50 font-bold'
+                  ? 'text-teal-900 bg-teal-50 font-semibold'
                   : 'text-slate-700 hover:text-teal-900 hover:bg-slate-50'
               }`}
             >
@@ -121,7 +121,7 @@ export function Navbar() {
                   {/* Dropdown Header */}
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3 px-2">
                     <div>
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-teal-800">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-800">
                         Core ERP Modules
                       </span>
                       <p className="text-xs text-slate-500 font-normal">
@@ -154,7 +154,7 @@ export function Navbar() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between">
-                              <span className="text-sm font-bold text-slate-900 group-hover:text-teal-900 transition-colors">
+                              <span className="text-sm font-semibold text-slate-800 group-hover:text-teal-900 transition-colors">
                                 {item.name}
                               </span>
                               <span className="text-[10px] font-semibold text-slate-400 bg-slate-100 group-hover:bg-teal-100 group-hover:text-teal-800 px-1.5 py-0.5 rounded">

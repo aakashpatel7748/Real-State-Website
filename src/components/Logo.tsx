@@ -30,11 +30,11 @@ export function Logo({
 
       <div className="flex flex-col">
         <div className="flex items-center gap-1.5">
-          <span className={`${textSize} font-bold tracking-tight text-slate-900 font-sans leading-none`}>
+          <span className={`${textSize} font-semibold tracking-tight text-slate-800 font-sans leading-none`}>
             Plotline
           </span>
           {showBadge && (
-            <span className="rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-bold text-teal-800 border border-teal-200 leading-none">
+            <span className="rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-semibold text-teal-800 border border-teal-200 leading-none">
               ERP
             </span>
           )}

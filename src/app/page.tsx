@@ -43,7 +43,7 @@ export default function HomePage() {
               <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 shadow-xs">
                 <span>About Plotline ERP</span>
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
                 Why Plotline is the First Choice of Indian Colonizers
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -56,11 +56,11 @@ export default function HomePage() {
               
               <div className="pt-2 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <div className="text-sm sm:text-base font-bold text-slate-900">100% Cloud Native</div>
+                  <div className="text-sm sm:text-base font-semibold text-slate-800">100% Cloud Native</div>
                   <div className="text-xs text-slate-500 mt-0.5">Live access from mobile and desktop with zero server maintenance.</div>
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <div className="text-sm sm:text-base font-bold text-[#0d9488]">RERA &amp; GST Ready</div>
+                  <div className="text-sm sm:text-base font-semibold text-[#0d9488]">RERA &amp; GST Ready</div>
                   <div className="text-xs text-slate-500 mt-0.5">Automated tax invoices, demand notices &amp; escrow reconciliation.</div>
                 </div>
               </div>
@@ -68,11 +68,11 @@ export default function HomePage() {
 
             <div className="lg:col-span-6">
               <div className="rounded-2xl border border-slate-200 bg-[#042026] p-6 sm:p-8 text-white shadow-xl">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-3">
+                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-3">
                   <ShieldCheck className="h-4 w-4" />
                   <span>The Plotline Commitment</span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug">
+                <h3 className="text-xl sm:text-2xl font-semibold text-white leading-snug">
                   Zero Double-Bookings &bull; Fast Installment Recovery &bull; Audit-Ready Accounts
                 </h3>
                 <div className="mt-5 space-y-3.5 text-xs sm:text-sm text-slate-300">
@@ -102,7 +102,7 @@ export default function HomePage() {
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
               Trusted by Leading Indian Developers
             </span>
-            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
               What Colonizers &amp; Township Builders Say
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -121,11 +121,11 @@ export default function HomePage() {
                 completed in under 12 days.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-xs">
+                <div className="h-10 w-10 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-semibold text-xs">
                   RS
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900">Rajeev Singhania</div>
+                  <div className="text-xs font-semibold text-slate-800">Rajeev Singhania</div>
                   <div className="text-[11px] text-slate-500 font-medium">Managing Director, Royal Palm City (180 Acres Plotted)</div>
                 </div>
               </div>
@@ -141,11 +141,11 @@ export default function HomePage() {
                 our entire buyer ledger was exported in one click.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
+                <div className="h-10 w-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-semibold text-xs">
                   AP
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900">Aditya Patel</div>
+                  <div className="text-xs font-semibold text-slate-800">Aditya Patel</div>
                   <div className="text-[11px] text-slate-500 font-medium">Chief Financial Officer, Green Meadows Townships</div>
                 </div>
               </div>
@@ -160,11 +160,11 @@ export default function HomePage() {
                 instant webhooks and WhatsApp integration, reps are alerted in seconds. Our lead conversion jumped by 35%.&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="h-10 w-10 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-xs">
+                <div className="h-10 w-10 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center font-semibold text-xs">
                   VK
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900">Vikram Khandelwal</div>
+                  <div className="text-xs font-semibold text-slate-800">Vikram Khandelwal</div>
                   <div className="text-[11px] text-slate-500 font-medium">Director of Sales, Shivalik High-Rise &amp; Villas</div>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
             <span>Ready for Instant Cloud Deployment</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-white leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-white leading-tight">
             Digitize Your Colony or Township Today
           </h2>
 
@@ -196,7 +196,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <Link
               href="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-bold text-[#042026] shadow-xl transition-all hover:scale-[1.02]"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02]"
             >
               <Calendar className="h-4 w-4 text-[#042026]" />
               <span>Schedule Free 1-on-1 Live Demo</span>

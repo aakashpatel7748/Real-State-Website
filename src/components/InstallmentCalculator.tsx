@@ -28,7 +28,7 @@ export function InstallmentCalculator() {
             <Calculator className="h-3.5 w-3.5 text-teal-600" />
             <span>Builder Cashflow Recovery Calculator</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
             See How Fast Your Installment Collections Accelerate
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -41,10 +41,10 @@ export function InstallmentCalculator() {
           <div className="lg:col-span-6 space-y-8">
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="text-sm font-bold text-slate-800">
+                <label className="text-sm font-medium text-slate-700">
                   Total Plotted / High-Rise Units:
                 </label>
-                <span className="text-lg font-bold text-teal-800">{totalUnits} Plots / Units</span>
+                <span className="text-lg font-semibold text-teal-800">{totalUnits} Plots / Units</span>
               </div>
               <input
                 type="range"
@@ -63,10 +63,10 @@ export function InstallmentCalculator() {
 
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="text-sm font-bold text-slate-800">
+                <label className="text-sm font-medium text-slate-700">
                   Average Plot / Unit Price:
                 </label>
-                <span className="text-lg font-bold text-teal-800">₹ {avgPriceLakhs} Lakhs</span>
+                <span className="text-lg font-semibold text-teal-800">₹ {avgPriceLakhs} Lakhs</span>
               </div>
               <input
                 type="range"
@@ -104,7 +104,7 @@ export function InstallmentCalculator() {
                   <div className="text-xs font-semibold text-slate-500">Total Project Gross Value</div>
                   <div className="text-[11px] text-slate-400">Combined phase valuation</div>
                 </div>
-                <div className="text-2xl font-bold text-slate-900">
+                <div className="text-2xl font-semibold text-slate-800">
                   ₹ {totalProjectValueCr.toFixed(2)} Cr
                 </div>
               </div>
@@ -114,7 +114,7 @@ export function InstallmentCalculator() {
                   <div className="text-xs font-semibold text-slate-500">Faster Cashflow Unlocked</div>
                   <div className="text-[11px] text-slate-400">Recover stuck installments in ~12 days</div>
                 </div>
-                <div className="text-2xl font-bold text-emerald-700">
+                <div className="text-2xl font-semibold text-emerald-700">
                   ₹ {estimatedStuckCashFlowLakhs.toLocaleString('en-IN')} Lakh
                 </div>
               </div>

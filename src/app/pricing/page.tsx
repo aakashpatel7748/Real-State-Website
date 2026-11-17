@@ -86,7 +86,7 @@ export default function PricingPage() {
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>Transparent Investment Plans</span>
           </span>
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-slate-800 leading-tight">
             Transparent Pricing Built for Indian Colonizers
           </h1>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -106,14 +106,14 @@ export default function PricingPage() {
               }`}
             >
               {tier.badge && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-[#042026] text-white px-4 py-1 text-[11px] font-bold uppercase tracking-wider shadow-md">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-[#042026] text-white px-4 py-1 text-[11px] font-semibold uppercase tracking-wider shadow-md">
                   {tier.badge}
                 </div>
               )}
 
               <div>
                 <div className="flex justify-between items-baseline">
-                  <h3 className="text-xl font-bold text-slate-900">{tier.name}</h3>
+                  <h3 className="text-xl font-semibold text-slate-800">{tier.name}</h3>
                   <span className="text-xs font-semibold text-teal-800 bg-teal-50 px-2 py-0.5 rounded">
                     {tier.units}
                   </span>
@@ -121,14 +121,14 @@ export default function PricingPage() {
                 <p className="mt-2 text-xs text-slate-500 leading-relaxed">{tier.description}</p>
 
                 <div className="mt-6 flex items-baseline gap-1">
-                  <span className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+                  <span className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-800">
                     {tier.price}
                   </span>
                   <span className="text-xs font-semibold text-slate-500">{tier.period}</span>
                 </div>
 
                 <div className="mt-6 border-t border-slate-100 pt-6">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                     Included Capabilities:
                   </span>
                   <ul className="mt-4 space-y-2.5 text-xs text-slate-700">
@@ -168,7 +168,7 @@ export default function PricingPage() {
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
-              <h4 className="text-base sm:text-lg font-bold text-teal-950">
+              <h4 className="text-base sm:text-lg font-semibold text-teal-950">
                 Free Onboarding &amp; Map Migration Assistance
               </h4>
               <p className="text-xs sm:text-sm text-teal-800 mt-0.5">

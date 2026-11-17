@@ -32,7 +32,7 @@ export default function ContactPage() {
             <Phone className="h-3.5 w-3.5 text-teal-600" />
             <span>Direct Advisory &amp; Live Walkthrough</span>
           </span>
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-slate-800 leading-tight">
             Schedule a Free 1-on-1 Live Demo
           </h1>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -45,38 +45,38 @@ export default function ContactPage() {
 
         {/* Office & Regional Presence Info */}
         <div className="mt-16 border-t border-slate-200 pt-12">
-          <h3 className="text-xl font-bold text-slate-900 text-center mb-8">
+          <h3 className="text-xl font-semibold text-slate-800 text-center mb-8">
             Regional Advisory &amp; Support Hubs
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs sm:text-sm">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-bold text-slate-900 text-base">Central India Hub</div>
-              <div className="text-teal-700 font-bold mt-1">Bhopal &amp; Indore, MP</div>
+              <div className="font-semibold text-slate-800 text-base">Central India Hub</div>
+              <div className="text-teal-700 font-semibold mt-1">Bhopal &amp; Indore, MP</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 Plotline Technologies Center, MP Nagar Zone II, Bhopal, Madhya Pradesh 462011
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-bold text-slate-900 text-base">North India Hub</div>
-              <div className="text-emerald-700 font-bold mt-1">Delhi NCR &amp; Jaipur, RJ</div>
+              <div className="font-semibold text-slate-800 text-base">North India Hub</div>
+              <div className="text-emerald-700 font-semibold mt-1">Delhi NCR &amp; Jaipur, RJ</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 Cyber City Phase II, Sector 24, Gurugram, Haryana 122002
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-bold text-slate-900 text-base">Western India Hub</div>
-              <div className="text-amber-700 font-bold mt-1">Ahmedabad &amp; Surat, GJ</div>
+              <div className="font-semibold text-slate-800 text-base">Western India Hub</div>
+              <div className="text-amber-700 font-semibold mt-1">Ahmedabad &amp; Surat, GJ</div>
               <p className="mt-2 text-slate-500 leading-relaxed text-xs">
                 SG Highway Corporate Park, Bodakdev, Ahmedabad, Gujarat 380054
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="font-bold text-slate-900 text-base">Direct Channels</div>
-              <div className="text-teal-800 font-bold mt-1">Phone &amp; WhatsApp</div>
+              <div className="font-semibold text-slate-800 text-base">Direct Channels</div>
+              <div className="text-teal-800 font-semibold mt-1">Phone &amp; WhatsApp</div>
               <div className="mt-2 text-slate-500 text-xs space-y-1">
                 <div>Phone: +91 98765 43210</div>
                 <div>Landline: +91 755 4900000</div>
