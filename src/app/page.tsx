@@ -30,7 +30,7 @@ export default function HomePage() {
       {/* 3. Five Core Modules in Clean High-Contrast Cards */}
       <ModulesShowcase />
 
-      {/* 4. Interactive Colony Plot Layout Map */}
+      {/* 4. Interactive Colony Naksha (Plot Layout Map) */}
       <InteractivePlotMapPreview />
 
       {/* 5. Builder Cashflow Recovery & ROI Calculator */}
