@@ -15,7 +15,7 @@ import {
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-6 pb-14 lg:pt-10 lg:pb-20 border-b border-slate-200/80">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-6 pb-14 lg:pt-14 lg:pb-25 border-b border-slate-200/80">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 right-1/4 -z-10 h-96 w-96 rounded-full bg-emerald-100/40 blur-3xl" />
       <div className="absolute top-20 left-10 -z-10 h-72 w-72 rounded-full bg-teal-100/30 blur-3xl" />
@@ -28,7 +28,7 @@ export function HeroSection() {
           <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
 
             {/* Top Category Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full /80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4">
               {/* <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               <span>India&apos;s #1 Real Estate ERP</span>
               <span className="text-teal-400">•</span>
@@ -47,15 +47,7 @@ export function HeroSection() {
               Software
             </h1>
 
-            {/* Subtitle in clean Poppins 16px */}
-            <p className="mt-4 text-base sm:text-[17px] text-slate-600 leading-relaxed font-normal">
-              Say goodbye to scattered spreadsheets and manual registers.{' '}
-              <strong className="font-semibold text-slate-800">Interactive Vector Colony Layout Map</strong>,{' '}
-              <strong className="font-semibold text-slate-800">Live Plot Status</strong> (Available, Reserved, Booked),{' '}
-              <strong className="font-semibold text-slate-800">Milestone Installment Demand Notices</strong>,{' '}
-              <strong className="font-semibold text-slate-800">PDC Cheque Vault</strong>, and{' '}
-              <strong className="font-semibold text-slate-800">Khasra Land Acquisition Ledgers</strong> — all in one unified cloud system.
-            </p>
+
 
             {/* 4 Key Value Checkpoints */}
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full">

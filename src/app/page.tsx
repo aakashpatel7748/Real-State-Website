@@ -4,7 +4,7 @@ import { HeroSection } from '@/components/HeroSection';
 import { SoftwareScreenshotsGallery } from '@/components/SoftwareScreenshotsGallery';
 import { ModulesShowcase } from '@/components/ModulesShowcase';
 import { InteractivePlotMapPreview } from '@/components/InteractivePlotMapPreview';
-import { InstallmentCalculator } from '@/components/InstallmentCalculator';
+import { PreSalesDashboardShowcase } from '@/components/PreSalesDashboardShowcase';
 import { FaqSection } from '@/components/FaqSection';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import {
@@ -30,11 +30,11 @@ export default function HomePage() {
       {/* 3. Five Core Modules in Clean High-Contrast Cards */}
       <ModulesShowcase />
 
-      {/* 4. Interactive Colony Naksha (Plot Layout Map) */}
+      {/* 4. Interactive Colony Plot Layout Map */}
       <InteractivePlotMapPreview />
 
-      {/* 5. Builder Cashflow Recovery & ROI Calculator */}
-      <InstallmentCalculator />
+      {/* 5. Pre-Sales & Lead Pipeline CRM Dashboard (Left Text &bull; Right Image) */}
+      <PreSalesDashboardShowcase />
 
       {/* 6. About Plotline ERP Section */}
       <section id="about" className="py-14 sm:py-20 bg-white border-b border-slate-200">

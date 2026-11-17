@@ -183,9 +183,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#roi-calculator" className="hover:text-emerald-300 transition-colors flex items-center gap-1.5 group">
+                <Link href="/#pre-sales-crm" className="hover:text-emerald-300 transition-colors flex items-center gap-1.5 group">
                   <ChevronRight className="h-3 w-3 text-teal-500/60 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition-all" />
-                  <span>Cashflow ROI Calculator</span>
+                  <span>Sales &amp; Lead CRM</span>
                 </Link>
               </li>
               <li>
