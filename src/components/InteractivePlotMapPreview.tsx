@@ -27,7 +27,7 @@ export function InteractivePlotMapPreview() {
             <MapPin className="h-3.5 w-3.5 text-teal-600" />
             <span>Interactive Vector Layout Engine</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
+          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.45]">
             Live Colony Layout Map with 0% Double-Booking Lock
           </h2>
           <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -72,9 +72,9 @@ export function InteractivePlotMapPreview() {
               {/* Authentic Product Screenshot (Real App UI Cleaned) */}
               <div className="relative overflow-hidden bg-slate-100">
                 <img
-                  src="/screenshots/real-plot-map-authentic.png"
+                  src="/screenshots/real-plot-map-clean-final.png"
                   alt="Plotline ERP Live Interactive Colony Plot Layout Map Interface"
-                  className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-500"
+                  className="w-full h-auto object-cover"
                   loading="lazy"
                 />
               </div>

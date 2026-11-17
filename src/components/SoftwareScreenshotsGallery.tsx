@@ -65,7 +65,7 @@ const SCREENSHOT_TABS = [
     tag: 'Interactive Vector Map',
     subtitle: 'Live interactive plot availability layout map with color-coded unit statuses',
     icon: MapPin,
-    image: '/screenshots/real-plot-map-authentic.png',
+    image: '/screenshots/real-plot-map-clean-final.png',
     points: [
       'Color-coded plot availability: Available (Green), Reserved (Yellow), and Booked (Red).',
       'Direct upload and rendering of vector SVG layout maps exported from AutoCAD or Town Planning.',

@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Building2, 
-  MapPin, 
-  ShieldCheck, 
-  ArrowRight, 
-  CheckCircle2, 
-  Phone, 
+import {
+  Building2,
+  MapPin,
+  ShieldCheck,
+  ArrowRight,
+  CheckCircle2,
+  Phone,
   Calendar,
   Sparkles,
   TrendingUp,
@@ -23,17 +23,11 @@ export function HeroSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* 2-Column Responsive Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-          
+
           {/* Left Column: Heading, Value Proposition & CTAs (Smooth Entrance from Left) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
-            
-            {/* Top Category Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4 shadow-sm">
-              <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>India&apos;s #1 Real Estate ERP</span>
-              <span className="text-teal-400">•</span>
-              <span className="text-teal-700">Plotted Colonies &amp; Townships</span>
-            </div>
+
+
 
             {/* Main H1 Title in Poppins, ~40px scale */}
             <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
@@ -120,10 +114,10 @@ export function HeroSection() {
 
           {/* Right Column: Real Product Preview (Smooth Entrance from Right) */}
           <div className="lg:col-span-6 relative animate-hero-right">
-            
+
             {/* Browser Window Frame Wrapper */}
             <div className="rounded-2xl border border-slate-200/90 bg-white p-2 sm:p-2.5 shadow-2xl shadow-slate-900/10 transition-transform hover:scale-[1.015] duration-300">
-              
+
               {/* Window Title Bar */}
               <div className="flex items-center justify-between rounded-t-xl bg-slate-100/90 px-3 py-2 border-b border-slate-200 text-xs text-slate-500">
                 <div className="flex items-center gap-1.5">
@@ -179,28 +173,28 @@ export function HeroSection() {
 
         {/* 4 Bottom Micro-Metrics Bar (Staggered Entrance on Load) */}
         <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <div 
+          <div
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             style={{ animationDelay: '850ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-slate-800">100%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">RERA &amp; GST Audit-Ready Invoicing</div>
           </div>
-          <div 
+          <div
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             style={{ animationDelay: '1000ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-[#0d9488]">4.5x</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Faster Installment Collection Recovery</div>
           </div>
-          <div 
+          <div
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             style={{ animationDelay: '1150ms' }}
           >
             <div className="text-xl sm:text-2xl font-semibold text-emerald-600">0%</div>
             <div className="text-xs font-medium text-slate-600 mt-0.5">Double-Booking Risk (Atomic Unit Lock)</div>
           </div>
-          <div 
+          <div
             className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm animate-hero-up hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             style={{ animationDelay: '1300ms' }}
           >
