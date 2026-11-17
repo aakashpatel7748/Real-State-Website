@@ -36,7 +36,7 @@ export function HeroSection() {
             </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-[1.22]">
+            <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
               India&apos;s Complete{' '}
               <span className="text-[#0d9488] relative inline-block">
                 Colony &amp; Real Estate ERP

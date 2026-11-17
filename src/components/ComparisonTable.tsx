@@ -68,7 +68,7 @@ export function ComparisonTable() {
           <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
             Why Generic Software Fails Indian Colonizers
           </span>
-          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Spreadsheets vs Generic CRMs vs <br />
             <span className="text-[#0d9488]">Plotline Real Estate ERP</span>
           </h2>

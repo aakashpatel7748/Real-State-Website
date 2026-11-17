@@ -27,10 +27,10 @@ export function InteractivePlotMapPreview() {
             <MapPin className="h-3.5 w-3.5 text-teal-600" />
             <span>Interactive Vector Layout Engine</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Live Colony Layout Map with 0% Double-Booking Lock
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+          <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
             Eliminate Excel spreadsheets and outdated paper blueprints. Here is how your colony layout map 
             displays live in the authentic <strong>Plotline ERP</strong> cloud interface:
           </p>
@@ -69,10 +69,10 @@ export function InteractivePlotMapPreview() {
                 </div>
               </div>
 
-              {/* Enterprise High-DPI Colony Map Visual (No test accounts, pure realistic data) */}
+              {/* Authentic Product Screenshot (Real App UI Cleaned) */}
               <div className="relative overflow-hidden bg-slate-100">
                 <img
-                  src="/screenshots/real-plot-map-enterprise.png"
+                  src="/screenshots/real-plot-map-authentic.png"
                   alt="Plotline ERP Live Interactive Colony Plot Layout Map Interface"
                   className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-500"
                   loading="lazy"
@@ -88,23 +88,23 @@ export function InteractivePlotMapPreview() {
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] font-medium text-slate-700">
                   <span className="flex items-center gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#10b981]" />
-                    <span>Available (32)</span>
+                    <span>Available</span>
                   </span>
                   <span className="flex items-center gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]" />
-                    <span>Reserved (6)</span>
+                    <span>Reserved</span>
                   </span>
                   <span className="flex items-center gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#3b82f6]" />
-                    <span>Booked (20)</span>
+                    <span>Booked</span>
                   </span>
                   <span className="flex items-center gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#8b5cf6]" />
-                    <span>Sold (4)</span>
+                    <span>Sold</span>
                   </span>
                   <span className="flex items-center gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#64748b]" />
-                    <span>Blocked (2)</span>
+                    <span>Blocked</span>
                   </span>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export function InteractivePlotMapPreview() {
                 <Sparkles className="h-3.5 w-3.5 text-teal-600" />
                 <span>Purpose-Built For Colonizers</span>
               </div>
-              <h3 className="text-xl sm:text-2xl lg:text-[26px] font-semibold text-slate-800 leading-tight">
+              <h3 className="text-xl sm:text-2xl lg:text-[26px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.35]">
                 Every Plot Synchronized Across Your Entire Sales Team
               </h3>
               <p className="mt-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">

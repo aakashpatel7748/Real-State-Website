@@ -32,7 +32,7 @@ export default function PostSalesPage() {
             <span className="text-slate-500">Post-Sales Operations</span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Post-Sales Operations &amp; <br />
             <span className="text-[#0d9488]">Automated Demand Notices</span>
           </h1>

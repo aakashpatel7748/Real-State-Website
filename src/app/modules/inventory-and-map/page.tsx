@@ -32,7 +32,7 @@ export default function InventoryMapPage() {
             <span className="text-slate-500">Colony Naksha &amp; Inventory</span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Interactive Colony Naksha &amp; <br />
             <span className="text-[#0d9488]">Master Inventory Control</span>
           </h1>

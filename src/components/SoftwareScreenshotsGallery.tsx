@@ -65,7 +65,7 @@ const SCREENSHOT_TABS = [
     tag: 'Interactive Vector Map',
     subtitle: 'Live interactive plot availability layout map with color-coded unit statuses',
     icon: MapPin,
-    image: '/screenshots/real-plot-map-enterprise.png',
+    image: '/screenshots/real-plot-map-authentic.png',
     points: [
       'Color-coded plot availability: Available (Green), Reserved (Yellow), and Booked (Red).',
       'Direct upload and rendering of vector SVG layout maps exported from AutoCAD or Town Planning.',
@@ -103,7 +103,7 @@ export function SoftwareScreenshotsGallery() {
             <Sparkles className="h-3.5 w-3.5 text-teal-600" />
             <span>Actual Product Interface</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Explore the Real Estate ERP Interface
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">

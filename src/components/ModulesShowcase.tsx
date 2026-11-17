@@ -161,7 +161,7 @@ export function ModulesShowcase() {
           <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
             <span>5 Core Colonizer Modules</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             Engineered for Real Indian Township Workflows
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">

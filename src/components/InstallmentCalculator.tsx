@@ -30,7 +30,7 @@ export function InstallmentCalculator() {
             <Calculator className="h-3.5 w-3.5 text-teal-600" />
             <span>Builder Cashflow Recovery Calculator</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
             See How Fast Your Installment Collections Accelerate
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">

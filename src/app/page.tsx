@@ -45,7 +45,7 @@ export default function HomePage() {
               <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 shadow-xs">
                 <span>About Plotline ERP</span>
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
                 Why Plotline is the First Choice of Indian Colonizers
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -106,7 +106,7 @@ export default function HomePage() {
             <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488]">
               Trusted by Leading Indian Developers
             </span>
-            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-tight">
+            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-[38px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
               What Colonizers &amp; Township Builders Say
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -198,7 +198,7 @@ export default function HomePage() {
                 <span>Ready for Instant Cloud Deployment</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-white leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-white leading-normal sm:leading-relaxed lg:leading-[1.38]">
                 Digitize Your Colony or Township Today
               </h2>
 
