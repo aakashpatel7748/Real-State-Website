@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Logo } from '@/components/Logo';
 import { 
   Menu, 
   X, 
@@ -70,30 +71,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/95 backdrop-blur-md shadow-xs">
       <div className="mx-auto flex h-16 sm:h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
-        {/* Brand Logo */}
-        <Link href="/" className="group flex items-center gap-2.5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#042026] text-white shadow-md shadow-teal-950/20 group-hover:bg-[#073640] transition-colors">
-            {/* Plotline 4-Square Grid Icon */}
-            <div className="grid grid-cols-2 gap-1 w-5 h-5 p-0.5">
-              <div className="rounded-[2px] bg-emerald-400" />
-              <div className="rounded-[2px] bg-teal-300" />
-              <div className="rounded-[2px] bg-teal-200" />
-              <div className="rounded-[2px] bg-emerald-500" />
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5">
-              <span className="text-xl font-bold tracking-tight text-slate-900 font-sans">
-                Plotline
-              </span>
-              <span className="rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-bold text-teal-800 border border-teal-200">
-                ERP
-              </span>
-            </div>
-            <span className="text-[11px] text-slate-500 font-medium leading-none">
-              Colony &amp; Township Software
-            </span>
-          </div>
+        {/* Brand Logo - 1:1 Match with Real ERP */}
+        <Link href="/" className="group flex items-center">
+          <Logo />
         </Link>
 
         {/* Center: Exactly 3 Items (Home, Features with hover menu, About) */}

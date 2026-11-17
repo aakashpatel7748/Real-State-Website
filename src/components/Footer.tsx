@@ -10,14 +10,11 @@ export function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 border border-teal-800/60 text-white font-bold">
-                <div className="grid grid-cols-2 gap-1 w-5 h-5 p-0.5">
-                  <div className="rounded-[2px] bg-emerald-400" />
-                  <div className="rounded-[2px] bg-teal-300" />
-                  <div className="rounded-[2px] bg-teal-200" />
-                  <div className="rounded-[2px] bg-emerald-500" />
-                </div>
-              </div>
+              <svg viewBox="0 0 32 32" className="h-9 w-9 shrink-0 shadow-sm" aria-hidden="true">
+                <rect width="32" height="32" rx="8" fill="#0f766e" />
+                <path d="M7 9h8v6H7zM17 9h8v6h-8zM7 17h8v6H7z" fill="#ecfdf5" />
+                <path d="M17 17h8v6h-8z" fill="#f59e0b" />
+              </svg>
               <div className="flex items-center gap-1.5">
                 <span className="text-2xl font-bold tracking-tight text-white font-sans">
                   Plotline

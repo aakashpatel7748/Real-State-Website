@@ -13,13 +13,12 @@
     <rect x="0" y="0" width="220" height="700" rx="12" fill="#042026"/>
     <rect x="210" y="0" width="10" height="700" fill="#042026"/>
 
-    <!-- Plotline 4-Square Logo -->
-    <g transform="translate(20, 24)">
-      <rect x="0" y="0" width="10" height="10" rx="2.5" fill="#14b8a6"/>
-      <rect x="13" y="0" width="10" height="10" rx="2.5" fill="#14b8a6"/>
-      <rect x="0" y="13" width="10" height="10" rx="2.5" fill="#14b8a6"/>
-      <rect x="13" y="13" width="10" height="10" rx="2.5" fill="#14b8a6"/>
-      <text x="32" y="18" fill="#ffffff" font-family="'Poppins', sans-serif" font-weight="700" font-size="19">Plotline</text>
+    <!-- Exact Plotline ERP Logo -->
+    <g transform="translate(18, 22)">
+      <rect width="28" height="28" rx="7" fill="#0f766e" />
+      <path d="M6 8h7v5H6zM15 8h7v5h-7zM6 15h7v5H6z" fill="#ecfdf5" />
+      <path d="M15 15h7v5h-7z" fill="#f59e0b" />
+      <text x="36" y="20" fill="#ffffff" font-family="'Poppins', sans-serif" font-weight="700" font-size="18">Plotline</text>
     </g>
 
     <!-- Company Badge -->

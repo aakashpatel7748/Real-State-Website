@@ -73,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-teal-100 selection:text-teal-900 pb-16 md:pb-0 font-sans">
