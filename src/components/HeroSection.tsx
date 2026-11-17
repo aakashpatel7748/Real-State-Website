@@ -27,7 +27,13 @@ export function HeroSection() {
           {/* Left Column: Heading, Value Proposition & CTAs (Smooth Entrance from Left) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
 
-
+            {/* Top Category Tag */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4 shadow-sm">
+              {/* <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>India&apos;s #1 Real Estate ERP</span>
+              <span className="text-teal-400">•</span>
+              <span className="text-teal-700">Plotted Colonies &amp; Townships</span> */}
+            </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
             <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">

@@ -69,10 +69,10 @@ export function InteractivePlotMapPreview() {
                 </div>
               </div>
 
-              {/* Authentic Product Screenshot (Real App UI Cleaned) */}
-              <div className="relative overflow-hidden bg-slate-100">
+              {/* Authentic Vector SVG Screenshot (Matches exact quality of top dashboard) */}
+              <div className="relative overflow-hidden bg-slate-50">
                 <img
-                  src="/screenshots/real-plot-map-clean-final.png"
+                  src="/screenshots/plotline-plot-map-clean.svg"
                   alt="Plotline ERP Live Interactive Colony Plot Layout Map Interface"
                   className="w-full h-auto object-cover"
                   loading="lazy"

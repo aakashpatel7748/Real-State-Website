@@ -20,7 +20,7 @@ import {
 
 export default function HomePage() {
   return (
-    <div className="relative bg-white text-slate-900 font-sans">
+    <div className="relative bg-white text-slate-900 font-sans ">
       {/* 1. Hero Section with 2-Column Layout & Clean Live ERP Screenshot */}
       <HeroSection />
 
