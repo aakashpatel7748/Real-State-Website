@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="100%" height="100%" style="background:transparent; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="illMonitorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0fdfa"/>
+    </linearGradient>
+    <linearGradient id="illTealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#042026"/>
+    </linearGradient>
+    <linearGradient id="illPhoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#042026"/>
+      <stop offset="100%" stop-color="#08333c"/>
+    </linearGradient>
+    <filter id="illGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0d9488" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Decorative Shapes & Clouds -->
+  <g fill="#ccfbf1" opacity="0.6">
+    <ellipse cx="400" cy="520" rx="340" ry="24" fill="#e2e8f0"/>
+    <path d="M120 120 q20 -25 50 -10 q25 -30 60 -10 q30 0 40 20 h-150z" fill="#f0fdfa"/>
+    <path d="M580 140 q25 -30 65 -15 q30 -35 75 -10 q35 5 45 25 h-185z" fill="#f0fdfa"/>
+  </g>
+
+  <!-- Floating Decorative Circles & Plus Marks -->
+  <g fill="none" stroke="#14b8a6" stroke-width="2" opacity="0.5">
+    <circle cx="110" cy="320" r="14"/>
+    <circle cx="710" cy="180" r="10"/>
+    <circle cx="690" cy="400" r="6" fill="#14b8a6"/>
+    <path d="M90 200v12M84 206h12M720 280v14M713 287h14"/>
+  </g>
+
+  <!-- Background Botanical Accent Leaves -->
+  <g fill="#99f6e4" opacity="0.35">
+    <path d="M140 240 C120 200 130 160 160 140 C170 170 170 210 140 240 Z"/>
+    <path d="M165 260 C150 220 170 190 200 180 C200 210 190 240 165 260 Z"/>
+    <path d="M660 220 C680 180 670 140 640 120 C630 150 630 190 660 220 Z"/>
+    <path d="M635 250 C650 210 630 180 600 170 C600 200 610 230 635 250 Z"/>
+  </g>
+
+  <!-- Construction Crane Cable & Hook at Top -->
+  <g transform="translate(400, 40)">
+    <line x1="0" y1="0" x2="0" y2="85" stroke="#0d9488" stroke-width="2.5" stroke-dasharray="4,3"/>
+    <rect x="-8" y="85" width="16" height="14" rx="3" fill="#042026"/>
+    <circle cx="0" cy="106" r="8" fill="none" stroke="#042026" stroke-width="3"/>
+    <path d="M0 114c-6 0-10-5-10-10 0-4 3-7 7-7" fill="none" stroke="#042026" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Large Central SaaS Monitor -->
+  <g transform="translate(160, 140)" filter="url(#illGlow)">
+    <!-- Monitor Outer Body -->
+    <rect x="0" y="0" width="480" height="340" rx="16" fill="#042026" stroke="#08333c" stroke-width="4"/>
+    
+    <!-- Monitor Top Bar -->
+    <rect x="0" y="0" width="480" height="28" rx="16" fill="#062b33"/>
+    <circle cx="20" cy="14" r="4.5" fill="#f87171"/>
+    <circle cx="34" cy="14" r="4.5" fill="#fbbf24"/>
+    <circle cx="48" cy="14" r="4.5" fill="#34d399"/>
+    
+    <!-- URL Pill -->
+    <rect x="150" y="6" width="180" height="16" rx="4" fill="#042026"/>
+    <text x="240" y="17" fill="#5eead4" font-size="9" font-weight="600" text-anchor="middle">plotline-erp.com/post-sales</text>
+
+    <!-- Monitor Inner Screen Display -->
+    <rect x="12" y="36" width="456" height="290" rx="8" fill="url(#illMonitorGrad)"/>
+
+    <!-- Screen Content: Post-Sales Dashboard UI -->
+    <!-- Screen Header -->
+    <g transform="translate(26, 50)">
+      <rect x="0" y="0" width="16" height="16" rx="4" fill="#0d9488"/>
+      <text x="24" y="12" fill="#042026" font-size="12" font-weight="700">Demand Notices &amp; BBA Ledger</text>
+      
+      <!-- Stage Badge -->
+      <rect x="300" y="0" width="115" height="18" rx="9" fill="#ccfbf1"/>
+      <text x="357" y="12" fill="#0f766e" font-size="8.5" font-weight="700" text-anchor="middle">⚡ Milestone 3 Active</text>
+    </g>
+
+    <!-- Mini KPI Cards inside Monitor -->
+    <g transform="translate(26, 80)">
+      <rect x="0" y="0" width="95" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="8" y="14" fill="#64748b" font-size="7" font-weight="600">COLLECTION</text>
+      <text x="8" y="32" fill="#042026" font-size="12" font-weight="800">₹ 84.5 L</text>
+
+      <rect x="105" y="0" width="95" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="113" y="14" fill="#64748b" font-size="7" font-weight="600">OVERDUE</text>
+      <text x="113" y="32" fill="#d97706" font-size="12" font-weight="800">₹ 27.5 L</text>
+
+      <rect x="210" y="0" width="95" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="218" y="14" fill="#64748b" font-size="7" font-weight="600">DISPATCHED</text>
+      <text x="218" y="32" fill="#0d9488" font-size="12" font-weight="800">100% PDF</text>
+
+      <rect x="315" y="0" width="100" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="323" y="14" fill="#64748b" font-size="7" font-weight="600">RERA ESCROW</text>
+      <text x="323" y="32" fill="#059669" font-size="12" font-weight="800">Verified</text>
+    </g>
+
+    <!-- Mini Table Rows inside Monitor -->
+    <g transform="translate(26, 134)">
+      <rect x="0" y="0" width="415" height="20" rx="4" fill="#e2e8f0"/>
+      <text x="10" y="13" fill="#475569" font-size="8" font-weight="700">PLOT / ALLOTTEE</text>
+      <text x="140" y="13" fill="#475569" font-size="8" font-weight="700">MILESTONE DEMAND</text>
+      <text x="260" y="13" fill="#475569" font-size="8" font-weight="700">PAYMENT STATUS</text>
+      <text x="350" y="13" fill="#475569" font-size="8" font-weight="700">DISPATCH</text>
+
+      <!-- Row 1 -->
+      <rect x="0" y="24" width="415" height="24" rx="4" fill="#ffffff" stroke="#f1f5f9"/>
+      <text x="10" y="39" fill="#042026" font-size="9" font-weight="700">Plot A-103 (Rajesh Verma)</text>
+      <text x="140" y="39" fill="#042026" font-size="9" font-weight="600">₹ 11,16,000</text>
+      <rect x="255" y="28" width="70" height="16" rx="3" fill="#d1fae5"/>
+      <text x="290" y="39" fill="#065f46" font-size="8" font-weight="700" text-anchor="middle">✓ PAID (RTGS)</text>
+      <text x="350" y="39" fill="#0d9488" font-size="8" font-weight="600">WhatsApp Sent</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="52" width="415" height="24" rx="4" fill="#ffffff" stroke="#f1f5f9"/>
+      <text x="10" y="67" fill="#042026" font-size="9" font-weight="700">Plot B-205 (Vikram Singh)</text>
+      <text x="140" y="67" fill="#042026" font-size="9" font-weight="600">₹ 8,40,000</text>
+      <rect x="255" y="56" width="70" height="16" rx="3" fill="#fef3c7"/>
+      <text x="290" y="67" fill="#92400e" font-size="8" font-weight="700" text-anchor="middle">Pending</text>
+      <text x="350" y="67" fill="#0d9488" font-size="8" font-weight="600">WhatsApp Sent</text>
+
+      <!-- Row 3 -->
+      <rect x="0" y="80" width="415" height="24" rx="4" fill="#ffffff" stroke="#f1f5f9"/>
+      <text x="10" y="95" fill="#042026" font-size="9" font-weight="700">Plot A-108 (Anita Sharma)</text>
+      <text x="140" y="95" fill="#b91c1c" font-size="9" font-weight="700">₹ 14,20,000</text>
+      <rect x="255" y="84" width="70" height="16" rx="3" fill="#fee2e2"/>
+      <text x="290" y="95" fill="#991b1b" font-size="8" font-weight="700" text-anchor="middle">Overdue 18d</text>
+      <text x="350" y="95" fill="#b91c1c" font-size="8" font-weight="600">Notice #2 Sent</text>
+    </g>
+
+    <!-- Monitor Stand -->
+    <rect x="210" y="340" width="60" height="40" fill="#042026"/>
+    <rect x="180" y="375" width="120" height="10" rx="4" fill="#062b33"/>
+  </g>
+
+  <!-- Left Side: Architectural Drafting Set-Square (Ruler) -->
+  <g transform="translate(60, 360)">
+    <!-- Set square body -->
+    <polygon points="0,170 170,170 0,0" fill="#0d9488" opacity="0.85"/>
+    <polygon points="25,145 140,145 25,30" fill="#f0fdfa"/>
+    <!-- Ruler markings -->
+    <line x1="2" y1="20" x2="14" y2="20" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="40" x2="10" y2="40" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="2" y1="60" x2="14" y2="60" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="80" x2="10" y2="80" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="2" y1="100" x2="14" y2="100" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="120" x2="10" y2="10" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="2" y1="140" x2="14" y2="140" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- Front Foreground: Modern Smartphone with Mobile Payment & WhatsApp Alert -->
+  <g transform="translate(430, 290)" filter="url(#illGlow)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="135" height="235" rx="20" fill="url(#illPhoneGrad)" stroke="#0d9488" stroke-width="2.5"/>
+    <!-- Speaker & Camera -->
+    <rect x="45" y="8" width="45" height="4" rx="2" fill="#1e293b"/>
+    <circle cx="34" cy="10" r="2.5" fill="#334155"/>
+    
+    <!-- Phone Screen -->
+    <rect x="8" y="22" width="119" height="195" rx="12" fill="#ffffff"/>
+
+    <!-- WhatsApp / SMS Header inside Phone -->
+    <rect x="8" y="22" width="119" height="30" rx="12" fill="#075e54"/>
+    <rect x="8" y="42" width="119" height="10" fill="#075e54"/>
+    <circle cx="24" cy="37" r="7" fill="#25d366"/>
+    <text x="38" y="36" fill="#ffffff" font-size="8" font-weight="700">Green Valley ERP</text>
+    <text x="38" y="45" fill="#a7f3d0" font-size="6.5">Milestone Payment Notice</text>
+
+    <!-- Message Bubble in Phone -->
+    <rect x="14" y="60" width="107" height="95" rx="8" fill="#e7fce8" stroke="#bbf7d0"/>
+    <text x="20" y="74" fill="#065f46" font-size="7.5" font-weight="700">Dear Mr. Rajesh Verma,</text>
+    <text x="20" y="86" fill="#334155" font-size="7">Plinth milestone for Plot</text>
+    <text x="20" y="96" fill="#042026" font-size="7.5" font-weight="800">A-103 is completed.</text>
+    <text x="20" y="110" fill="#334155" font-size="7">Due: <tspan fill="#059669" font-weight="700">₹ 11,16,000</tspan></text>
+    
+    <!-- PDF Attachment Badge in WhatsApp -->
+    <rect x="20" y="118" width="95" height="26" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="24" y="122" width="14" height="18" rx="2" fill="#ef4444"/>
+    <text x="31" y="134" fill="#ffffff" font-size="6" font-weight="800" text-anchor="middle">PDF</text>
+    <text x="42" y="130" fill="#0f172a" font-size="6.5" font-weight="700">Demand_Notice.pdf</text>
+    <text x="42" y="139" fill="#64748b" font-size="5.5">142 KB &bull; Verified</text>
+
+    <!-- Success Checkmark Banner at bottom of Phone -->
+    <rect x="14" y="164" width="107" height="42" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+    <circle cx="30" cy="185" r="9" fill="#10b981"/>
+    <path d="M26 185l3 3 6-6" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="45" y="182" fill="#065f46" font-size="7.5" font-weight="800">RTGS Received</text>
+    <text x="45" y="193" fill="#15803d" font-size="6.5">Rcpt #4012 Generated</text>
+  </g>
+
+  <!-- Floating Right: Milestone Stamp / Rupee Badge -->
+  <g transform="translate(640, 360)" filter="url(#illGlow)">
+    <circle cx="45" cy="45" r="45" fill="url(#illTealGrad)"/>
+    <circle cx="45" cy="45" r="38" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="45" y="44" fill="#ffffff" font-size="24" font-weight="800" text-anchor="middle">₹</text>
+    <text x="45" y="60" fill="#5eead4" font-size="9" font-weight="700" text-anchor="middle">4.5x FASTER</text>
+    <text x="45" y="70" fill="#ffffff" font-size="7" font-weight="500" text-anchor="middle">Collections</text>
+  </g>
+
+</svg>
