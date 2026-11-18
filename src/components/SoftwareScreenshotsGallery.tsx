@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  LayoutDashboard, 
-  Users, 
-  TrendingUp, 
-  MapPin, 
-  FileText, 
+import {
+  LayoutDashboard,
+  Users,
+  TrendingUp,
+  MapPin,
+  FileText,
   Sparkles,
   ArrowRight,
   Calendar,
@@ -96,7 +96,7 @@ export function SoftwareScreenshotsGallery() {
   return (
     <section id="screenshots" className="py-14 sm:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading with Scroll Reveal */}
         <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
@@ -120,11 +120,10 @@ export function SoftwareScreenshotsGallery() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:-translate-y-0.5 active:scale-95 ${
-                  isSelected
-                    ? 'bg-[#042026] text-white shadow-md shadow-teal-950/20 ring-1 ring-teal-700'
-                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-xs'
-                }`}
+                className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:-translate-y-0.5 active:scale-95 ${isSelected
+                  ? 'bg-[#042026] text-white shadow-md shadow-teal-950/20 ring-1 ring-teal-700'
+                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-xs'
+                  }`}
               >
                 <Icon className={`h-4 w-4 ${isSelected ? 'text-emerald-400' : 'text-teal-700'}`} />
                 <span>{tab.title}</span>
@@ -136,7 +135,7 @@ export function SoftwareScreenshotsGallery() {
         {/* Active Screenshot Display Showcase Card with Scroll Reveal */}
         <ScrollReveal direction="up" delay={200} className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-900/5 transition-all">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Visual Screenshot Display */}
             <div className="lg:col-span-8 flex justify-center">
               <div className="w-full rounded-xl overflow-hidden border border-slate-200 shadow-lg bg-slate-900">
