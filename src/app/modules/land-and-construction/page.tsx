@@ -2,13 +2,13 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { 
-  HardHat, 
-  MapPin, 
-  FileText, 
-  ReceiptIndianRupee, 
-  CheckCircle2, 
-  ShieldCheck, 
+import {
+  HardHat,
+  MapPin,
+  FileText,
+  ReceiptIndianRupee,
+  CheckCircle2,
+  ShieldCheck,
   Building,
   TrendingUp,
   Check,
@@ -26,10 +26,10 @@ export default function LandConstructionPage() {
   return (
     <div className="py-12 sm:py-16 lg:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top 2-Column Showcase: Left Text & Right Image */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Column: Heading, Benefits & CTA */}
           <ScrollReveal direction="left" duration={850} className="lg:col-span-5 space-y-6">
             <div>
@@ -82,20 +82,14 @@ export default function LandConstructionPage() {
                 <ArrowRight className="h-4 w-4 text-emerald-400" />
               </Link>
 
-              <a
-                href="tel:+919876543210"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3.5 text-xs sm:text-sm font-semibold text-slate-800 transition-all shadow-xs text-center"
-              >
-                <Phone className="h-4 w-4 text-[#0d9488]" />
-                <span>+91 98765 43210</span>
-              </a>
+
             </div>
           </ScrollReveal>
 
           {/* Right Column: Land & Construction Showcase */}
           <ScrollReveal direction="right" duration={850} delay={150} className="lg:col-span-7">
             <div className="group relative rounded-2xl border border-slate-200/90 bg-white shadow-xl shadow-slate-900/10 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-teal-300">
-              
+
               {/* Land & Construction Themed Tech Illustration */}
               <div className="relative overflow-hidden bg-white p-2 sm:p-4 flex items-center justify-center min-h-[320px]">
                 <img
@@ -106,19 +100,6 @@ export default function LandConstructionPage() {
                 />
               </div>
 
-              {/* Bottom Status Bar */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/90 bg-slate-50 px-4 py-2.5 text-xs text-slate-600">
-                <div className="flex items-center gap-2">
-                  <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-                  <span className="font-semibold text-slate-800">Site Operations &amp; Land Registry</span>
-                  <span className="text-slate-400">&bull;</span>
-                  <span className="text-slate-500">Khasra Parcel Tracking</span>
-                </div>
-                <div className="flex items-center gap-3 text-[11px] font-medium">
-                  <span className="text-emerald-700 font-semibold">&bull; 100% Margin Control</span>
-                  <span className="text-teal-700 font-semibold">&bull; Work Order Milestone Sync</span>
-                </div>
-              </div>
             </div>
           </ScrollReveal>
 
