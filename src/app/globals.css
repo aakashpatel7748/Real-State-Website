@@ -13,6 +13,7 @@ html {
   scroll-behavior: smooth;
   color-scheme: light;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,8 @@ body {
   background: var(--background);
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -109,6 +112,14 @@ body {
 .animate-hero-right {
   animation: heroSlideRight 1.15s cubic-bezier(0.16, 1, 0.3, 1) 620ms both;
   will-change: opacity, transform;
+}
+
+/* On mobile/tablet, prevent horizontal translateX from causing initial horizontal scrollbar/overflow */
+@media (max-width: 1023px) {
+  .animate-hero-left,
+  .animate-hero-right {
+    animation: heroFadeUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  }
 }
 
 /* Bottom metrics animate up sequentially after columns */

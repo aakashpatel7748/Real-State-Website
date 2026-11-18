@@ -76,10 +76,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-teal-100 selection:text-teal-900 pb-16 md:pb-0 font-sans">
+      <body className="min-h-screen bg-white text-slate-900 antialiased selection:bg-teal-100 selection:text-teal-900 pb-16 md:pb-0 font-sans overflow-x-hidden w-full relative">
         <JsonLd />
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 overflow-x-hidden w-full">{children}</main>
         <Footer />
         <MobileQuickBar />
       </body>

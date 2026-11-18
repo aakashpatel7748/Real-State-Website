@@ -142,18 +142,16 @@ export function SoftwareScreenshotsGallery() {
               <div className="w-full rounded-xl overflow-hidden border border-slate-200 shadow-lg bg-slate-900">
                 {/* Browser Title Bar for Screenshot */}
                 <div className="flex items-center justify-between bg-slate-800 px-3 py-2 border-b border-slate-700 text-xs text-slate-300">
-                  <div className="flex items-center gap-1.5">
+                  <div className="flex items-center gap-1.5 shrink-0">
                     <span className="h-2 w-2 rounded-full bg-red-400" />
                     <span className="h-2 w-2 rounded-full bg-amber-400" />
                     <span className="h-2 w-2 rounded-full bg-emerald-400" />
                   </div>
-                  <div className="flex items-center gap-1.5 text-[11px] text-slate-300 font-mono">
-                    <span>app.plotline.in/</span>
-                    <span className="text-emerald-400">{activeTab}</span>
+                  <div className="flex items-center gap-1 text-[10px] sm:text-[11px] text-slate-300 font-mono whitespace-nowrap">
+                    <span className="text-slate-400">app.plotline.in/</span>
+                    <span className="text-emerald-400 font-medium">{activeTab}</span>
                   </div>
-                  <span className="text-[10px] bg-emerald-950 text-emerald-300 font-medium px-2 py-0.5 rounded border border-emerald-800">
-                    Live UI
-                  </span>
+                  <div className="w-5 sm:w-8 shrink-0" />
                 </div>
 
                 {/* Screenshot Image */}
@@ -198,16 +196,16 @@ export function SoftwareScreenshotsGallery() {
               <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-stretch gap-2.5">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-colors text-center"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#042026] hover:bg-[#083c47] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-colors text-center whitespace-nowrap"
                 >
-                  <Calendar className="h-3.5 w-3.5 text-emerald-400" />
+                  <Calendar className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
                   <span>Schedule Live Demo</span>
-                  <ArrowRight className="h-3.5 w-3.5 text-slate-400" />
+                  <ArrowRight className="h-3.5 w-3.5 text-slate-400 shrink-0" />
                 </Link>
 
                 <a
                   href="tel:+919876543210"
-                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-3.5 py-2.5 text-xs font-semibold text-slate-700 transition-colors text-center"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-3.5 py-2.5 text-xs font-semibold text-slate-700 transition-colors text-center whitespace-nowrap"
                 >
                   <span>Phone Support</span>
                 </a>

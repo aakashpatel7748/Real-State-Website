@@ -37,8 +37,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 relative z-10">
         
         {/* Pre-Footer Action / Trust Strip */}
-        <div className="mb-12 rounded-2xl border border-teal-800/40 bg-teal-950/30 p-5 sm:p-6 backdrop-blur-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-5 shadow-lg">
-          <div className="flex items-start sm:items-center gap-3.5">
+        <div className="mb-12 rounded-2xl border border-teal-800/40 bg-teal-950/30 p-5 sm:p-6 backdrop-blur-xs flex flex-col md:flex-row items-center justify-between gap-5 shadow-lg text-center md:text-left">
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3.5">
             <div className="h-10 w-10 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center shrink-0 text-emerald-400">
               <Sparkles className="h-5 w-5" />
             </div>
@@ -52,10 +52,10 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-3 w-full md:w-auto">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 px-4 py-2.5 text-xs font-semibold text-[#042026] shadow-md transition-all hover:scale-[1.02] active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 px-5 py-2.5 text-xs font-semibold text-[#042026] shadow-md transition-all hover:scale-[1.02] active:scale-95 whitespace-nowrap"
             >
               <Calendar className="h-3.5 w-3.5" />
               <span>Book 1-on-1 Walkthrough</span>
@@ -64,7 +64,7 @@ export function Footer() {
               href="https://wa.me/919876543210?text=Hi%20Plotline%20Team,%20I%20am%20interested%20in%20a%20demo%20of%20the%20Colony%20ERP."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/70 px-4 py-2.5 text-xs font-semibold text-teal-200 transition-all active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/70 px-5 py-2.5 text-xs font-semibold text-teal-200 transition-all active:scale-95 whitespace-nowrap"
             >
               <MessageCircle className="h-3.5 w-3.5 text-emerald-400" />
               <span>WhatsApp Direct</span>
@@ -76,8 +76,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           
           {/* Column 1: Brand, Value Proposition & Trust Badges (4 cols) */}
-          <div className="lg:col-span-4 space-y-5">
-            <Link href="/" className="inline-flex items-center gap-2.5">
+          <div className="lg:col-span-4 space-y-5 text-center sm:text-left flex flex-col items-center sm:items-start">
+            <Link href="/" className="inline-flex items-center justify-center sm:justify-start gap-2.5">
               <svg viewBox="0 0 32 32" className="h-9 w-9 shrink-0 shadow-sm" aria-hidden="true">
                 <rect width="32" height="32" rx="8" fill="#0f766e" />
                 <path d="M7 9h8v6H7zM17 9h8v6h-8zM7 17h8v6H7z" fill="#ecfdf5" />
@@ -93,12 +93,12 @@ export function Footer() {
               </div>
             </Link>
 
-            <p className="text-xs sm:text-sm leading-relaxed text-slate-400">
+            <p className="text-xs sm:text-sm leading-relaxed text-slate-400 text-center sm:text-left">
               India&apos;s leading Colony &amp; Plotted Real Estate management platform. Eliminate double bookings with atomic plot locking, automate milestone demand letters on WhatsApp, and manage land parcels from Khasra registry to customer handover.
             </p>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-2.5 text-xs">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 text-xs">
               <div className="flex items-center gap-1.5 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-emerald-300 font-medium">
                 <ShieldCheck className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
                 <span>100% RERA &amp; GST Ready</span>
@@ -114,7 +114,7 @@ export function Footer() {
             </div>
 
             {/* Geographical Footprint */}
-            <div className="pt-2 text-xs text-slate-400 flex items-start gap-2">
+            <div className="pt-2 text-xs text-slate-400 flex items-center sm:items-start justify-center sm:justify-start gap-2 text-center sm:text-left">
               <MapPin className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
               <div className="leading-relaxed">
                 <span className="font-semibold text-slate-300">Regional Colonizer Onboarding:</span>{' '}

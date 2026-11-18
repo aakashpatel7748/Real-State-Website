@@ -123,9 +123,7 @@ export function HeroSection() {
                   <span className="text-emerald-600">🔒</span>
                   <span>app.plotline.in/dashboard</span>
                 </div>
-                <div className="text-[10px] font-semibold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
-                  Live ERP
-                </div>
+                <div className="w-6 sm:w-10" />
               </div>
 
               {/* Cleaned Real ERP Dashboard Screenshot */}

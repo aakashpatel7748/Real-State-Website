@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal
             direction="up"
-            className="rounded-3xl bg-gradient-to-br from-[#063038] via-[#042026] to-[#021418] p-8 sm:p-14 text-white shadow-2xl shadow-teal-950/25 border border-teal-700/40 relative overflow-hidden text-center"
+            className="rounded-3xl bg-gradient-to-br from-[#063038] via-[#042026] to-[#021418] px-4 py-8 sm:p-14 text-white shadow-2xl shadow-teal-950/25 border border-teal-700/40 relative overflow-hidden text-center"
           >
             {/* Subtle atmospheric ambient glow effects */}
             <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none" />
@@ -188,30 +188,30 @@ export default function HomePage() {
                 <span>Ready for Instant Cloud Deployment</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-white leading-normal sm:leading-relaxed lg:leading-[1.38]">
+              <h2 className="text-xl sm:text-3xl lg:text-[40px] font-semibold tracking-tight text-white leading-snug sm:leading-relaxed lg:leading-[1.38]">
                 Digitize Your Colony or Township Today
               </h2>
 
-              <p className="mt-3.5 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+              <p className="mt-3 text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 Eliminate double-booking disputes and spreadsheet errors.
                 Schedule a personalized 1-on-1 live demo configured with your colony layout map.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+              <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
                 <Link
                   href="/contact"
-                  className="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-7 py-3.5 text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02] active:scale-95"
+                  className="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-5 py-3 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02] active:scale-95 whitespace-nowrap"
                 >
-                  <Calendar className="h-4 w-4 text-[#042026]" />
-                  <span>Schedule Free 1-on-1 Live Demo</span>
+                  <Calendar className="h-4 w-4 text-[#042026] shrink-0" />
+                  <span>Schedule Free Live Demo</span>
                 </Link>
 
                 <a
                   href="tel:+919876543210"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 active:scale-95"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-5 py-3 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-semibold text-white transition-all hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
                 >
-                  <Phone className="h-4 w-4 text-emerald-400" />
-                  <span>Call Helpline: +91 98765 43210</span>
+                  <Phone className="h-4 w-4 text-emerald-400 shrink-0" />
+                  <span>Call: +91 98765 43210</span>
                 </a>
               </div>
 
