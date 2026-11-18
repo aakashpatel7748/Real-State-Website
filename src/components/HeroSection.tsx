@@ -123,7 +123,10 @@ export function HeroSection() {
                   <span className="text-emerald-600">🔒</span>
                   <span>app.plotline.in/dashboard</span>
                 </div>
-                <div className="w-6 sm:w-10" />
+                <div className="hidden sm:inline-flex text-[10px] bg-emerald-100 text-emerald-800 font-medium px-2 py-0.5 rounded border border-emerald-300 whitespace-nowrap">
+                  Live ERP
+                </div>
+                <div className="w-6 sm:hidden" />
               </div>
 
               {/* Cleaned Real ERP Dashboard Screenshot */}

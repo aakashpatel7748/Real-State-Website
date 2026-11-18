@@ -203,7 +203,8 @@ export default function HomePage() {
                   className="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 px-5 py-3 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-semibold text-[#042026] shadow-xl transition-all hover:scale-[1.02] active:scale-95 whitespace-nowrap"
                 >
                   <Calendar className="h-4 w-4 text-[#042026] shrink-0" />
-                  <span>Schedule Free Live Demo</span>
+                  <span className="sm:hidden">Schedule Free Live Demo</span>
+                  <span className="hidden sm:inline">Schedule Free 1-on-1 Live Demo</span>
                 </Link>
 
                 <a
@@ -211,7 +212,8 @@ export default function HomePage() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-teal-700/60 bg-teal-900/40 hover:bg-teal-900/60 px-5 py-3 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-semibold text-white transition-all hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
                 >
                   <Phone className="h-4 w-4 text-emerald-400 shrink-0" />
-                  <span>Call: +91 98765 43210</span>
+                  <span className="sm:hidden">Call: +91 98765 43210</span>
+                  <span className="hidden sm:inline">Call Helpline: +91 98765 43210</span>
                 </a>
               </div>
 

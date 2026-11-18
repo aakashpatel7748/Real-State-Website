@@ -151,7 +151,10 @@ export function SoftwareScreenshotsGallery() {
                     <span className="text-slate-400">app.plotline.in/</span>
                     <span className="text-emerald-400 font-medium">{activeTab}</span>
                   </div>
-                  <div className="w-5 sm:w-8 shrink-0" />
+                  <span className="hidden sm:inline-flex text-[10px] bg-emerald-950 text-emerald-300 font-medium px-2 py-0.5 rounded border border-emerald-800 whitespace-nowrap">
+                    Live UI
+                  </span>
+                  <div className="w-5 sm:hidden shrink-0" />
                 </div>
 
                 {/* Screenshot Image */}

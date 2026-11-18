@@ -102,7 +102,8 @@ export default function InventoryMapPage() {
                 {/* Simulated Address Bar */}
                 <div className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] text-slate-600 font-mono shadow-xs whitespace-nowrap">
                   <Lock className="h-3 w-3 text-emerald-600 shrink-0" />
-                  <span>plotline-erp.com/map</span>
+                  <span className="sm:hidden">plotline-erp.com/map</span>
+                  <span className="hidden sm:inline">plotline-erp.com/master/units-inventory/map</span>
                 </div>
 
                 <div className="flex items-center gap-1.5">

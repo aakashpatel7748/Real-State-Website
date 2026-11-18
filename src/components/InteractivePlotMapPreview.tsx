@@ -30,6 +30,10 @@ export function InteractivePlotMapPreview() {
           <h2 className="text-xl sm:text-3xl lg:text-[36px] font-semibold text-slate-800 leading-snug sm:leading-relaxed lg:leading-[1.45]">
             Live Colony Layout Map with 0% Double-Booking Lock
           </h2>
+          <p className="hidden sm:block text-sm text-slate-600 max-w-2xl mx-auto mt-3 leading-relaxed">
+            Eliminate Excel spreadsheets and outdated paper blueprints. Here is how your colony layout map displays live in the authentic{' '}
+            <strong className="font-semibold text-slate-800">Plotline ERP</strong> cloud interface:
+          </p>
         </ScrollReveal>
 
         {/* 2-Column Balanced Grid (Image and Text Perfectly Aligned) */}
@@ -53,7 +57,8 @@ export function InteractivePlotMapPreview() {
                 {/* Simulated Secure Address Bar */}
                 <div className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] text-slate-600 font-mono shadow-xs whitespace-nowrap">
                   <Lock className="h-3 w-3 text-emerald-600 shrink-0" />
-                  <span>plotline-erp.com/map</span>
+                  <span className="sm:hidden">plotline-erp.com/map</span>
+                  <span className="hidden sm:inline">plotline-erp.com/master/units-inventory/map</span>
                 </div>
 
                 <div className="flex items-center gap-1.5">
