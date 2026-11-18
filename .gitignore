@@ -9,6 +9,7 @@
 
 # Production
 /build
+/.vercel/
 
 # Environment variables
 .env*.local

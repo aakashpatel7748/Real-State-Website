@@ -34,29 +34,11 @@ export default function PreSalesPage() {
           {/* Left Column: Breadcrumb, Heading, Benefits & CTA */}
           <ScrollReveal direction="left" duration={850} className="lg:col-span-5 space-y-6">
             <div>
-              {/* Breadcrumb */}
-              {/* <div className="flex items-center gap-2 text-xs font-bold text-teal-800 mb-3 uppercase tracking-wider">
-                <Link href="/" className="hover:text-teal-950">Home</Link>
-                <span>/</span>
-                <Link href="/#modules" className="hover:text-teal-950">Modules</Link>
-                <span>/</span>
-                <span className="text-slate-500">Pre-Sales CRM</span>
-              </div>
-
-              <div className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3.5 py-1 text-xs font-semibold text-teal-900 border border-teal-200 mb-3 shadow-xs">
-                <TrendingUp className="h-3.5 w-3.5 text-teal-600" />
-                <span>Purpose-Built for Real Estate Colonizers</span>
-              </div> */}
 
               <h1 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold tracking-tight text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">
                 Pre-Sales Pipeline &amp; <br />
                 <span className="text-[#0d9488]">WhatsApp Lead Automation</span>
               </h1>
-
-              {/* <p className="mt-4 text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
-                Never lose prospective plot buyers in unstructured WhatsApp chats or misplaced diaries.
-                Track web inquiries, site visits, and booked revenue with automated follow-up alerts and 1-click quotation PDFs.
-              </p> */}
             </div>
 
             {/* Value Checkpoints */}
@@ -102,13 +84,6 @@ export default function PreSalesPage() {
                 <ArrowRight className="h-4 w-4 text-emerald-400" />
               </Link>
 
-              <a
-                href="tel:+919876543210"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3.5 text-xs sm:text-sm font-semibold text-slate-800 transition-all shadow-xs text-center"
-              >
-                <Phone className="h-4 w-4 text-[#0d9488]" />
-                <span>+91 98765 43210</span>
-              </a>
             </div>
           </ScrollReveal>
 

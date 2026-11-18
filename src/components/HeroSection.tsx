@@ -15,7 +15,7 @@ import {
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-12 pb-20 sm:pt-16 sm:pb-24 lg:pt-24 lg:pb-32 border-b border-slate-200/80">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f0fdfa]/60 via-white to-slate-50/60 pt-6 lg:mt-8 pb-14 lg:pt-14 lg:pb-25 border-b border-slate-200/80">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 right-1/4 -z-10 h-96 w-96 rounded-full bg-emerald-100/40 blur-3xl" />
       <div className="absolute top-20 left-10 -z-10 h-72 w-72 rounded-full bg-teal-100/30 blur-3xl" />
@@ -26,6 +26,10 @@ export function HeroSection() {
 
           {/* Left Column: Heading, Value Proposition & CTAs (Smooth Entrance from Left) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left animate-hero-left">
+
+            {/* Top Category Tag */}
+            <div className="inline-flex items-center gap-2 rounded-full /80 px-3.5 py-1 text-xs font-semibold text-teal-900 mb-4">
+            </div>
 
             {/* Main H1 Title in Poppins, ~40px scale */}
             <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold text-slate-800 leading-normal sm:leading-relaxed lg:leading-[1.38]">

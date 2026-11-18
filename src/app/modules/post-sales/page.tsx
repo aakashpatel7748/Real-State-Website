@@ -2,12 +2,12 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { 
-  FileText, 
-  CheckCircle2, 
-  Clock, 
-  ShieldCheck, 
-  Download, 
+import {
+  FileText,
+  CheckCircle2,
+  Clock,
+  ShieldCheck,
+  Download,
   ReceiptIndianRupee,
   AlertTriangle,
   Lock,
@@ -26,10 +26,10 @@ export default function PostSalesPage() {
   return (
     <div className="py-12 sm:py-16 lg:py-20 bg-slate-50/70 border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top 2-Column Showcase: Left Text & Right Image */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Column: Heading, Benefits & CTA */}
           <ScrollReveal direction="left" duration={850} className="lg:col-span-5 space-y-6">
             <div>
@@ -82,45 +82,13 @@ export default function PostSalesPage() {
                 <ArrowRight className="h-4 w-4 text-emerald-400" />
               </Link>
 
-              <a
-                href="tel:+919876543210"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3.5 text-xs sm:text-sm font-semibold text-slate-800 transition-all shadow-xs text-center"
-              >
-                <Phone className="h-4 w-4 text-[#0d9488]" />
-                <span>+91 98765 43210</span>
-              </a>
+
             </div>
           </ScrollReveal>
 
           {/* Right Column: Actual Real Software Post-Sales & Demand Notice Showcase */}
           <ScrollReveal direction="right" duration={850} delay={150} className="lg:col-span-7">
             <div className="group relative rounded-2xl border border-slate-200/90 bg-white shadow-xl shadow-slate-900/10 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-teal-300">
-              
-              {/* macOS/SaaS Window Header Bar */}
-              <div className="flex items-center justify-between border-b border-slate-200/90 bg-slate-100/95 px-4 py-2.5 select-none">
-                <div className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-rose-400" />
-                  <div className="h-3 w-3 rounded-full bg-amber-400" />
-                  <div className="h-3 w-3 rounded-full bg-emerald-400" />
-                  <span className="ml-2 text-[11px] font-semibold text-slate-600 hidden sm:inline">
-                    Plotline ERP &bull; Post-Sales Demand Notices &amp; Ledger
-                  </span>
-                </div>
-
-                {/* Simulated Address Bar */}
-                <div className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1 text-[11px] text-slate-600 font-mono shadow-xs">
-                  <Lock className="h-3 w-3 text-emerald-600" />
-                  <span>plotline-erp.com/post-sales/demand-notices</span>
-                </div>
-
-                <div className="flex items-center gap-1.5">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-                  </span>
-                  <span className="text-[10px] font-bold text-emerald-700 hidden sm:inline">Live Sync</span>
-                </div>
-              </div>
 
               {/* Post-Sales Themed Tech Illustration */}
               <div className="relative overflow-hidden bg-white p-2 sm:p-4 flex items-center justify-center">
@@ -130,20 +98,6 @@ export default function PostSalesPage() {
                   className="w-full h-auto object-contain rounded-xl select-none"
                   loading="lazy"
                 />
-              </div>
-
-              {/* Bottom Real Map Status Bar */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200/90 bg-slate-50 px-4 py-2.5 text-xs text-slate-600">
-                <div className="flex items-center gap-2">
-                  <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-                  <span className="font-semibold text-slate-800">Post-Sales Operations Hub</span>
-                  <span className="text-slate-400">&bull;</span>
-                  <span className="text-slate-500">Milestone Demands &amp; Possession</span>
-                </div>
-                <div className="flex items-center gap-3 text-[11px] font-medium">
-                  <span className="text-emerald-700 font-semibold">&bull; 4.5x Faster Collections</span>
-                  <span className="text-teal-700 font-semibold">&bull; 100% RERA Compliant</span>
-                </div>
               </div>
             </div>
           </ScrollReveal>
